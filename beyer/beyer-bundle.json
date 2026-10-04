@@ -1,0 +1,651 @@
+{
+"base": "https://raw.githubusercontent.com/pianoweb/large_file_cleaner/tmp-pianosolo-duvernoy/beyer/",
+"art": {
+"01": {
+"k": "01",
+"post": 332,
+"titolo": "Esercizi a tre mani - Mano destra sola",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-01-web.png",
+"sha": "1ebc76fd4ddc88b61dc1fbdc564881ebc937155f7451d8e802c1e2a5dc06d1ac",
+"title": "Beyer op. 101 – Esercizio n. 1 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 1 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-01.pdf",
+"sha": "20f2d9f65bd34e77018379041cdf6821571fb6070414e86e8fe09dad6c28fc05",
+"title": "Beyer op. 101 – Esercizio n. 1 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-01-frammento-a.png",
+"sha": "102b08512c496052d357628ea154a7dd8fd8b7ad8e56308bf7c745d75ddd8655",
+"title": "Beyer op. 101 – Esercizio n. 1, frammento a",
+"alt": "Tema, battute 1–4: una semibreve per battuta, quattro movimenti ciascuna (in blu il conteggio). (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-01-frammento-b.png",
+"sha": "0ecbe9d6221d2313a2cb3131a450bd2de4fb36fb4a0c7bc780296403eba31042",
+"title": "Beyer op. 101 – Esercizio n. 1, frammento b",
+"alt": "Variazione 2, battute 1–4: la minima col punto dura tre movimenti, la semiminima cade sul «4». (Beyer op. 101)"
+},
+{
+"k": "fc",
+"name": "beyer-op101-esercizio-01-frammento-c.png",
+"sha": "357708b0b37cbc2b51c5000fd51d4521bd13d87bb2bb07b99ab0ac52bf9b09c7",
+"title": "Beyer op. 101 – Esercizio n. 1, frammento c",
+"alt": "Variazione 7, battute 1–4: in rosso le pause di un movimento, sempre sull'«1». (Beyer op. 101)"
+},
+{
+"k": "fd",
+"name": "beyer-op101-esercizio-01-frammento-d.png",
+"sha": "bbbba2233e1c350388314ebca06d5f3538c27ebc14d5c816a50d88874ec61c95",
+"title": "Beyer op. 101 – Esercizio n. 1, frammento d",
+"alt": "Variazione 4, battute 1–4: in rosso le note ribattute con lo stesso dito; le altre sono legate. (Beyer op. 101)"
+},
+{
+"k": "fe",
+"name": "beyer-op101-esercizio-01-frammento-e.png",
+"sha": "69632c39bf39c43f6ec28590dae3f2c456e4c21b12708af28c0275293e85e774",
+"title": "Beyer op. 101 – Esercizio n. 1, frammento e",
+"alt": "Variazione 3, battute 1–4: in 3/4 si conta fino a tre. (Beyer op. 101)"
+},
+{
+"k": "ff",
+"name": "beyer-op101-esercizio-01-frammento-f.png",
+"sha": "7e6eea208156b9773588ae927e6d392ee758738ffcb86c0ae85a86e36749a0f7",
+"title": "Beyer op. 101 – Esercizio n. 1, frammento f",
+"alt": "Variazione 9, battute 1–3: i salti verso il Sol e verso il Do (in rosso le dita). (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Tema, battute 1–4: una semibreve per battuta, quattro movimenti ciascuna (in blu il conteggio).",
+"b": "Variazione 2, battute 1–4: la minima col punto dura tre movimenti, la semiminima cade sul «4».",
+"c": "Variazione 7, battute 1–4: in rosso le pause di un movimento, sempre sull'«1».",
+"d": "Variazione 4, battute 1–4: in rosso le note ribattute con lo stesso dito; le altre sono legate.",
+"e": "Variazione 3, battute 1–4: in 3/4 si conta fino a tre.",
+"f": "Variazione 9, battute 1–3: i salti verso il Sol e verso il Do (in rosso le dita)."
+},
+"h2": "Spartito dell'esercizio n. 1",
+"pdf": "Scarica lo spartito dell'esercizio n. 1 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo: il tema e le dodici variazioni per la mano destra.",
+"blocchi": {
+"5": [
+"fr:a"
+],
+"7": [
+"fr:b"
+],
+"8": [
+"fr:c"
+],
+"9": [
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Do maggiore.",
+"<strong>Tempo:</strong> Tempo moderato. Il tema e quasi tutte le variazioni sono in 4/4; le variazioni 3 e 8 sono in 3/4.",
+"<strong>Struttura:</strong> un tema di otto battute e dodici variazioni, tutte sulle stesse cinque note.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> tenere ogni nota per tutta la sua durata. Nel tema e nelle prime variazioni le note sono lunghe e si tende ad accorciarle.",
+"<strong>Soluzione:</strong> contate sempre ad alta voce, come negli esempi qui sopra. Il conteggio non si ferma mai, nemmeno nelle pause della variazione 7: sull'«1» la mano si alza dalla tastiera e la prima nota arriva sul «2».",
+"<strong>Difficoltà:</strong> legare le note e, quando serve, ribatterle. Le note sotto la legatura devono susseguirsi senza vuoti; quando invece la stessa nota si ripete con lo stesso dito (variazioni 1, 4 e 5) il tasto deve risalire.",
+"fr:d",
+"<strong>Soluzione:</strong> nel legato alzate un dito solo nel momento in cui il successivo abbassa il suo tasto. Per ribattere, lasciate risalire il tasto alzando appena il dito e riabbassatelo, senza irrigidire il polso.",
+"<strong>Difficoltà:</strong> il cambio di metro. Le variazioni 3 e 8 sono in 3/4: tre movimenti per battuta invece di quattro.",
+"fr:e",
+"<strong>Soluzione:</strong> prima di suonare contate una battuta a vuoto, «1, 2, 3». Nella variazione 3 la minima occupa i primi due numeri e la semiminima il terzo.",
+"<strong>Difficoltà:</strong> i salti. Dalla variazione 8 le note non sono sempre vicine: si passa dal Do al Sol, dal Re al Sol, dal Mi al Do.",
+"fr:f",
+"<strong>Soluzione:</strong> la mano non si sposta: ogni dito resta sopra il suo tasto e per saltare basta abbassare il dito giusto, senza cercarlo con lo sguardo."
+]
+}
+},
+"02": {
+"k": "02",
+"post": 364,
+"titolo": "Esercizi a tre mani - Mano sinistra sola",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-02-web.png",
+"sha": "9032265c9c6b74540305f31eb56b85d2b31218836727e519e4c27896de492a2d",
+"title": "Beyer op. 101 – Esercizio n. 2 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 2 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-02.pdf",
+"sha": "c73c306b23fbcfbc8ee1587d999fb86ef909c400f3da7f1a8f21565850b54c78",
+"title": "Beyer op. 101 – Esercizio n. 2 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-02-frammento-a.png",
+"sha": "7844800850eb3b99e3523e190e84cf294bb17aa1a6a57db6f835dc7a8dfeebb5",
+"title": "Beyer op. 101 – Esercizio n. 2, frammento a",
+"alt": "Tema, battute 1–4: Sol, Si, La, Si con le dita 3, 1, 2, 1 della mano sinistra (in rosso). (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-02-frammento-b.png",
+"sha": "e8c0a1f42e229a5642c71605c797f4c0dbf80f3330a23e10e5ee588a9a4ba586",
+"title": "Beyer op. 101 – Esercizio n. 2, frammento b",
+"alt": "Variazione 4, battute 1–4: in 2/4 si conta fino a due. (Beyer op. 101)"
+},
+{
+"k": "fc",
+"name": "beyer-op101-esercizio-02-frammento-c.png",
+"sha": "5ab9fc0960aa9928dcccc1f1f4c30ee2bcad77b7dafd33732585f46488223944",
+"title": "Beyer op. 101 – Esercizio n. 2, frammento c",
+"alt": "Variazione 5, battute 7–10: i segni di ritornello fra la prima e la seconda parte. (Beyer op. 101)"
+},
+{
+"k": "fd",
+"name": "beyer-op101-esercizio-02-frammento-d.png",
+"sha": "4a55cf6efbf6a867a7a3ababd091f6316e169f192d6cb2f69099ae6ac51197a8",
+"title": "Beyer op. 101 – Esercizio n. 2, frammento d",
+"alt": "Variazione 6, battute 1–4: la nuova posizione su cinque note; il pollice (1) resta sempre sopra il Re. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Tema, battute 1–4: Sol, Si, La, Si con le dita 3, 1, 2, 1 della mano sinistra (in rosso).",
+"b": "Variazione 4, battute 1–4: in 2/4 si conta fino a due.",
+"c": "Variazione 5, battute 7–10: i segni di ritornello fra la prima e la seconda parte.",
+"d": "Variazione 6, battute 1–4: la nuova posizione su cinque note; il pollice (1) resta sempre sopra il Re."
+},
+"h2": "Spartito dell'esercizio n. 2",
+"pdf": "Scarica lo spartito dell'esercizio n. 2 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo: il tema e le otto variazioni per la mano sinistra.",
+"blocchi": {
+"1": [
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Sol maggiore. L'allievo suona solo tasti bianchi: il Fa diesis compare soltanto nella parte del maestro.",
+"<strong>Tempo:</strong> Moderato. Il tema e le variazioni 1, 2, 6 e 7 sono in 4/4; le variazioni 3, 5 e 8 in 3/4; la variazione 4 in 2/4.",
+"<strong>Posizione e diteggiatura:</strong> la sinistra legge in chiave di violino. Fino alla variazione 5 usa tre dita: il 3 sul Sol, il 2 sul La e il pollice (1) sul Si. Dalla variazione 6 la posizione si allarga a cinque note: 5 sul Sol, 4 sul La, 3 sul Si, 2 sul Do e 1 sul Re.",
+"<strong>Struttura:</strong> un tema e otto variazioni, di sedici battute ciascuno.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> la diteggiatura della sinistra è rovesciata rispetto a quella della destra: salendo verso le note acute i numeri delle dita scendono, e la nota più alta la suona il pollice.",
+"fr:a",
+"<strong>Soluzione:</strong> suonate il tema dicendo ad alta voce il numero del dito, poi ripetetelo dicendo il nome delle note. Ogni semibreve dura quattro movimenti, come nell'esercizio n.1.",
+"<strong>Difficoltà:</strong> i cambi di metro. La variazione 4 è in 2/4, le variazioni 3, 5 e 8 sono in 3/4.",
+"fr:b",
+"<strong>Soluzione:</strong> guardate la frazione all'inizio del rigo e contate una battuta a vuoto prima di cominciare: «1, 2» nel 2/4, «1, 2, 3» nel 3/4.",
+"<strong>Difficoltà:</strong> il ritornello, che compare per la prima volta nella variazione 5 e torna nella 8.",
+"fr:c",
+"<strong>Soluzione:</strong> i due punti accanto alla doppia stanghetta indicano che il brano si ripete: si suonano due volte le battute 1–8 e poi due volte le battute 9–16, senza fermarsi fra una volta e l’altra.",
+"<strong>Difficoltà:</strong> dalla variazione 6 la mano copre cinque note e compaiono i salti verso il Re, da suonare con il pollice.",
+"fr:d",
+"<strong>Soluzione:</strong> preparate la mano sulla nuova posizione prima di cominciare e lasciate il pollice sempre sopra il Re: il salto si fa abbassando il dito, non spostando la mano."
+]
+}
+},
+"03": {
+"k": "03",
+"post": 399,
+"titolo": "Esercizio n.3",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-03-web.png",
+"sha": "f74e4b595f1a5866e42e49c816db1e7c3bfe32e72f494dfeaae75fe7c3dc71ed",
+"title": "Beyer op. 101 – Esercizio n. 3 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 3 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-03.pdf",
+"sha": "4e33e472dd0af5b2fdbb550d48e7d80f4ae3b6a8b298784f8f82dfcbf5e474a7",
+"title": "Beyer op. 101 – Esercizio n. 3 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-03-frammento-a.png",
+"sha": "fca4675036f16dd1a881367b6bdc7185b3a30e2f0293739788c11482e27134e9",
+"title": "Beyer op. 101 – Esercizio n. 3, frammento a",
+"alt": "Battute 1–5: ogni semibreve dura quattro movimenti (in blu il conteggio). In rosso le dita: la destra sale con 1-2-3-4-5, la sinistra con 5-4-3-2-1. (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-03-frammento-b.png",
+"sha": "10770d49139757a387e27fc9cbd8ec2a4a368feacf872d0a2975627754352a94",
+"title": "Beyer op. 101 – Esercizio n. 3, frammento b",
+"alt": "Battute 7–10: dopo il ritornello si suona il Do finale e si conta un'intera battuta di pausa (in rosso). (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Battute 1–5: ogni semibreve dura quattro movimenti (in blu il conteggio). In rosso le dita: la destra sale con 1-2-3-4-5, la sinistra con 5-4-3-2-1.",
+"b": "Battute 7–10: dopo il ritornello si suona il Do finale e si conta un'intera battuta di pausa (in rosso)."
+},
+"h2": "Spartito dell'esercizio n. 3",
+"pdf": "Scarica lo spartito dell'esercizio n. 3 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo.",
+"blocchi": {
+"1": [
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Do maggiore.",
+"<strong>Tempo:</strong> Moderato, in 4/4.",
+"<strong>Posizione e diteggiatura:</strong> la mano destra ha il pollice (1) sul Do e il mignolo (5) sul Sol; la sinistra, un'ottava sotto, ha il mignolo (5) sul Do e il pollice (1) sul Sol. Le dita restano sempre sopra questi cinque tasti.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> ogni nota dura quattro movimenti e si tende ad accorciarla, passando troppo presto alla successiva. Inoltre le due mani suonano la stessa nota ma con dita diverse.",
+"fr:a",
+"<strong>Soluzione:</strong> contate ad alta voce «1, 2, 3, 4» e cambiate nota solo sull'«1» della battuta seguente. Il dito lascia il tasto nel momento in cui il dito vicino abbassa quello nuovo: è il legato chiesto dalla legatura. Per le dita, provate prima ogni mano da sola dicendo i numeri.",
+"<strong>Difficoltà:</strong> il finale. Le prime otto battute vanno ripetute (ritornello); la seconda volta si prosegue con il Do e con una battuta intera di pausa.",
+"fr:b",
+"<strong>Soluzione:</strong> sulla pausa alzate le mani dalla tastiera e continuate a contare fino al «4»: l'esercizio finisce lì, non sul Do."
+]
+}
+},
+"04": {
+"k": "04",
+"post": 451,
+"titolo": "Esercizio n.4",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-04-web.png",
+"sha": "f4f678e3060b016ebab6a15ceb98f9c02974ea422eedcb3f1c6f1dab25930e1c",
+"title": "Beyer op. 101 – Esercizio n. 4 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 4 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-04.pdf",
+"sha": "b6b1ad4fdcd6a0d8c1f478cc0fea940be756a013f488795623d518af84b8fc1b",
+"title": "Beyer op. 101 – Esercizio n. 4 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-04-frammento-a.png",
+"sha": "3f162741fb355734cd08a1b41b248819a97b6ef9e4db95358ed29302c290e56f",
+"title": "Beyer op. 101 – Esercizio n. 4, frammento a",
+"alt": "Battute 1–4: due minime per battuta, una sull'«1» e una sul «3». Queste quattro battute si suonano due volte. (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-04-frammento-b.png",
+"sha": "5132f38a740dd8056b3aa094823e344e0d4b8fc7c3da93e7f0ff6d8cd6aa7836",
+"title": "Beyer op. 101 – Esercizio n. 4, frammento b",
+"alt": "Battute 5–8: dopo il ritornello le note procedono per salti di terza (in rosso le dita) e l'esercizio si chiude con le pause. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Battute 1–4: due minime per battuta, una sull'«1» e una sul «3». Queste quattro battute si suonano due volte.",
+"b": "Battute 5–8: dopo il ritornello le note procedono per salti di terza (in rosso le dita) e l'esercizio si chiude con le pause."
+},
+"h2": "Spartito dell'esercizio n. 4",
+"pdf": "Scarica lo spartito dell'esercizio n. 4 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo.",
+"blocchi": {
+"2": [
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Do maggiore.",
+"<strong>Tempo:</strong> lo spartito non riporta un'indicazione: si mantiene il Moderato dell'esercizio n.3. Il metro è 4/4.",
+"<strong>Posizione e diteggiatura:</strong> la stessa dell'esercizio n.3, con le cinque dita di ogni mano sui tasti da Do a Sol e le due mani a distanza di un'ottava.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> con le minime le dita si muovono al doppio della velocità rispetto all'esercizio n.3, e il rischio è di non dare a tutte le note la stessa durata.",
+"fr:a",
+"<strong>Soluzione:</strong> contate sempre in quattro: una nota sull'«1», che dura anche il «2», e una sul «3», che dura anche il «4». Nel ritornello ripartite subito dall'inizio, senza fermarvi fra la prima e la seconda volta.",
+"<strong>Difficoltà:</strong> dopo il ritornello le note non sono più vicine: si salta un tasto (Do–Mi–Sol–Mi–Do) e quindi anche un dito. Poi arrivano le pause, che vanno contate come le note.",
+"fr:b",
+"<strong>Soluzione:</strong> suonano solo le dita 1, 3 e 5; il 2 e il 4 restano appoggiati sui loro tasti senza abbassarli, così la mano non si sposta. Sulla pausa di minima alzate le mani e contate «3, 4», poi tutta l'ultima battuta."
+]
+}
+},
+"05": {
+"k": "05",
+"post": 492,
+"titolo": "Esercizio n.5",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-05-web.png",
+"sha": "2e54c656d105644cb5989ca391da3099f69040c6bfe0ca6bb47207b88b8c0d27",
+"title": "Beyer op. 101 – Esercizio n. 5 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 5 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-05.pdf",
+"sha": "522c7c7e719f41137592a04ae6bb1b1062fea77ca849ae92d20d5fb75280ffaa",
+"title": "Beyer op. 101 – Esercizio n. 5 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-05-frammento-a.png",
+"sha": "c8d3869bddbd7d409fcd3de8f55da6e449d89cdaa076dd5207c82a69684f04f9",
+"title": "Beyer op. 101 – Esercizio n. 5, frammento a",
+"alt": "Battute 1–4: minima col punto (tre movimenti) e semiminima (un movimento, sul «4»). (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-05-frammento-b.png",
+"sha": "50db6c6c205c55806c05e202638d400c6297b6f71b45d6df4d7794759055fb68",
+"title": "Beyer op. 101 – Esercizio n. 5, frammento b",
+"alt": "Battute 5–8: il salto Do–Sol della penultima battuta (in rosso le dita) e la pausa finale. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Battute 1–4: minima col punto (tre movimenti) e semiminima (un movimento, sul «4»).",
+"b": "Battute 5–8: il salto Do–Sol della penultima battuta (in rosso le dita) e la pausa finale."
+},
+"h2": "Spartito dell'esercizio n. 5",
+"pdf": "Scarica lo spartito dell'esercizio n. 5 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo.",
+"blocchi": {
+"0": [
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Do maggiore.",
+"<strong>Tempo:</strong> lo spartito non riporta un'indicazione: si mantiene il Moderato dell'esercizio n.3. Il metro è 4/4.",
+"<strong>Posizione e diteggiatura:</strong> le cinque dita di ogni mano sui tasti da Do a Sol, come negli esercizi precedenti.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> la minima col punto dura tre movimenti: è facile accorciarla e suonare la semiminima in anticipo.",
+"fr:a",
+"<strong>Soluzione:</strong> contate «1, 2, 3» tenendo abbassato il tasto e suonate la semiminima esattamente sul «4».",
+"<strong>Difficoltà:</strong> nella penultima battuta le mani passano direttamente dal Do al Sol, saltando tre tasti; nell'ultima c'è una pausa di un movimento.",
+"fr:b",
+"<strong>Soluzione:</strong> non spostate la mano: pollice e mignolo sono già sopra il Do e il Sol, basta abbassarli. Sul «4» dell'ultima battuta alzate le due mani insieme."
+]
+}
+},
+"06": {
+"k": "06",
+"post": 536,
+"titolo": "Esercizio n.6",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-06-web.png",
+"sha": "e1a2eb2dae347bf3e618868d18b67b96130eca94a2d1791ea34c51ac7cdaa04e",
+"title": "Beyer op. 101 – Esercizio n. 6 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 6 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-06.pdf",
+"sha": "8d39d01a404f798fc3faa2d56cf2da7481768710ec535fa438219d96e1b61b2f",
+"title": "Beyer op. 101 – Esercizio n. 6 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-06-frammento-a.png",
+"sha": "a2c3e60f5097f9493602bb151f708ca91460d7a57bee42aa4cd8e604c971895f",
+"title": "Beyer op. 101 – Esercizio n. 6, frammento a",
+"alt": "Battute 1–4: in 3/4 si conta fino a tre; la minima occupa l'«1» e il «2», la semiminima il «3». (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-06-frammento-b.png",
+"sha": "32cd0ee334318b48dfc788e92f7ee811b801265c641532a93de9742ecfa3c3de",
+"title": "Beyer op. 101 – Esercizio n. 6, frammento b",
+"alt": "Battute 9–12: tre note da tre movimenti con il salto Do–Sol–Do (in rosso le dita), poi una battuta di pausa. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Battute 1–4: in 3/4 si conta fino a tre; la minima occupa l'«1» e il «2», la semiminima il «3».",
+"b": "Battute 9–12: tre note da tre movimenti con il salto Do–Sol–Do (in rosso le dita), poi una battuta di pausa."
+},
+"h2": "Spartito dell'esercizio n. 6",
+"pdf": "Scarica lo spartito dell'esercizio n. 6 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo.",
+"blocchi": {
+"1": [
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Do maggiore.",
+"<strong>Tempo:</strong> lo spartito non riporta un'indicazione. Il metro è 3/4: tre movimenti per battuta.",
+"<strong>Posizione e diteggiatura:</strong> le cinque dita di ogni mano sui tasti da Do a Sol, come negli esercizi precedenti.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> è il primo esercizio in 3/4: chi è abituato al 4/4 tende ad aggiungere un movimento alla fine della battuta.",
+"fr:a",
+"<strong>Soluzione:</strong> contate «1, 2, 3» appoggiando leggermente l'«1». La minima si tiene per due numeri, la semiminima cade sul «3» e subito dopo si riparte dall'«1».",
+"<strong>Difficoltà:</strong> nel finale ogni nota dura un'intera battuta e si passa dal Do al Sol senza note intermedie; anche la battuta di pausa conclusiva fa parte dell'esercizio.",
+"fr:b",
+"<strong>Soluzione:</strong> tenete ogni nota per tutti e tre i movimenti: pollice e mignolo sono già sui loro tasti. Nella battuta di pausa alzate le mani e contate ancora «1, 2, 3»."
+]
+}
+},
+"07": {
+"k": "07",
+"post": 582,
+"titolo": "Esercizio n.7",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-07-web.png",
+"sha": "6b43898e60a24b11f5a9ed63622df9928a34088e456efd63fadff2861d31ea87",
+"title": "Beyer op. 101 – Esercizio n. 7 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 7 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-07.pdf",
+"sha": "f9f5fa1067fc318364d178a5df2525a091fc93f40cc76a506d616fb26f733f56",
+"title": "Beyer op. 101 – Esercizio n. 7 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-07-frammento-a.png",
+"sha": "1eb35e5985f3e28a07586c6c7c88b41f96eb384c47a176d15e832c7945e9e23d",
+"title": "Beyer op. 101 – Esercizio n. 7, frammento a",
+"alt": "Battute 5–8: una mano tiene il Do mentre l’altra suona (fasce colorate); alla battuta 7 la destra entra dopo una pausa (in rosso). (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-07-frammento-b.png",
+"sha": "c3f978aa1e2680147f3c7ea5bb9f12469287646118ce66dee7cb7b86ecb61121",
+"title": "Beyer op. 101 – Esercizio n. 7, frammento b",
+"alt": "Battute 1–2: quattro semiminime per battuta; in rosso le dita più deboli, il 4 e il 5. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Battute 5–8: una mano tiene il Do mentre l’altra suona (fasce colorate); alla battuta 7 la destra entra dopo una pausa (in rosso).",
+"b": "Battute 1–2: quattro semiminime per battuta; in rosso le dita più deboli, il 4 e il 5."
+},
+"h2": "Spartito dell'esercizio n. 7",
+"pdf": "Scarica lo spartito dell'esercizio n. 7 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo.",
+"blocchi": {
+"1": [
+"fr:a",
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Do maggiore.",
+"<strong>Tempo:</strong> lo spartito non riporta un'indicazione: si mantiene il Moderato dell'esercizio n.3. Il metro è 4/4.",
+"<strong>Posizione e diteggiatura:</strong> le cinque dita di ogni mano sui tasti da Do a Sol, come negli esercizi precedenti.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> nelle battute 5 e 6 le mani fanno per la prima volta cose diverse: una tiene il Do per quattro movimenti, l'altra suona quattro semiminime. Spesso la mano che dovrebbe tenere la nota la lascia, oppure si ferma anche l'altra.",
+"<strong>Soluzione:</strong> studiate queste due battute da sole. Appoggiate bene il dito che tiene il Do e contate ad alta voce mentre l'altra mano suona; il Do si lascia solo sull'«1» della battuta seguente.",
+"<strong>Difficoltà:</strong> alla battuta 7 la sinistra riparte sull'«1», mentre la destra ha una pausa ed entra sul «2».",
+"<strong>Soluzione:</strong> dite «1» a voce alta mentre suona solo la sinistra e fate entrare la destra sul «2», con il Mi (dito 3).",
+"<strong>Difficoltà:</strong> nelle prime quattro battute le semiminime devono essere tutte uguali, ma il 4 e il 5 sono dita più deboli e tendono a suonare più piano o in ritardo.",
+"fr:b",
+"<strong>Soluzione:</strong> suonate lentamente, una nota per ogni numero, cercando lo stesso suono con tutte le dita; aumentate la velocità solo quando le due mani sono perfettamente insieme."
+]
+}
+},
+"08": {
+"k": "08",
+"post": 596,
+"titolo": "Esercizio n.8",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-08-web.png",
+"sha": "b45fdcfe2873b2931c6dfce92a967ed0243b4ba605f8d17690624d256702f6b9",
+"title": "Beyer op. 101 – Esercizio n. 8 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 8 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-08.pdf",
+"sha": "16db12087b1144eeb1ac7fb5a279af2982bf84c25447cbcd16728b62e0eed83c",
+"title": "Beyer op. 101 – Esercizio n. 8 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-08-frammento-a.png",
+"sha": "27beb3163d3baa45f20e3c7aa6910f5da74933a3e480d6b9ad447bc0d30e7472",
+"title": "Beyer op. 101 – Esercizio n. 8, frammento a",
+"alt": "Battute 5–8: alla battuta 7 la sinistra suona due minime (fascia gialla) mentre la destra continua con le semiminime. (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-08-frammento-b.png",
+"sha": "33016cfce6a93421d3de294e45c84732ebe436186315ca81f9e8bfd91cba562e",
+"title": "Beyer op. 101 – Esercizio n. 8, frammento b",
+"alt": "Battute 1–4: in rosso le note ribattute della destra, da suonare sempre con lo stesso dito. (Beyer op. 101)"
+},
+{
+"k": "fc",
+"name": "beyer-op101-esercizio-08-frammento-c.png",
+"sha": "8ad995914ce22fec6a2b80c8d0c6f4fefc47b787c9695fdf218bc4f3162d17e8",
+"title": "Beyer op. 101 – Esercizio n. 8, frammento c",
+"alt": "Battute 9–12: i salti Sol–Re (dita 5-2) e Mi–Do (dita 3-1) della seconda parte. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Battute 5–8: alla battuta 7 la sinistra suona due minime (fascia gialla) mentre la destra continua con le semiminime.",
+"b": "Battute 1–4: in rosso le note ribattute della destra, da suonare sempre con lo stesso dito.",
+"c": "Battute 9–12: i salti Sol–Re (dita 5-2) e Mi–Do (dita 3-1) della seconda parte."
+},
+"h2": "Spartito dell'esercizio n. 8",
+"pdf": "Scarica lo spartito dell'esercizio n. 8 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo.",
+"blocchi": {
+"4": [
+"fr:a"
+],
+"5": [
+"<strong>Soluzione:</strong> nelle battute con i due Sol contate ad alta voce: la sinistra suona sull'«1» e sul «3», cioè insieme alla prima e alla terza nota della destra. Provate prima queste battute da sole, lentamente.",
+"<strong>Difficoltà:</strong> la destra ribatte più volte la stessa nota con lo stesso dito (Do-Do-Do, Re-Re-Re-Re, Mi-Mi-Mi-Mi): se il tasto non risale del tutto, la nota non suona.",
+"fr:b",
+"<strong>Soluzione:</strong> tra una nota e l'altra lasciate risalire il tasto alzando appena il dito, senza staccare la mano e senza irrigidire il polso.",
+"<strong>Difficoltà:</strong> la seconda parte comincia dal Sol con il mignolo e procede per piccoli salti, usando dita non vicine.",
+"fr:c",
+"<strong>Soluzione:</strong> la mano resta ferma sulla posizione Do–Sol: ogni dito ha già il suo tasto sotto, quindi basta pensare al numero del dito. Ricordate il ritornello: le battute 9–16 si suonano due volte."
+]
+}
+},
+"09": {
+"k": "09",
+"post": 618,
+"titolo": "Esercizio n.9",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizio-09-web.png",
+"sha": "8ef052fd333f73a64ef0bf24a72e357d2e4192fbb9789b848daedfdb247b2679",
+"title": "Beyer op. 101 – Esercizio n. 9 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio n. 9 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizio-09.pdf",
+"sha": "bec9297ea0b44dea49ae1b6f0bb84ee96e085f5d4d29da84747c32037e5bb2db",
+"title": "Beyer op. 101 – Esercizio n. 9 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizio-09-frammento-a.png",
+"sha": "a5110e2146bf7c6cb5fda8ae938d8bc9f66116b8eb1a62d7dc364ae14a0465db",
+"title": "Beyer op. 101 – Esercizio n. 9, frammento a",
+"alt": "Battute 1–4: le fasce gialle indicano le note da tre movimenti; l'altra mano suona una semiminima per ogni numero. (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizio-09-frammento-b.png",
+"sha": "d83b57864ca10ee8443a3a4530b4e54d9d972e048aee7bcf29e6444e84fbbe3a",
+"title": "Beyer op. 101 – Esercizio n. 9, frammento b",
+"alt": "Battute 17–20: all'inizio della seconda parte la destra salta fra note lunghe (in rosso le dita), la sinistra scandisce i tre movimenti. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Battute 1–4: le fasce gialle indicano le note da tre movimenti; l'altra mano suona una semiminima per ogni numero.",
+"b": "Battute 17–20: all'inizio della seconda parte la destra salta fra note lunghe (in rosso le dita), la sinistra scandisce i tre movimenti."
+},
+"h2": "Spartito dell'esercizio n. 9",
+"pdf": "Scarica lo spartito dell'esercizio n. 9 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo.",
+"blocchi": {
+"1": [
+"<strong>Tonalità:</strong> Do maggiore."
+],
+"4": [
+"fr:a"
+],
+"5": [
+"<strong>Soluzione:</strong> contate «1, 2, 3» ad alta voce. La mano che ha la nota lunga la tiene abbassata fino al «3»; l’altra suona una nota per ogni numero. Nelle prime quattro battute i ruoli si scambiano più volte: studiatele da sole finché lo scambio diventa naturale.",
+"<strong>Difficoltà:</strong> la seconda parte (dalla battuta 17, con ritornello) comincia con quattro note lunghe della destra che procedono per salti: Re–Sol–Do–Mi.",
+"fr:b",
+"<strong>Soluzione:</strong> approfittate dei tre movimenti di ogni nota per pensare al dito successivo, che è già sopra il suo tasto; la sinistra, con le sue semiminime regolari, vi fa da metronomo."
+]
+}
+},
+"10-11": {
+"k": "10-11",
+"post": 668,
+"titolo": "Esercizio n.10 e 11",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-esercizi-10-11-web.png",
+"sha": "ac3f5427ba1b8889a264beb5da0423275417d0182ef06cd0528ca1f5b4b3679f",
+"title": "Beyer op. 101 – Esercizi n. 10 e 11 (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizi n. 10 e 11 (parte dell’allievo)"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-esercizi-10-11.pdf",
+"sha": "99f0f95320a2771e6c709dd6c9ef1d2e8fd50c5d7565700fa50de1370b73938e",
+"title": "Beyer op. 101 – Esercizi n. 10 e 11 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-esercizi-10-11-frammento-a.png",
+"sha": "3c53f77f46ae7277494961ca976fedf61c51110829252329e304a3c75e132870",
+"title": "Beyer op. 101 – Esercizi n. 10 e 11, frammento a",
+"alt": "Esercizio n.10, battute 1–4: il salto Mi–Sol–Do della battuta 3 (in rosso le dita) e lo scambio dei ruoli alla battuta 4. (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-esercizi-10-11-frammento-b.png",
+"sha": "3ba37ecd6a5ce0ec80ec8593dc581edea46a0740e921d2c9f7610b1371f0c72a",
+"title": "Beyer op. 101 – Esercizi n. 10 e 11, frammento b",
+"alt": "Esercizio n.11, battute 1–4: le due mani si muovono insieme ma con note e dita diverse (in rosso). (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Esercizio n.10, battute 1–4: il salto Mi–Sol–Do della battuta 3 (in rosso le dita) e lo scambio dei ruoli alla battuta 4.",
+"b": "Esercizio n.11, battute 1–4: le due mani si muovono insieme ma con note e dita diverse (in rosso)."
+},
+"h2": "Spartito degli esercizi n. 10 e 11",
+"pdf": "Scarica lo spartito degli esercizi n. 10 e 11 in PDF",
+"nota": "Lo spartito riporta la parte dell'allievo.",
+"blocchi": {
+"1": [
+"<strong>Tempo:</strong> Comodo, cioè senza fretta.",
+"<strong>Difficoltà:</strong> la destra suona tre semiminime per battuta mentre la sinistra tiene il Sol per tre movimenti; alla quarta battuta i ruoli si scambiano. Nella terza battuta, inoltre, la destra sale da Mi a Sol e poi scende al Do.",
+"fr:a",
+"<strong>Soluzione:</strong> contate «1, 2, 3» e tenete fermo il Sol della sinistra fino al «3». Per il salto non spostate la mano: suonano le dita 3, 5 e 1, che sono già sui loro tasti."
+],
+"2": [
+"<strong>Tempo:</strong> Moderato, in 4/4. La tonalità è sempre Do maggiore.",
+"<strong>Difficoltà:</strong> è il primo esercizio in cui le due mani suonano nello stesso momento note diverse, e con dita diverse: Do-Re-Mi con 1-2-3 nella destra, Mi-Fa-Sol con 3-2-1 nella sinistra. Il ritmo alterna minime e semiminime.",
+"fr:b",
+"<strong>Soluzione:</strong> dopo lo studio a mani separate, unite le mani molto lentamente e ascoltate che le due note di ogni coppia partano insieme. Contate in quattro: le minime durano due numeri, le semiminime uno. La seconda parte (battute 9–16) ha il ritornello."
+]
+}
+}
+}
+}

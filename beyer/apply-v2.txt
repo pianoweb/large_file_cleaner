@@ -1,0 +1,48 @@
+error_reporting(0); global $wpdb; require_once ABSPATH.'wp-admin/includes/file.php'; require_once ABSPATH.'wp-admin/includes/media.php'; require_once ABSPATH.'wp-admin/includes/image.php';
+add_filter('big_image_size_threshold', '__return_false', 999);
+add_filter('intermediate_image_sizes_advanced', function ($sizes) { return array_intersect_key($sizes, ['thumbnail' => 1, 'medium' => 1]); }, 999);
+$in = $GLOBALS['pw_bey']; $kk = $in['k']; $dry = !empty($in['dry']); $burl = 'https://raw.githubusercontent.com/pianoweb/large_file_cleaner/tmp-pianosolo-duvernoy/beyer/beyer-bundle.json';
+$r = wp_remote_get($burl, ['timeout' => 20]); if (is_wp_error($r)) return ['stop' => 'bundle: ' . $r->get_error_message()];
+$body = wp_remote_retrieve_body($r); if (hash('sha256', $body) !== $in['sha']) return ['stop' => 'bundle sha mismatch', 'got' => hash('sha256', $body)];
+$b = json_decode($body, true); $st = $b['art'][$kk] ?? null; if (!$st) return ['stop' => 'articolo assente'];
+$pid = (int) $st['post']; $p = get_post($pid);
+if (!$p || $p->post_status !== 'publish' || $p->post_type !== 'post' || strpos($p->post_title, $st['titolo']) !== 0) return ['stop' => 'controllo articolo fallito', 'title' => $p ? $p->post_title : null];
+$bt = $wpdb->prefix . 'pw_bak_beyer_20261004';
+$wpdb->query("CREATE TABLE IF NOT EXISTS $bt (ID bigint unsigned NOT NULL PRIMARY KEY, post_content longtext NOT NULL, saved datetime NOT NULL) DEFAULT CHARSET=utf8mb4");
+$orig = $wpdb->get_var($wpdb->prepare("SELECT post_content FROM $bt WHERE ID=%d", $pid)); $inbak = $orig !== null;
+if (!$inbak) $orig = $p->post_content;
+if (strpos($orig, 'beyer-op101-eserciz') !== false) return ['stop' => 'originale gia modificato'];
+$nl = "\r\n\r\n"; $pars = preg_split('~\r?\n\r?\n~', trim($orig));
+foreach ($st['blocchi'] as $i => $x) if ((int) $i >= count($pars)) return ['stop' => 'indice paragrafo ' . $i . ' oltre ' . count($pars)];
+if ($dry) { $h = []; foreach ($pars as $i => $par) $h[$i] = (isset($st['blocchi'][(string) $i]) ? '>> ' : '') . mb_substr(trim(strip_tags($par)), 0, 70); return ['k' => $kk, 'post' => $pid, 'title' => $p->post_title, 'in_backup' => $inbak, 'pars' => $h]; }
+if (!$inbak) { $wpdb->query($wpdb->prepare("INSERT IGNORE INTO $bt (ID, post_content, saved) VALUES (%d, %s, NOW())", $pid, $orig)); if ($wpdb->get_var($wpdb->prepare("SELECT post_content FROM $bt WHERE ID=%d", $pid)) !== $orig) return ['stop' => 'backup non verificato']; }
+$map = get_option('pw_bey_media_20261004', []); $log = [];
+foreach ($st['files'] as $f) {
+  $key = $kk . '-' . $f['k']; $id = !empty($map[$key]) && get_post($map[$key]) ? (int) $map[$key] : 0;
+  if ($id && hash_file('sha256', get_attached_file($id)) === $f['sha']) { $log[$key] = 'ok'; continue; }
+  $tmp = download_url($b['base'] . $f['name'], 30); if (is_wp_error($tmp)) return ['stop' => 'download ' . $f['name'] . ': ' . $tmp->get_error_message(), 'log' => $log];
+  if (hash_file('sha256', $tmp) !== $f['sha']) { @unlink($tmp); return ['stop' => 'sha ' . $f['name'], 'log' => $log]; }
+  if ($id) {
+    $path = get_attached_file($id); $meta = wp_get_attachment_metadata($id);
+    if (!empty($meta['sizes'])) foreach ($meta['sizes'] as $s) { $t = dirname($path) . '/' . $s['file']; if (strpos($s['file'], 'beyer-op101-') === 0 && file_exists($t)) @unlink($t); }
+    if (!@copy($tmp, $path)) { @unlink($tmp); return ['stop' => 'copy ' . $f['name'], 'log' => $log]; }
+    @unlink($tmp); wp_update_attachment_metadata($id, wp_generate_attachment_metadata($id, $path));
+    $wpdb->update($wpdb->posts, ['post_title' => $f['title']], ['ID' => $id]); clean_post_cache($id); $log[$key] = 'sostituito';
+  } else {
+    $id = media_handle_sideload(['name' => $f['name'], 'tmp_name' => $tmp], $pid, $f['title']);
+    if (is_wp_error($id)) { @unlink($tmp); return ['stop' => 'sideload ' . $f['name'] . ': ' . $id->get_error_message(), 'log' => $log]; }
+    $map[$key] = $id; update_option('pw_bey_media_20261004', $map, false); $log[$key] = 'nuovo ' . $id;
+  }
+  if ($f['alt'] !== '') update_post_meta($id, '_wp_attachment_image_alt', $f['alt']);
+  if (hash_file('sha256', get_attached_file($id)) !== $f['sha']) return ['stop' => 'verifica file ' . $f['name'], 'log' => $log];
+}
+$img = function ($k, $cls) use ($map, $kk) { $id = $map[$kk . '-' . $k]; $m = wp_get_attachment_metadata($id); $w = (int) round($m['width'] / 2); $h = (int) round($m['height'] / 2); return [$id, $w, '<img class="' . $cls . ' size-full wp-image-' . $id . '" src="' . wp_get_attachment_url($id) . '" alt="' . esc_attr(get_post_meta($id, '_wp_attachment_image_alt', true)) . '" width="' . $w . '" height="' . $h . '" />']; };
+$out = [];
+foreach ($pars as $i => $par) { $out[] = $par; if (isset($st['blocchi'][(string) $i])) foreach ($st['blocchi'][(string) $i] as $it) { if (strpos($it, 'fr:') === 0) { $k = substr($it, 3); list($id, $w, $tag) = $img('f' . $k, ''); $out[] = '[caption id="attachment_' . $id . '" align="aligncenter" width="' . $w . '"]' . str_replace('class=" size-full', 'class="size-full', $tag) . ' ' . $st['cap'][$k] . '[/caption]'; } else $out[] = $it; } }
+list($wid, $ww, $wtag) = $img('web', 'aligncenter');
+$out = array_merge($out, ['<h2>' . $st['h2'] . '</h2>', $st['nota'], '<a href="' . wp_get_attachment_url($wid) . '">' . $wtag . '</a>', '<a href="' . wp_get_attachment_url($map[$kk . '-pdf']) . '" target="_blank" rel="noopener"><strong>' . $st['pdf'] . '</strong></a>']);
+$new = implode($nl, $out);
+$wpdb->update($wpdb->posts, ['post_content' => $new], ['ID' => $pid]); clean_post_cache($pid); do_action('litespeed_purge_post', $pid);
+$chk = $wpdb->get_var($wpdb->prepare("SELECT post_content FROM {$wpdb->posts} WHERE ID=%d", $pid));
+$ap = get_option('pw_bey_applied_20261004', []); $ap[$kk] = ['post' => $pid, 'when' => current_time('mysql'), 'sha' => $in['sha']]; update_option('pw_bey_applied_20261004', $ap, false);
+return ['k' => $kk, 'post' => $pid, 'written' => $chk === $new, 'len' => [strlen($orig), strlen($new)], 'pars' => count($pars), 'media' => $log, 'imgs' => substr_count($new, '<img'), 'captions' => substr_count($new, '[caption')];

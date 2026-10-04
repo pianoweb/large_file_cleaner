@@ -1,0 +1,1201 @@
+{
+"base": "https://raw.githubusercontent.com/pianoweb/large_file_cleaner/tmp-pianosolo-duvernoy/",
+"studi": {
+"01": {
+"n": 1,
+"post": 9546,
+"titolo": "Esercizio n.1",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-01-web.png",
+"sha": "bbea4ad697ea937737a0236c50f0efbea3ccec82e23c5ec2550897e735c2bb9d",
+"title": "Duvernoy op. 176 – Studio n. 1 (spartito)",
+"alt": "Spartito dello studio n. 1 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-01.pdf",
+"sha": "8db32049d584bcaab3c464df91818dce8bf056c52afd76b16e4e410484017195",
+"title": "Duvernoy op. 176 – Studio n. 1 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-01-frammento-a.png",
+"sha": "a8ece6b08798bb5dd19955871a72f36e99ed693a628aaa775e363f91bfe320f2",
+"title": "Duvernoy op. 176 – Studio n. 1, battute 5–8",
+"alt": "Battute 5–8: i passaggi del pollice nelle scale della mano destra (studio n. 1 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-01-frammento-b.png",
+"sha": "7b2e95faa4ff9aa9d55b222c8c0a0e842e59a958ab0c79d4a88308866dd5d489",
+"title": "Duvernoy op. 176 – Studio n. 1, battute 11–14",
+"alt": "Battute 11–14: il primo cambio di ritmo della mano sinistra (studio n. 1 di Duvernoy op. 176)"
+},
+{
+"k": "fc",
+"name": "duvernoy-op176-studio-01-frammento-c.png",
+"sha": "41bfc926a6d998859878e26455b89a81edb44c291fe50ec84f75eb6455fc724b",
+"title": "Duvernoy op. 176 – Studio n. 1, battute 15–18",
+"alt": "Battute 15–18: il secondo cambio di ritmo della mano sinistra (studio n. 1 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 5–8: i passaggi del pollice nelle scale della mano destra",
+"b": "Battute 11–14: il primo cambio di ritmo della mano sinistra",
+"c": "Battute 15–18: il secondo cambio di ritmo della mano sinistra"
+},
+"blocchi": {
+"3": [
+"fr:a",
+"fr:b",
+"fr:c"
+]
+}
+},
+"02": {
+"n": 2,
+"post": 9637,
+"titolo": "Esercizio n.2",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-02-web.png",
+"sha": "b27f6b2a9f097c5af2844d9a63181fecca0341cbbdc6e893b0507bad6cb7fdd8",
+"title": "Duvernoy op. 176 – Studio n. 2 (spartito)",
+"alt": "Spartito dello studio n. 2 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-02.pdf",
+"sha": "bef37a7861dc135f595800f1d80f7756e4249168d45d08deb795fdb5d570c82e",
+"title": "Duvernoy op. 176 – Studio n. 2 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-02-frammento-a.png",
+"sha": "e38e0eb10fedb311c6577f0537f704cbddeac4c49af82aada9aa4296d67bb340",
+"title": "Duvernoy op. 176 – Studio n. 2, battute iniziali",
+"alt": "Battute iniziali: semiminime in entrambe le mani (studio n. 2 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-02-frammento-b.png",
+"sha": "c19cdbc72657bd809c7c1fdf0de8ed0996c02a91043d2bbd9f798492d31c1dfc",
+"title": "Duvernoy op. 176 – Studio n. 2, battute 5–8",
+"alt": "Battute 5–8: la sinistra lascia il sol ribattuto e sale a la, si e do mentre la destra scende (studio n. 2 di Duvernoy op. 176)"
+},
+{
+"k": "fc",
+"name": "duvernoy-op176-studio-02-frammento-c.png",
+"sha": "d171f82072ae6ef9538238cc952c12811a5e143bb842c138bc9520476dc968fe",
+"title": "Duvernoy op. 176 – Studio n. 2, battute 9–12",
+"alt": "Battute 9–12: la sinistra passa in chiave di violino e si muove per moto contrario (studio n. 2 di Duvernoy op. 176)"
+},
+{
+"k": "fd",
+"name": "duvernoy-op176-studio-02-frammento-d.png",
+"sha": "cb3170a89ebedd06f5980a9c7db2df29f71e227cddb87e2f7dbf902a777c8953",
+"title": "Duvernoy op. 176 – Studio n. 2, battute 17–20",
+"alt": "Battute 17–20: le crome della destra con il fa diesis e il do diesis (studio n. 2 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute iniziali: semiminime in entrambe le mani",
+"b": "Battute 5–8: la sinistra lascia il sol ribattuto e sale a la, si e do mentre la destra scende",
+"c": "Battute 9–12: la sinistra passa in chiave di violino e si muove per moto contrario",
+"d": "Battute 17–20: le crome della destra con il fa diesis e il do diesis"
+},
+"blocchi": {
+"0": [
+"fr:a"
+],
+"3": [
+"fr:b",
+"fr:c",
+"<strong>Il finale in crome: </strong>dalla battuta 16 la destra suona due note per ogni nota della sinistra e compaiono le prime alterazioni (fa diesis e do diesis), quindi è facile perdere il tempo. Studiate queste battute lentamente, contando le semiminime della sinistra.",
+"fr:d"
+]
+}
+},
+"03": {
+"n": 3,
+"post": 9711,
+"titolo": "Esercizio n.3",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-03-web.png",
+"sha": "f2e1b272df5cb85118f785c78d9d2f75c7d191791a0b63b97c74b33e8748f142",
+"title": "Duvernoy op. 176 – Studio n. 3 (spartito)",
+"alt": "Spartito dello studio n. 3 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-03.pdf",
+"sha": "0fc086d66177d90858bcdb0a71bc1d2c2402a2908e604b847fe9657762326e59",
+"title": "Duvernoy op. 176 – Studio n. 3 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-03-frammento-a.png",
+"sha": "7949ecdeffa7061fab4eb9bb5cad869fcee4ad227e91011323481f8aff044763",
+"title": "Duvernoy op. 176 – Studio n. 3, battute 7–10",
+"alt": "Battute 7–10: la pausa della battuta 8 e il passaggio della sinistra dalla posizione di do a quella di sol (studio n. 3 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-03-frammento-b.png",
+"sha": "04f3d7eecae9ab5a36745135ef7647aece46981d084321356343c587f6d184db",
+"title": "Duvernoy op. 176 – Studio n. 3, battute 1–4",
+"alt": "Battute 1–4: crescendo e diminuendo a coppie di battute (studio n. 3 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 7–10: la pausa della battuta 8 e il passaggio della sinistra dalla posizione di do a quella di sol",
+"b": "Battute 1–4: crescendo e diminuendo a coppie di battute"
+},
+"blocchi": {
+"1": [
+"fr:a"
+],
+"2": [
+"fr:b"
+]
+}
+},
+"04": {
+"n": 4,
+"post": 9764,
+"titolo": "Esercizio n.4",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-04-web.png",
+"sha": "16e6ebfa41b813be5992d40a7da67ce336490cab1fe52814d8249b1893e56b14",
+"title": "Duvernoy op. 176 – Studio n. 4 (spartito)",
+"alt": "Spartito dello studio n. 4 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-04.pdf",
+"sha": "716255909f5aa0c523a073b8bea875c8e114a7276e96b1d4ce5935a130e5f0c7",
+"title": "Duvernoy op. 176 – Studio n. 4 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-04-frammento-a.png",
+"sha": "ac9f08a02fe4621a3ca1c8da0ff70238a51a29010af8640d2dbeb395218822b8",
+"title": "Duvernoy op. 176 – Studio n. 4, battute 1–4",
+"alt": "Battute 1–4: la destra in crome spezzate scende di grado, la sinistra canta in minime (studio n. 4 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-04-frammento-b.png",
+"sha": "677f36e8c21100d4bb49a9c9400451989715c34e594bbec245a41f09abe78fa3",
+"title": "Duvernoy op. 176 – Studio n. 4, battute 29–32",
+"alt": "Battute 29–32: la destra sale lungo la tastiera cambiando posizione ogni mezza battuta (studio n. 4 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: la destra in crome spezzate scende di grado, la sinistra canta in minime",
+"b": "Battute 29–32: la destra sale lungo la tastiera cambiando posizione ogni mezza battuta"
+},
+"blocchi": {
+"2": [
+"fr:a"
+],
+"3": [
+"fr:b"
+]
+}
+},
+"05": {
+"n": 5,
+"post": 9826,
+"titolo": "Esercizio n.5",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-05-web.png",
+"sha": "fcb8b3dc33dd934b0e6dcafbc08f76c83bf3e665f08bb6f62b4e740a98298850",
+"title": "Duvernoy op. 176 – Studio n. 5 (spartito)",
+"alt": "Spartito dello studio n. 5 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-05.pdf",
+"sha": "3f973d1e9b99d6c7b9df87d98ac51b971cebb4cb4c8c21db559962f8d71e6a2e",
+"title": "Duvernoy op. 176 – Studio n. 5 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-05-frammento-a.png",
+"sha": "995eedb8a1f8ff6cabd17d3b9ce1553defac7da01a504dc07a2f647d1b2ddfe3",
+"title": "Duvernoy op. 176 – Studio n. 5, battute 12–14",
+"alt": "Battute 12–14: alla battuta 13 le due mani si uniscono in crome (studio n. 5 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-05-frammento-b.png",
+"sha": "338ac6ac108a804a963812470732772874c17efbaf2cdbd7cf00f2e027f3f9a7",
+"title": "Duvernoy op. 176 – Studio n. 5, battute 15–18",
+"alt": "Battute 15–18: la diteggiatura delle scale, con i passaggi del pollice in rosso (studio n. 5 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 12–14: alla battuta 13 le due mani si uniscono in crome",
+"b": "Battute 15–18: la diteggiatura delle scale, con i passaggi del pollice in rosso"
+},
+"blocchi": {
+"4": [
+"fr:a",
+"fr:b"
+]
+}
+},
+"06": {
+"n": 6,
+"post": 9866,
+"titolo": "Esercizio n.6",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-06-web.png",
+"sha": "0919ad96a499f3ecd0527cfe143d84cf1cdf0c43b96776a3e5b9797f76304923",
+"title": "Duvernoy op. 176 – Studio n. 6 (spartito)",
+"alt": "Spartito dello studio n. 6 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-06.pdf",
+"sha": "ddd9da44a36a504f9a8cff87bc12937c5b75d17cecd25912a02269f215f2e7f1",
+"title": "Duvernoy op. 176 – Studio n. 6 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-06-frammento-a.png",
+"sha": "dd888d9068b8b2a43bc9d59f685f6cdac0de2dcf9c13f9c3bbeaabcae8b15e06",
+"title": "Duvernoy op. 176 – Studio n. 6, battute 10–12",
+"alt": "Battute 10–12: la sinistra alla seconda battuta del terzo rigo (battuta 11) (studio n. 6 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-06-frammento-b.png",
+"sha": "7a7d9fad3faac44f5c8989afc5760af41f1a34320e893bf3919d9be5670fdbbb",
+"title": "Duvernoy op. 176 – Studio n. 6, battute iniziali",
+"alt": "Battute iniziali: il piccolo salto re–si della destra, in rosso (studio n. 6 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 10–12: la sinistra alla seconda battuta del terzo rigo (battuta 11)",
+"b": "Battute iniziali: il piccolo salto re–si della destra, in rosso"
+},
+"blocchi": {
+"4": [
+"fr:a",
+"fr:b"
+]
+}
+},
+"07": {
+"n": 7,
+"post": 10024,
+"titolo": "Esercizio n.7",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-07-web.png",
+"sha": "7142cd6ea4b65c6c1195c4284d3d476f0db6ba322b76f4d6f3bbcb57e8b8239f",
+"title": "Duvernoy op. 176 – Studio n. 7 (spartito)",
+"alt": "Spartito dello studio n. 7 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-07.pdf",
+"sha": "ce5442538dd4651334bee5b1f28302c314692b56b95d17e434a1a1193a307e37",
+"title": "Duvernoy op. 176 – Studio n. 7 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-07-frammento-a.png",
+"sha": "1a41553d5f444be244a56ec4e0f48a523e700c2dbbf1c4343d70f0bb4a82b2d5",
+"title": "Duvernoy op. 176 – Studio n. 7, battute 9–12",
+"alt": "Battute 9–12: le scale della destra, con i passaggi del pollice in rosso (studio n. 7 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-07-frammento-b.png",
+"sha": "21edd7e434c872b94e5058fbe7e8998fc2dc61ee9213ce457c5416faabe9f0bd",
+"title": "Duvernoy op. 176 – Studio n. 7, battute 17–20",
+"alt": "Battute 17–20: le alterazioni della destra nella seconda parte, in rosso (studio n. 7 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 9–12: le scale della destra, con i passaggi del pollice in rosso",
+"b": "Battute 17–20: le alterazioni della destra nella seconda parte, in rosso"
+},
+"blocchi": {
+"3": [
+"fr:a"
+],
+"4": [
+"fr:b"
+],
+"5": [
+"Una divisione naturale è in tre blocchi: battute 1–16, battute 17–32 (la parte centrale, con le alterazioni) e battute 33–48, che riprendono l'inizio."
+]
+}
+},
+"08": {
+"n": 8,
+"post": 27276,
+"titolo": "Esercizio n.8",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-08-web.png",
+"sha": "7421eda2a2d02c28df862cd257ae8bcc3c8f73582560fd4c909f699bd5f84474",
+"title": "Duvernoy op. 176 – Studio n. 8 (spartito)",
+"alt": "Spartito dello studio n. 8 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-08.pdf",
+"sha": "a9d95fc4c7721206cd2f958c31efc0e8cf04f8f75e0e80b2a35e9258e3313761",
+"title": "Duvernoy op. 176 – Studio n. 8 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-08-frammento-a.png",
+"sha": "2c1bdecfb14d22d49d4c2713d643dd16d6085b56abec922cd4902140e95a58d4",
+"title": "Duvernoy op. 176 – Studio n. 8, battute 1–4",
+"alt": "Battute 1–4: il fa ribattuto con cambio di dito e la scala con i passaggi del pollice, in rosso (studio n. 8 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-08-frammento-b.png",
+"sha": "c467c735f45a6701d8d7542e55d83ecc6e5c40284a58f6c65dc87ae6f4d64a66",
+"title": "Duvernoy op. 176 – Studio n. 8, battute 17–20",
+"alt": "Battute 17–20: l'ultima riga, con l'alternanza tra staccato e accento (studio n. 8 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: il fa ribattuto con cambio di dito e la scala con i passaggi del pollice, in rosso",
+"b": "Battute 17–20: l'ultima riga, con l'alternanza tra staccato e accento"
+},
+"blocchi": {
+"2": [
+"fr:a",
+"fr:b"
+]
+}
+},
+"09": {
+"n": 9,
+"post": 10203,
+"titolo": "Esercizio n.9",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-09-web.png",
+"sha": "4dce9163f61f0dfdfee69dbbbe2b0669648ef2682a2b5b73c97651f863613fa8",
+"title": "Duvernoy op. 176 – Studio n. 9 (spartito)",
+"alt": "Spartito dello studio n. 9 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-09.pdf",
+"sha": "d3ca081897916f14dbbc718132a7e21e3c96b502fd6db17551d485de568863df",
+"title": "Duvernoy op. 176 – Studio n. 9 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-09-frammento-a.png",
+"sha": "6dad71a5ccc5c5cf9186cf94a8d453eddead3e31c314cbf00988b1345da05353",
+"title": "Duvernoy op. 176 – Studio n. 9, battute 15–18",
+"alt": "Battute 15–18: dal forte al piano, poi crescendo e diminuendo dentro la stessa battuta (studio n. 9 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-09-frammento-b.png",
+"sha": "599aeec56a48ee6cb5ea82cc2b687bbb385f78b546eb0a13bec79e07a591774b",
+"title": "Duvernoy op. 176 – Studio n. 9, battute 7–10",
+"alt": "Battute 7–10: la scala a mani parallele e la sinistra che passa in chiave di violino (studio n. 9 di Duvernoy op. 176)"
+},
+{
+"k": "fc",
+"name": "duvernoy-op176-studio-09-frammento-c.png",
+"sha": "ac975e7dc08f5ceb3f4be67ac268b7cef961ce8097ae62d4e20b46ff94cd9caf",
+"title": "Duvernoy op. 176 – Studio n. 9, battute 19–22",
+"alt": "Battute 19–22: la conclusione, con le pause da contare (studio n. 9 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 15–18: dal forte al piano, poi crescendo e diminuendo dentro la stessa battuta",
+"b": "Battute 7–10: la scala a mani parallele e la sinistra che passa in chiave di violino",
+"c": "Battute 19–22: la conclusione, con le pause da contare"
+},
+"blocchi": {
+"1": [
+"fr:a",
+"fr:b"
+],
+"3": [
+"fr:c"
+]
+}
+},
+"10": {
+"n": 10,
+"post": 10377,
+"titolo": "Esercizio n.10",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-10-web.png",
+"sha": "6bcfc980082f7983d98e4b88a6929095204c511193f3662d7144328f85b56b34",
+"title": "Duvernoy op. 176 – Studio n. 10 (spartito)",
+"alt": "Spartito dello studio n. 10 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-10.pdf",
+"sha": "11cd2173337f99e8257544472368a31c32c4bfb6714492263ff15d06f6854eb3",
+"title": "Duvernoy op. 176 – Studio n. 10 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-10-frammento-a.png",
+"sha": "e6c4c0e99a347d37552e827d970793aa6e8645ca1bb3f261f788ec47d24a6c3a",
+"title": "Duvernoy op. 176 – Studio n. 10, battute 9–12",
+"alt": "Battute 9–12: le scale della destra, con i passaggi del pollice in rosso (studio n. 10 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-10-frammento-b.png",
+"sha": "9c1bca3aa06ecdb5108ebbfa9afc6c593850ae0f28bfe2236a673c7a30e4a1a4",
+"title": "Duvernoy op. 176 – Studio n. 10, battute 13–16",
+"alt": "Battute 13–16: il crescendo con il sol diesis fino allo staccato della battuta 16 (studio n. 10 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 9–12: le scale della destra, con i passaggi del pollice in rosso",
+"b": "Battute 13–16: il crescendo con il sol diesis fino allo staccato della battuta 16"
+},
+"blocchi": {
+"4": [
+"fr:a",
+"fr:b"
+]
+}
+},
+"11": {
+"n": 11,
+"post": 10574,
+"titolo": "Esercizio n.11",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-11-web.png",
+"sha": "c6a442717d8d34e1818d9ed907a643fbdd0c0bf520a7d61cf4b79b648e055be1",
+"title": "Duvernoy op. 176 – Studio n. 11 (spartito)",
+"alt": "Spartito dello studio n. 11 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-11.pdf",
+"sha": "8147b102a4e0ab01fbbe9d8f32ca8e6c9d43bc42d0e64501ce1454d10983558b",
+"title": "Duvernoy op. 176 – Studio n. 11 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-11-frammento-a.png",
+"sha": "db58682de51c2751c1bb435c6018b953e33e1ccf89216bc56d8074c06aac2ad8",
+"title": "Duvernoy op. 176 – Studio n. 11, battute 4–6",
+"alt": "Battute 4–6: il passaggio di diteggiatura della quinta battuta (studio n. 11 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-11-frammento-b.png",
+"sha": "6c0eca064ae856872fa5b31769ee54ed5b0505ff1aa15af0c7b429fc33a3df46",
+"title": "Duvernoy op. 176 – Studio n. 11, battute 11–13",
+"alt": "Battute 11–13: la prima battuta del terzo rigo (battuta 12) (studio n. 11 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 4–6: il passaggio di diteggiatura della quinta battuta",
+"b": "Battute 11–13: la prima battuta del terzo rigo (battuta 12)"
+},
+"blocchi": {
+"4": [
+"fr:a",
+"fr:b"
+]
+}
+},
+"12": {
+"n": 12,
+"post": 10987,
+"titolo": "Esercizio n.12",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-12-web.png",
+"sha": "e6b9a125c6f714a2877e02ca65368bfb36e4fbeed88c9106ff50b56bd21aa944",
+"title": "Duvernoy op. 176 – Studio n. 12 (spartito)",
+"alt": "Spartito dello studio n. 12 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-12.pdf",
+"sha": "ecc8c5a092dc62fbc65e66b73b325def181854297290f036613b3f4cfea04013",
+"title": "Duvernoy op. 176 – Studio n. 12 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-12-frammento-a.png",
+"sha": "f307c17f288a13d83249726461c8c910dde21c1afd7b2a1dd662bd37fe17cf05",
+"title": "Duvernoy op. 176 – Studio n. 12, battute 1–4",
+"alt": "Battute 1–4: il botta e risposta tra le mani, tre crome per ogni pulsazione (studio n. 12 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-12-frammento-b.png",
+"sha": "4dba2fc3b05272cc10ada605cadde8d82364e0203f62d05e5ba39678d1bb40f3",
+"title": "Duvernoy op. 176 – Studio n. 12, battute 21–24",
+"alt": "Battute 21–24: i passaggi tra il quarto e il quinto rigo (studio n. 12 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: il botta e risposta tra le mani, tre crome per ogni pulsazione",
+"b": "Battute 21–24: i passaggi tra il quarto e il quinto rigo"
+},
+"blocchi": {
+"1": [
+"fr:a"
+],
+"2": [
+"fr:b"
+]
+}
+},
+"13": {
+"n": 13,
+"post": 11093,
+"titolo": "Esercizio n.13",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-13-web.png",
+"sha": "089c65e7866be89716114d28de7384914bab8c3efa1b99c48fec3f3907748dd3",
+"title": "Duvernoy op. 176 – Studio n. 13 (spartito)",
+"alt": "Spartito dello studio n. 13 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-13.pdf",
+"sha": "39c6019e05eab71450580c477e4ca063c1774570c2e13946a97308db8de56077",
+"title": "Duvernoy op. 176 – Studio n. 13 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-13-frammento-a.png",
+"sha": "d519cf5095e9097361cec748597b7b69ca9c2852c29267649ab748f1d95c47b1",
+"title": "Duvernoy op. 176 – Studio n. 13, battute 1–4",
+"alt": "Battute 1–4: le scale della sinistra, con i passaggi del pollice e il salto d'ottava della battuta 3 in rosso (studio n. 13 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: le scale della sinistra, con i passaggi del pollice e il salto d'ottava della battuta 3 in rosso"
+},
+"blocchi": {
+"1": [
+"fr:a"
+]
+}
+},
+"14": {
+"n": 14,
+"post": 11454,
+"titolo": "Esercizio n.14",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-14-web.png",
+"sha": "de756fdef4a3167e91056c362429133a52a4191e9a713a880a8418482950ae7c",
+"title": "Duvernoy op. 176 – Studio n. 14 (spartito)",
+"alt": "Spartito dello studio n. 14 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-14.pdf",
+"sha": "729b100b9acb3000bcc668da68037d0d2cd099b4fa5f9816e3eb934d6f2bcb01",
+"title": "Duvernoy op. 176 – Studio n. 14 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-14-frammento-a.png",
+"sha": "88f3c40a9e8735cb5018d21714e6ea5cba2e14875bf9851a3b7c77d5f92e7b40",
+"title": "Duvernoy op. 176 – Studio n. 14, battute 1–4",
+"alt": "Battute 1–4: la destra parte dal do diesis, con tre diesis in chiave (studio n. 14 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-14-frammento-b.png",
+"sha": "5cacfadb1b18673834c36ff4c667a3953ff8ca24e04149f9ea1c9a1664f90268",
+"title": "Duvernoy op. 176 – Studio n. 14, battute 19–22",
+"alt": "Battute 19–22: le scale a mani parallele, a distanza di una decima (studio n. 14 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: la destra parte dal do diesis, con tre diesis in chiave",
+"b": "Battute 19–22: le scale a mani parallele, a distanza di una decima"
+},
+"blocchi": {
+"1": [
+"fr:a",
+"fr:b"
+]
+}
+},
+"15": {
+"n": 15,
+"post": 11548,
+"titolo": "Esercizio n.15",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-15-web.png",
+"sha": "cfcd67cf834e641335436844c47cde0f8f9aa23d5154d44da6755c3c7703f795",
+"title": "Duvernoy op. 176 – Studio n. 15 (spartito)",
+"alt": "Spartito dello studio n. 15 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-15.pdf",
+"sha": "257dec251f7b4abbee845f98c29ef2528543e926272727beec8df2b2a184c60f",
+"title": "Duvernoy op. 176 – Studio n. 15 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-15-frammento-a.png",
+"sha": "90d4888ab8244a9a61752a71acb1ccceab028ebe631c801114b6c99c42287344",
+"title": "Duvernoy op. 176 – Studio n. 15, battute 13–16",
+"alt": "Battute 13–16: i piccoli salti della sinistra e i segni dinamici (studio n. 15 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 13–16: i piccoli salti della sinistra e i segni dinamici"
+},
+"blocchi": {
+"2": [
+"fr:a"
+]
+}
+},
+"16": {
+"n": 16,
+"post": 11574,
+"titolo": "Esercizio n.16",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-16-web.png",
+"sha": "87a1849e4c03c181205b3229712956056d36c04edca35f0ac7bb1dea22c068c5",
+"title": "Duvernoy op. 176 – Studio n. 16 (spartito)",
+"alt": "Spartito dello studio n. 16 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-16.pdf",
+"sha": "01091cfab8b1d03c707a9cf94b25ebd940773d6b2a6e6020a8abf9558803325d",
+"title": "Duvernoy op. 176 – Studio n. 16 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-16-frammento-a.png",
+"sha": "65ca5f296451b7d1259678ba48a3dd9a1cf233421ba4ca59eefa0e781aea30b4",
+"title": "Duvernoy op. 176 – Studio n. 16, battute 1–3",
+"alt": "Battute 1–3: il pollice tiene la nota lunga accentata mentre le altre dita suonano le crome (studio n. 16 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–3: il pollice tiene la nota lunga accentata mentre le altre dita suonano le crome"
+},
+"blocchi": {
+"2": [
+"fr:a"
+]
+}
+},
+"17": {
+"n": 17,
+"post": 11614,
+"titolo": "Esercizio n.17",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-17-web.png",
+"sha": "abfd00ce56b65d3d2a3a61c61203d8034ea6a9012101ac27cfd613fe3de2591f",
+"title": "Duvernoy op. 176 – Studio n. 17 (spartito)",
+"alt": "Spartito dello studio n. 17 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-17.pdf",
+"sha": "1e84c25efdabbee0ab972e2ca0530744be21cff9f6976604517a5714ddab8242",
+"title": "Duvernoy op. 176 – Studio n. 17 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-17-frammento-a.png",
+"sha": "80313226fb92302e2a0cfd7b2f877c8c6ac9758d6a5545706eb89e549347d7de",
+"title": "Duvernoy op. 176 – Studio n. 17, battute 1–4",
+"alt": "Battute 1–4: quattro crome legate e una staccata alla destra, sinistra tutta staccata (studio n. 17 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-17-frammento-b.png",
+"sha": "098e0902cb0d840c2853e96043d89bc3a814d953db9fef0b24ee80f97bf2d288",
+"title": "Duvernoy op. 176 – Studio n. 17, battute 21–24",
+"alt": "Battute 21–24: il quinto rigo, la parte centrale (studio n. 17 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: quattro crome legate e una staccata alla destra, sinistra tutta staccata",
+"b": "Battute 21–24: il quinto rigo, la parte centrale"
+},
+"blocchi": {
+"1": [
+"fr:a"
+],
+"2": [
+"fr:b"
+]
+}
+},
+"18": {
+"n": 18,
+"post": 11658,
+"titolo": "Esercizio n.18",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-18-web.png",
+"sha": "a79cba46cd40e841b4a8493cff2b82088746714f4864cd42c0fdeac527d8ae42",
+"title": "Duvernoy op. 176 – Studio n. 18 (spartito)",
+"alt": "Spartito dello studio n. 18 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-18.pdf",
+"sha": "2be50d65bc12f4123ca8fafc5a7acd45632ce312d4a142757739c6645702e9d2",
+"title": "Duvernoy op. 176 – Studio n. 18 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-18-frammento-a.png",
+"sha": "8b02879a5b075283ffd28d73f8c0449e8249896725fda5963e32f41c783b39f1",
+"title": "Duvernoy op. 176 – Studio n. 18, battute 13–16",
+"alt": "Battute 13–16: la scala ascendente e discendente tra il secondo e il terzo rigo (studio n. 18 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-18-frammento-b.png",
+"sha": "e3beb228a22133d653f9a8b1667dfc5c58a0c77dea2893f597c5062eb7120aa5",
+"title": "Duvernoy op. 176 – Studio n. 18, battute 17–20",
+"alt": "Battute 17–20: l'inversione tra le mani, la sinistra lega e la destra stacca (studio n. 18 di Duvernoy op. 176)"
+},
+{
+"k": "fc",
+"name": "duvernoy-op176-studio-18-frammento-c.png",
+"sha": "1e00b5d6c9c1e56b2de51c766e3b49e140e527fb097eee9221f6e4e387b0a37d",
+"title": "Duvernoy op. 176 – Studio n. 18, battute 36–38",
+"alt": "Battute 36–38: la lunga scala discendente dal la acuto (studio n. 18 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 13–16: la scala ascendente e discendente tra il secondo e il terzo rigo",
+"b": "Battute 17–20: l'inversione tra le mani, la sinistra lega e la destra stacca",
+"c": "Battute 36–38: la lunga scala discendente dal la acuto"
+},
+"blocchi": {
+"3": [
+"fr:a",
+"fr:b",
+"fr:c"
+]
+}
+},
+"19": {
+"n": 19,
+"post": 11736,
+"titolo": "Esercizio n.19",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-19-web.png",
+"sha": "3443485bf10a03c28ad37e3a6f23699a2c552d44c81e8353d42ffc51464ae22b",
+"title": "Duvernoy op. 176 – Studio n. 19 (spartito)",
+"alt": "Spartito dello studio n. 19 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-19.pdf",
+"sha": "01c5981e975f65aff37c24f6ebc3640ca6f66553c5f512dee76ff80d53f5d9fb",
+"title": "Duvernoy op. 176 – Studio n. 19 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-19-frammento-a.png",
+"sha": "86e93ce8d1457a190463f1d32a83535e5c97d383db21d584ea6bc2033baea225",
+"title": "Duvernoy op. 176 – Studio n. 19, battute 1–3",
+"alt": "Battute 1–3: il pollice della destra cambia posizione a ogni battuta (studio n. 19 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-19-frammento-b.png",
+"sha": "7f3ede800015d4375b123c508f5d443d9594933108fbe1115f3a67d2bcf739d0",
+"title": "Duvernoy op. 176 – Studio n. 19, battute 17–20",
+"alt": "Battute 17–20: le scale della sinistra, con i passaggi del pollice in rosso (studio n. 19 di Duvernoy op. 176)"
+},
+{
+"k": "fc",
+"name": "duvernoy-op176-studio-19-frammento-c.png",
+"sha": "33bdc4dcb239fdea52d47ddd96af6715e7674b2bb0ed3aff2f3518c414df657c",
+"title": "Duvernoy op. 176 – Studio n. 19, battute 21–22",
+"alt": "Battute 21–22: la prima battuta del quinto rigo, che parte dal mi bemolle (studio n. 19 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–3: il pollice della destra cambia posizione a ogni battuta",
+"b": "Battute 17–20: le scale della sinistra, con i passaggi del pollice in rosso",
+"c": "Battute 21–22: la prima battuta del quinto rigo, che parte dal mi bemolle"
+},
+"blocchi": {
+"2": [
+"fr:a",
+"fr:b",
+"fr:c"
+]
+}
+},
+"20": {
+"n": 20,
+"post": 11804,
+"titolo": "Esercizio n.20",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-20-web.png",
+"sha": "ca3d1658e5b97d40a3f508bbaea6f5f6b29071062f750308f495717a5b9abf7c",
+"title": "Duvernoy op. 176 – Studio n. 20 (spartito)",
+"alt": "Spartito dello studio n. 20 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-20.pdf",
+"sha": "f469b5722ae30ab3d8c15e03e147d5cfa08939411922f4b0b5bcd30095499604",
+"title": "Duvernoy op. 176 – Studio n. 20 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-20-frammento-a.png",
+"sha": "22667ad55d1621be83496259e753e23f4e97762cc16985cb9fcb7f9d3551383e",
+"title": "Duvernoy op. 176 – Studio n. 20, battute 1–4",
+"alt": "Battute 1–4: la destra tiene la melodia in minime e ribatte il sol (studio n. 20 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-20-frammento-b.png",
+"sha": "43d01f581b801d245926db14dc241d49c531c533e423e127eaf88388a51120de",
+"title": "Duvernoy op. 176 – Studio n. 20, battute 5–8",
+"alt": "Battute 5–8: i ruoli si scambiano, la sinistra tiene le minime e ribatte il re (studio n. 20 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: la destra tiene la melodia in minime e ribatte il sol",
+"b": "Battute 5–8: i ruoli si scambiano, la sinistra tiene le minime e ribatte il re"
+},
+"blocchi": {
+"0": [
+"fr:a",
+"fr:b"
+]
+}
+},
+"21": {
+"n": 21,
+"post": 11903,
+"titolo": "Esercizio n.21",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-21-web.png",
+"sha": "81e01422a8b88e896f8698a4c414ad72e5a1efe90e3c65ca9e9ae962ec74429c",
+"title": "Duvernoy op. 176 – Studio n. 21 (spartito)",
+"alt": "Spartito dello studio n. 21 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-21.pdf",
+"sha": "ceecb18cfa543150e4bccb6152188eb90fa5a9fa1773dedad02906b8206744c6",
+"title": "Duvernoy op. 176 – Studio n. 21 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-21-frammento-a.png",
+"sha": "88e1c774538c60cb4ba177777a505961737e8b02c6c3c68428b0fca74bb813bd",
+"title": "Duvernoy op. 176 – Studio n. 21, battute 9–12",
+"alt": "Battute 9–12: i frammenti di scala a mani alterne (studio n. 21 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-21-frammento-b.png",
+"sha": "b11d3132a5a6b05878b3f6c23ce8d8119752ebbdd559cea19bc4559f9ba1f759",
+"title": "Duvernoy op. 176 – Studio n. 21, battute 17–20",
+"alt": "Battute 17–20: la stessa figura ripetuta quattro volte, in crescendo (studio n. 21 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 9–12: i frammenti di scala a mani alterne",
+"b": "Battute 17–20: la stessa figura ripetuta quattro volte, in crescendo"
+},
+"blocchi": {
+"2": [
+"fr:a"
+],
+"6": [
+"fr:b"
+]
+}
+},
+"22": {
+"n": 22,
+"post": 11994,
+"titolo": "Esercizio n.22",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-22-web.png",
+"sha": "f092fffbc7460c182131f4c59bdc0ff695357a038ded8f29789231665c69c788",
+"title": "Duvernoy op. 176 – Studio n. 22 (spartito)",
+"alt": "Spartito dello studio n. 22 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-22.pdf",
+"sha": "d3cab57aa7a9feb68e970618d2c846b21bd584cc4b8959dbd49750081b1c479a",
+"title": "Duvernoy op. 176 – Studio n. 22 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-22-frammento-a.png",
+"sha": "88f65a98f211f90f92cc6c6b58441c971414b263c7493a1f7fbc25fefbb15ab1",
+"title": "Duvernoy op. 176 – Studio n. 22, battute 1–4",
+"alt": "Battute 1–4: i piccoli salti della destra, due posizioni per battuta (studio n. 22 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-22-frammento-b.png",
+"sha": "08154ad3d2215afbb0b2636165fc537153ee2b98eeb42c4fcc9dc7e26c60a18a",
+"title": "Duvernoy op. 176 – Studio n. 22, battute 9–12",
+"alt": "Battute 9–12: i ruoli si invertono e i salti passano alla sinistra (studio n. 22 di Duvernoy op. 176)"
+},
+{
+"k": "fc",
+"name": "duvernoy-op176-studio-22-frammento-c.png",
+"sha": "ace18c26906321b57ff4375b881046387cd0993190575fe8dcfa95dc99e81cbf",
+"title": "Duvernoy op. 176 – Studio n. 22, battute 13–16",
+"alt": "Battute 13–16: alla sinistra il passaggio fa–mi bemolle e il bicordo si bemolle–re, con la diteggiatura 5-2-1+3 (studio n. 22 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: i piccoli salti della destra, due posizioni per battuta",
+"b": "Battute 9–12: i ruoli si invertono e i salti passano alla sinistra",
+"c": "Battute 13–16: alla sinistra il passaggio fa–mi bemolle e il bicordo si bemolle–re, con la diteggiatura 5-2-1+3"
+},
+"blocchi": {
+"2": [
+"fr:a",
+"fr:b"
+],
+"3": [
+"fr:c"
+]
+}
+},
+"23": {
+"n": 23,
+"post": 12019,
+"titolo": "Esercizio n.23",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-23-web.png",
+"sha": "f4088eb93e37b47945e02b2fca3a3269e14536700f8e11b06a5a6e79f256bdf0",
+"title": "Duvernoy op. 176 – Studio n. 23 (spartito)",
+"alt": "Spartito dello studio n. 23 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-23.pdf",
+"sha": "5c27254e8c0b2be08d375942f221aea4905f71af2c68fa5f296fea14b5b4d4b3",
+"title": "Duvernoy op. 176 – Studio n. 23 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-23-frammento-a.png",
+"sha": "70d94583a229ce258021acee7dd8703b1a137607ce2fb94e749932949790b0f2",
+"title": "Duvernoy op. 176 – Studio n. 23, battute 1–4",
+"alt": "Battute 1–4: le semicrome della destra, con il do diesis di passaggio (studio n. 23 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-23-frammento-b.png",
+"sha": "090406172b116de2102482f7e80589fad5446f0961f110e010d42553bf3f297a",
+"title": "Duvernoy op. 176 – Studio n. 23, battute 7–8",
+"alt": "Battute 7–8: la scala con le alterazioni e i passaggi del pollice in rosso (studio n. 23 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: le semicrome della destra, con il do diesis di passaggio",
+"b": "Battute 7–8: la scala con le alterazioni e i passaggi del pollice in rosso"
+},
+"blocchi": {
+"1": [
+"fr:a",
+"fr:b"
+]
+}
+},
+"24": {
+"n": 24,
+"post": 12152,
+"titolo": "Esercizio n.24",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-24-web.png",
+"sha": "a96ab74f86c93464de282c51806a6211baf803563b45549d7d0826fa87128732",
+"title": "Duvernoy op. 176 – Studio n. 24 (spartito)",
+"alt": "Spartito dello studio n. 24 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-24.pdf",
+"sha": "6e62244c254af802b7e37a76579b57443f3e512074e8d917fef329ee5bd0dd5e",
+"title": "Duvernoy op. 176 – Studio n. 24 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-24-frammento-a.png",
+"sha": "ced853019887744544109e95519f8abf467f62d471db4c206945873e1ba0facf",
+"title": "Duvernoy op. 176 – Studio n. 24, battute 1–4",
+"alt": "Battute 1–4: le doppie note staccate della destra (studio n. 24 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-24-frammento-b.png",
+"sha": "fc6d7213e49831dee4678b0e3086573be9e461341d2068b05ba3330257fae2ff",
+"title": "Duvernoy op. 176 – Studio n. 24, battute 29–32",
+"alt": "Battute 29–32: gli accenti sulla prima croma di ogni battuta (studio n. 24 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 1–4: le doppie note staccate della destra",
+"b": "Battute 29–32: gli accenti sulla prima croma di ogni battuta"
+},
+"blocchi": {
+"1": [
+"fr:a"
+],
+"2": [
+"fr:b"
+]
+}
+},
+"25": {
+"n": 25,
+"post": 12790,
+"titolo": "Esercizio n.25",
+"files": [
+{
+"k": "web",
+"name": "duvernoy-op176-studio-25-web.png",
+"sha": "d81363f5a8c676a5c87303392aa8f9c932ec196e6451fdcc7bb2347d8d0c4830",
+"title": "Duvernoy op. 176 – Studio n. 25 (spartito)",
+"alt": "Spartito dello studio n. 25 di Duvernoy op. 176 per pianoforte"
+},
+{
+"k": "pdf",
+"name": "duvernoy-op176-studio-25.pdf",
+"sha": "5ddf13593d643cb022542713fc160694551db9ea822aad43b1e9cef509c95201",
+"title": "Duvernoy op. 176 – Studio n. 25 (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "duvernoy-op176-studio-25-frammento-a.png",
+"sha": "a2b76ebf9a291c9dca78efc3e0a3973ae8180265acb2716a5e61467050eae402",
+"title": "Duvernoy op. 176 – Studio n. 25, battute 5–8",
+"alt": "Battute 5–8: le note ribattute con il cambio di dito 4-3-2-1, in rosso (studio n. 25 di Duvernoy op. 176)"
+},
+{
+"k": "fb",
+"name": "duvernoy-op176-studio-25-frammento-b.png",
+"sha": "d5e6afb7c779177b1ce1711197178917974091162d1d081f55261064e4721108",
+"title": "Duvernoy op. 176 – Studio n. 25, battute 13–16",
+"alt": "Battute 13–16: la sinistra con basso e bicordi staccati (studio n. 25 di Duvernoy op. 176)"
+},
+{
+"k": "fc",
+"name": "duvernoy-op176-studio-25-frammento-c.png",
+"sha": "eadd419f358a393805bd462669ebb2950ac0e3918ebc8d241457777999ecf534",
+"title": "Duvernoy op. 176 – Studio n. 25, battute 39–42",
+"alt": "Battute 39–42: accordi tenuti e accentati alla sinistra sotto le note ribattute (studio n. 25 di Duvernoy op. 176)"
+}
+],
+"cap": {
+"a": "Battute 5–8: le note ribattute con il cambio di dito 4-3-2-1, in rosso",
+"b": "Battute 13–16: la sinistra con basso e bicordi staccati",
+"c": "Battute 39–42: accordi tenuti e accentati alla sinistra sotto le note ribattute"
+},
+"blocchi": {
+"1": [
+"fr:a"
+],
+"2": [
+"fr:b",
+"fr:c"
+]
+}
+}
+}
+}

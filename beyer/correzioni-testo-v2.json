@@ -1,0 +1,218 @@
+{
+ "c": [
+  {
+   "post": 332,
+   "old": "<strong>semiminima con il punto</strong>",
+   "new": "<strong>minima con il punto</strong>",
+   "n": 1,
+   "why": "n.1 var.2: nota di 3 movimenti = minima col punto"
+  },
+  {
+   "post": 451,
+   "old": "anzichè delle <strong>semiminime</strong>",
+   "new": "anzichè delle <strong>semibrevi</strong>",
+   "n": 1,
+   "why": "il n.3 è in semibrevi"
+  },
+  {
+   "post": 668,
+   "old": "di una terza maggiore",
+   "new": "di una sesta",
+   "n": 1,
+   "why": "n.11: Do della destra sopra il Mi della sinistra = sesta"
+  },
+  {
+   "post": 856,
+   "old": "sul battere del 4 movimento di ogni battuta",
+   "new": "sul battere del 4 movimento di alcune battute (1–2, 5–6 e 13–14)",
+   "n": 1,
+   "why": "n.20: la figura c'è solo in quelle battute"
+  },
+  {
+   "post": 856,
+   "old": "Si crea un ritmo leggermente sincopato",
+   "new": "Si crea un ritmo puntato",
+   "n": 1,
+   "why": "n.20: minima col punto + semiminima, non è una sincope"
+  },
+  {
+   "post": 884,
+   "old": "(es.4, 6,7 battuta ecc...)",
+   "new": "(es.4, 7, 9 battuta ecc...)",
+   "n": 1,
+   "why": "n.24: alla battuta 6 la destra tiene una semibreve"
+  },
+  {
+   "post": 1975,
+   "old": "interruzione della legatura di valore consiglio",
+   "new": "interruzione della legatura di frase consiglio",
+   "n": 1,
+   "why": "n.47: sono legature di frase"
+  },
+  {
+   "post": 2059,
+   "old": "il n.51 è abbastanza semplice e il n.52 al contrario",
+   "new": "il n.50 è abbastanza semplice e il n.51 al contrario",
+   "n": 1,
+   "why": "l'articolo tratta i n.50 e 51"
+  },
+  {
+   "post": 2165,
+   "old": "Cambi continui di chiave tra chiave di violino e di basso.",
+   "new": "Cambio di chiave tra chiave di violino e di basso.",
+   "n": 1,
+   "why": "n.56: un solo cambio di chiave"
+  },
+  {
+   "post": 2165,
+   "old": "Dalla battuta 8 in poi",
+   "new": "Dalla battuta 9 in poi",
+   "n": 1,
+   "why": "n.56: le crome a due mani cominciano alla 9"
+  },
+  {
+   "post": 2165,
+   "old": "tranne che nella prima battuta del secondo rigo, dove con il 5",
+   "new": "tranne che nelle battute 3, 4, 9 e 11, dove con il 5",
+   "n": 1,
+   "why": "n.57: il Mi col 5 è alle battute 3, 4, 9, 11"
+  },
+  {
+   "post": 2523,
+   "old": "alla legatura di valore nel secondo rigo",
+   "new": "alla legatura di valore nella parte b (battute 3–4)",
+   "n": 1,
+   "why": "rigo che non torna nello spartito riscritto"
+  },
+  {
+   "post": 2523,
+   "old": "e nella 5 del secondo rigo",
+   "new": "e nella battuta 12",
+   "n": 1,
+   "why": "n.65: la nota fuori scala è alla battuta 12 (e 14)"
+  },
+  {
+   "post": 2799,
+   "old": "come nell'esercizio n.64</a>",
+   "new": "come nell'esercizio n.63</a>",
+   "n": 1,
+   "why": "il cuneo è nel n.63"
+  },
+  {
+   "post": 3164,
+   "old": "(vedi mano sinistra nel primo rigo e mano destra nel secondo)",
+   "new": "(vedi mano sinistra nelle battute 1–8 e mano destra nelle battute 9–12)",
+   "n": 1,
+   "why": "n.72: rigo che non torna"
+  },
+  {
+   "post": 3164,
+   "old": "anche il ritmo sincopato",
+   "new": "anche il ritmo puntato",
+   "n": 1,
+   "why": "n.72: ritmo puntato, non sincope"
+  },
+  {
+   "post": 3309,
+   "old": "la mano sinistra è tutta formata da blocchi",
+   "new": "la mano sinistra è quasi tutta formata da blocchi",
+   "n": 1,
+   "why": "n.74: alle battute 7, 11–12, 15 e 24 la sinistra non ha terzine"
+  },
+  {
+   "post": 3528,
+   "old": "note doppie puntate",
+   "new": "note doppie staccate",
+   "n": 1,
+   "why": "n.76: i punti sono staccati"
+  },
+  {
+   "post": 3616,
+   "old": "si presenta come un Allegro moderato in tempo",
+   "new": "si presenta come un Moderato in tempo",
+   "n": 1,
+   "why": "n.77: lo spartito indica Moderato"
+  },
+  {
+   "post": 3877,
+   "old": "l<strong> esercizio n.80</strong>",
+   "new": "l'<strong>esercizio n.80</strong>",
+   "n": 1,
+   "why": "refuso"
+  },
+  {
+   "post": 3877,
+   "old": "Si incrocerete per la prima volta",
+   "new": "Incrocerete per la prima volta",
+   "n": 1,
+   "why": "refuso"
+  },
+  {
+   "post": 3937,
+   "old": "Sono tre righe di esercizio",
+   "new": "Sono 25 battute di esercizio",
+   "n": 1,
+   "why": "n.81: rigo che non torna"
+  },
+  {
+   "post": 5021,
+   "old": "apparte la legatura",
+   "new": "a parte la legatura",
+   "n": 1,
+   "why": "refuso"
+  },
+  {
+   "post": 5043,
+   "old": "al legato e al secondo rigo in cui dovrete marcare",
+   "new": "al legato e alle battute 9–16, in cui dovrete marcare",
+   "n": 1,
+   "why": "n.85: rigo che non torna"
+  },
+  {
+   "post": 5280,
+   "old": "quel doppio sincopato della prima battuta del secondo rigo",
+   "new": "quel doppio ritmo puntato della battuta 7",
+   "n": 1,
+   "why": "n.89: rigo che non torna + ritmo puntato"
+  },
+  {
+   "post": 5325,
+   "old": "con intervallo di terza e quinta sia per",
+   "new": "con intervallo di terza, quinta e sesta sia per",
+   "n": 1,
+   "why": "n.90: la destra ha terze e seste"
+  },
+  {
+   "post": 5375,
+   "old": "della seconda battuta del secondo rigo",
+   "new": "della battuta 8",
+   "n": 1,
+   "why": "n.91: rigo che non torna"
+  },
+  {
+   "post": 5375,
+   "old": "alla quarta battuta del terzo rigo",
+   "new": "alla battuta 16",
+   "n": 1,
+   "why": "n.91: rigo che non torna"
+  },
+  {
+   "post": 8642,
+   "old": "</strong> Allegro Moderato in 3/8",
+   "new": "</strong> Allegretto in 3/8",
+   "n": 1,
+   "why": "n.104: lo spartito indica Allegretto"
+  },
+  {
+   "post": 8772,
+   "old": "ogni 5 battute",
+   "new": "ogni 4 battute",
+   "n": 2,
+   "why": "n.106: frasi di 4 battute"
+  }
+ ],
+ "po": [
+  "un pò",
+  "un po'"
+ ]
+}

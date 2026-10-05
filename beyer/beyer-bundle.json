@@ -4180,6 +4180,118 @@
 "<strong>Soluzione:</strong> i salti cadono dove comincia una nuova scala (battute 5, 9, 13, 17…). Ogni scala parte con il pollice in tutte e due le mani: durante la pausa portate i due pollici sopra la nota di partenza e guardatela prima di suonare. Provate il collegamento da solo: ultima battuta della frase, pausa, prime due note della scala."
 ]
 }
+},
+"201": {
+"k": "201",
+"post": 2930,
+"titolo": "Esercizio \"La scala di SOL\" Beyer op.101 Lezione n.46",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-scala-di-sol-maggiore-web.png",
+"sha": "96f5160ad2e60dcc76628004ed2b8e958cfcfb6dc73242ab99bb97dfe118eeb7",
+"title": "Beyer op. 101 – Scala di Sol maggiore (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio sulla scala di Sol maggiore per pianoforte"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-scala-di-sol-maggiore.pdf",
+"sha": "b2204e67ff1b42c3778776a4bf8781f6234241789457938b37b009f2c11195ec",
+"title": "Beyer op. 101 – Scala di Sol maggiore (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-scala-di-sol-maggiore-frammento-a.png",
+"sha": "0facc78c4f9687823e547810aa76d50533c182c9a6667ca8a8478c5edf7a8647",
+"title": "Beyer op. 101 – Scala di Sol maggiore, frammento a",
+"alt": "Parte a, battute 1–2: la scala sale prima nella sinistra e poi nella destra. In rosso le dita intorno al passaggio: nella sinistra il 3° dito scavalca il pollice (Re–Mi), nella destra il pollice passa sotto il 3° dito (Si–Do). (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-scala-di-sol-maggiore-frammento-b.png",
+"sha": "50ec73c1be9e8fcf8fb62721cfd73f578af0cf1dd42787cb0c30278d0ac573b6",
+"title": "Beyer op. 101 – Scala di Sol maggiore, frammento b",
+"alt": "Parte b, battute 5–6: le mani suonano insieme. In rosso le dita dei passaggi: non cadono sulle stesse note nelle due mani. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Parte a, battute 1–2: la scala sale prima nella sinistra e poi nella destra. In rosso le dita intorno al passaggio: nella sinistra il 3° dito scavalca il pollice (Re–Mi), nella destra il pollice passa sotto il 3° dito (Si–Do).",
+"b": "Parte b, battute 5–6: le mani suonano insieme. In rosso le dita dei passaggi: non cadono sulle stesse note nelle due mani."
+},
+"h2": "Spartito dell'esercizio sulla scala di Sol maggiore",
+"pdf": "Scarica lo spartito dell'esercizio sulla scala di Sol maggiore in PDF",
+"nota": "",
+"blocchi": {
+"2": [
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Sol maggiore, con un diesis in chiave: tutti i Fa sono Fa diesis.",
+"<strong>Tempo:</strong> lo spartito non riporta un'indicazione; il metro è 4/4. L'esercizio è in due parti: nella prima (a) le mani suonano la scala una dopo l'altra, nella seconda (b) arrivano a suonarla insieme.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> il passaggio del pollice, che nelle due mani avviene in punti diversi. In salita la destra suona Sol–La–Si con le dita 1-2-3 e passa il pollice sotto la mano per prendere il Do; la sinistra parte con il 5° dito, arriva al Re con il pollice e scavalca con il 3° dito per prendere il Mi. In discesa i movimenti sono gli stessi al contrario.",
+"fr:a",
+"<strong>Soluzione:</strong> studiate le prime quattro battute della parte a, dove ogni mano suona la scala da sola mentre l'altra tiene la nota lunga. Nella destra, mentre il 3° dito suona il Si, portate già il pollice sotto la mano, vicino al Do; nella sinistra, mentre il pollice suona il Re, preparate il 3° dito sopra il Mi. Il polso resta fermo e il gomito non si alza. Ascoltate che la nota del passaggio non suoni più forte delle altre.",
+"<strong>Difficoltà:</strong> dalla battuta 5 della parte b le mani suonano la scala insieme, a distanza di un'ottava, in crome continue. I passaggi non coincidono: in salita la destra passa il pollice sul Do, la sinistra scavalca sul Mi; in discesa la destra scavalca sul Si, la sinistra passa il pollice sul Re. È facile che una mano copi la diteggiatura dell'altra.",
+"fr:b",
+"<strong>Soluzione:</strong> suonate le battute 5–6 a mani unite molto lentamente, fermandovi un attimo prima di ogni nota con il dito in rosso: controllate il dito, poi proseguite. Quando i passaggi vengono senza pensarci, togliete le fermate e ripetete le due battute di seguito, come nelle battute 7–8."
+]
+}
+},
+"203": {
+"k": "203",
+"post": 4016,
+"titolo": "Esercizio n.82 Beyer op.101 Lezione n.58",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-scala-di-mi-maggiore-web.png",
+"sha": "4134f3e575fd9e1ab28beef0839e01c3e9fd460a27ce709166257813752fe34c",
+"title": "Beyer op. 101 – Scala di Mi maggiore (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizio sulla scala di Mi maggiore per pianoforte"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-scala-di-mi-maggiore.pdf",
+"sha": "d379f0a3ace640f87be82fdd9270933ab2f2dbbc86a980fbbd8fd0e0adee9af3",
+"title": "Beyer op. 101 – Scala di Mi maggiore (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-scala-di-mi-maggiore-frammento-a.png",
+"sha": "7214e78484b9851c31a95ea5c57394edc7106b7d3e9c6395590e2330b5277ea5",
+"title": "Beyer op. 101 – Scala di Mi maggiore, frammento a",
+"alt": "Parte a, battute 3–4: la scala di Mi maggiore nella destra. In rosso le note con il diesis (tasti neri) e tutte le dita: il pollice passa sul La. (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-scala-di-mi-maggiore-frammento-b.png",
+"sha": "a9cfe0655db01dbeeb7f925e1d65e84c5ec3fd9bd9dd1b14e4db5837b6eecf76",
+"title": "Beyer op. 101 – Scala di Mi maggiore, frammento b",
+"alt": "Parte b (Allegretto), battute 1–4: le mani si alternano. Mentre una suona le sei crome, l'altra tiene la minima col punto (fascia gialla). In blu il conteggio, in rosso le dita. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "Parte a, battute 3–4: la scala di Mi maggiore nella destra. In rosso le note con il diesis (tasti neri) e tutte le dita: il pollice passa sul La.",
+"b": "Parte b (Allegretto), battute 1–4: le mani si alternano. Mentre una suona le sei crome, l'altra tiene la minima col punto (fascia gialla). In blu il conteggio, in rosso le dita."
+},
+"h2": "Spartito dell'esercizio sulla scala di Mi maggiore",
+"pdf": "Scarica lo spartito dell'esercizio sulla scala di Mi maggiore in PDF",
+"nota": "",
+"blocchi": {
+"1": [
+"<h3>Scheda dell'esercizio</h3>",
+"<strong>Tonalità:</strong> Mi maggiore, con quattro diesis in chiave: Fa, Do, Sol e Re.",
+"<strong>Tempo:</strong> l'esercizio è in due parti. La prima (a) non riporta un'indicazione di tempo ed è in 4/4; la seconda (b) è un Allegretto in 3/4.",
+"<h3>Difficoltà e soluzioni</h3>",
+"<strong>Difficoltà:</strong> i quattro tasti neri. Le dita sono le stesse della scala di Do (la destra sale con 1-2-3-1-2-3-4-5, la sinistra con 5-4-3-2-1-3-2-1), ma la mano non trova più tutti i tasti alla stessa altezza: nella destra, per esempio, il 2° e il 3° dito suonano due tasti neri (Fa diesis e Sol diesis) e subito dopo il pollice deve passare su un tasto bianco, il La.",
+"fr:a",
+"<strong>Soluzione:</strong> tieni la mano un po' più avanti sulla tastiera, con le dita vicine ai tasti neri, così il pollice arriva ai tasti bianchi senza che il polso si sposti avanti e indietro. Prima di suonare, di' i nomi delle note in ordine: Mi, Fa diesis, Sol diesis, La, Si, Do diesis, Re diesis, Mi. Studia a mani separate, lentamente: la sinistra nelle battute 1–2 e la destra nelle battute 3–4 della parte a.",
+"<strong>Difficoltà:</strong> nell'Allegretto (parte b) la scala è divisa fra le mani: una mano suona sei crome e si ferma su una minima col punto, mentre l'altra risponde con le sue sei crome. Chi ha appena finito le crome tende a lasciare la nota lunga quando parte l'altra mano. Inoltre la sinistra non riparte dal Mi: alla battuta 2 comincia dal Fa diesis con il 4° dito.",
+"fr:b",
+"<strong>Soluzione:</strong> conta «1, 2, 3» con due crome per ogni movimento. La minima col punto dura tutta la battuta: tienila abbassata finché l'altra mano non ha finito le sue sei crome. Nella sinistra, mentre il 5° dito tiene il Mi della battuta 1, prepara il 4° dito sopra il Fa diesis."
+]
+}
 }
 }
 }

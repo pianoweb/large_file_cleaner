@@ -1,0 +1,56 @@
+error_reporting(0); global $wpdb; require_once ABSPATH.'wp-admin/includes/file.php'; require_once ABSPATH.'wp-admin/includes/media.php'; require_once ABSPATH.'wp-admin/includes/image.php';
+add_filter('big_image_size_threshold', '__return_false', 999);
+add_filter('intermediate_image_sizes_advanced', function ($sizes) { return array_intersect_key($sizes, ['thumbnail' => 1, 'medium' => 1]); }, 999);
+$in = $GLOBALS['pw_bey']; $kk = $in['k']; $dry = !empty($in['dry']); $t0 = microtime(true); $budget = isset($in['budget']) ? (float) $in['budget'] : 33;
+$burl = 'https://raw.githubusercontent.com/pianoweb/large_file_cleaner/tmp-pianosolo-duvernoy/beyer/beyer-bundle.json';
+$r = wp_remote_get($burl, ['timeout' => 20]); if (is_wp_error($r)) return ['stop' => 'bundle: ' . $r->get_error_message()];
+$body = wp_remote_retrieve_body($r); if (hash('sha256', $body) !== $in['sha']) return ['stop' => 'bundle sha mismatch', 'got' => hash('sha256', $body)];
+$b = json_decode($body, true); $st = $b['art'][$kk] ?? null; if (!$st) return ['stop' => 'articolo assente'];
+$pid = (int) $st['post']; $p = get_post($pid);
+if (!$p || $p->post_status !== 'publish' || $p->post_type !== 'post' || strpos($p->post_title, $st['titolo']) !== 0) return ['stop' => 'controllo articolo fallito', 'title' => $p ? $p->post_title : null];
+$bt = $wpdb->prefix . 'pw_bak_beyer_20261004';
+$orig = $wpdb->get_var($wpdb->prepare("SELECT post_content FROM $bt WHERE ID=%d", $pid)); $inbak = $orig !== null;
+if (!$inbak) $orig = $p->post_content;
+if (strpos($orig, 'beyer-op101-eserciz') !== false) return ['stop' => 'originale gia modificato'];
+$nl = "\r\n\r\n"; $pars = preg_split('~\r?\n\r?\n~', trim($orig));
+foreach ($st['blocchi'] as $i => $x) if ((int) $i >= count($pars)) return ['stop' => 'indice paragrafo ' . $i . ' oltre ' . count($pars)];
+if ($dry) return ['k' => $kk, 'post' => $pid, 'in_backup' => $inbak, 'pars' => count($pars), 'ins' => array_keys($st['blocchi']), 'len' => strlen($orig), 'md5' => md5($orig)];
+if (!$inbak) { $wpdb->query($wpdb->prepare("INSERT IGNORE INTO $bt (ID, post_content, saved) VALUES (%d, %s, NOW())", $pid, $orig)); if ($wpdb->get_var($wpdb->prepare("SELECT post_content FROM $bt WHERE ID=%d", $pid)) !== $orig) return ['stop' => 'backup non verificato']; }
+$ids = []; $log = []; $tm = [];
+foreach ($st['files'] as $f) {
+  $key = $kk . '-' . $f['k'];
+  $id = (int) $wpdb->get_var($wpdb->prepare("SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key='_pw_bey_key' AND meta_value=%s ORDER BY meta_id LIMIT 1", $key));
+  if ($id && (!get_post($id) || get_post_type($id) !== 'attachment')) $id = 0;
+  if ($id && hash_file('sha256', get_attached_file($id)) === $f['sha']) { $ids[$f['k']] = $id; $log[$key] = 'ok'; continue; }
+  if (microtime(true) - $t0 > $budget) return ['k' => $kk, 'continua' => true, 'fatti' => count($ids), 'di' => count($st['files']), 'log' => $log, 'sec' => round(microtime(true) - $t0, 1)];
+  $ta = microtime(true);
+  $tmp = download_url($b['base'] . $f['name'], 30); if (is_wp_error($tmp)) return ['stop' => 'download ' . $f['name'] . ': ' . $tmp->get_error_message(), 'log' => $log];
+  if (hash_file('sha256', $tmp) !== $f['sha']) { @unlink($tmp); return ['stop' => 'sha ' . $f['name'], 'log' => $log]; }
+  $tb = microtime(true);
+  if ($id) {
+    $path = get_attached_file($id); $meta = wp_get_attachment_metadata($id);
+    if (!empty($meta['sizes'])) foreach ($meta['sizes'] as $s) { $t = dirname($path) . '/' . $s['file']; if (strpos($s['file'], 'beyer-op101-') === 0 && file_exists($t)) @unlink($t); }
+    if (!@copy($tmp, $path)) { @unlink($tmp); return ['stop' => 'copy ' . $f['name'], 'log' => $log]; }
+    @unlink($tmp); wp_update_attachment_metadata($id, wp_generate_attachment_metadata($id, $path));
+    $wpdb->update($wpdb->posts, ['post_title' => $f['title']], ['ID' => $id]); clean_post_cache($id); $log[$key] = 'sostituito';
+  } else {
+    $id = media_handle_sideload(['name' => $f['name'], 'tmp_name' => $tmp], $pid, $f['title']);
+    if (is_wp_error($id)) { @unlink($tmp); return ['stop' => 'sideload ' . $f['name'] . ': ' . $id->get_error_message(), 'log' => $log]; }
+    add_post_meta($id, '_pw_bey_key', $key, true); $log[$key] = 'nuovo ' . $id;
+  }
+  if ($f['alt'] !== '') update_post_meta($id, '_wp_attachment_image_alt', $f['alt']);
+  if (hash_file('sha256', get_attached_file($id)) !== $f['sha']) return ['stop' => 'verifica file ' . $f['name'], 'log' => $log];
+  $ids[$f['k']] = $id; $tm[] = round($tb - $ta, 1) . '+' . round(microtime(true) - $tb, 1);
+}
+$img = function ($k, $cls) use ($ids) { $id = $ids[$k]; $m = wp_get_attachment_metadata($id); $w = (int) round($m['width'] / 2); $h = (int) round($m['height'] / 2); return [$id, $w, '<img class="' . $cls . ' size-full wp-image-' . $id . '" src="' . wp_get_attachment_url($id) . '" alt="' . esc_attr(get_post_meta($id, '_wp_attachment_image_alt', true)) . '" width="' . $w . '" height="' . $h . '" />']; };
+$out = [];
+foreach ($pars as $i => $par) { $out[] = $par; if (isset($st['blocchi'][(string) $i])) foreach ($st['blocchi'][(string) $i] as $it) { if (strpos($it, 'fr:') === 0) { $k = substr($it, 3); list($id, $w, $tag) = $img('f' . $k, ''); $out[] = '[caption id="attachment_' . $id . '" align="aligncenter" width="' . $w . '"]' . str_replace('class=" size-full', 'class="size-full', $tag) . ' ' . $st['cap'][$k] . '[/caption]'; } else $out[] = $it; } }
+list($wid, $ww, $wtag) = $img('web', 'aligncenter');
+$fin = ['<h2>' . $st['h2'] . '</h2>']; if (trim((string) $st['nota']) !== '') $fin[] = $st['nota'];
+$fin[] = '<a href="' . wp_get_attachment_url($wid) . '">' . $wtag . '</a>';
+$fin[] = '<a href="' . wp_get_attachment_url($ids['pdf']) . '" target="_blank" rel="noopener"><strong>' . $st['pdf'] . '</strong></a>';
+$new = implode($nl, array_merge($out, $fin));
+$wpdb->update($wpdb->posts, ['post_content' => $new], ['ID' => $pid]); clean_post_cache($pid); do_action('litespeed_purge_post', $pid);
+$chk = $wpdb->get_var($wpdb->prepare("SELECT post_content FROM {$wpdb->posts} WHERE ID=%d", $pid));
+update_post_meta($pid, '_pw_bey_applied', $in['sha'] . '|' . current_time('mysql'));
+return ['k' => $kk, 'post' => $pid, 'written' => $chk === $new, 'len' => [strlen($orig), strlen($new)], 'pars' => count($pars), 'media' => $log, 'tm' => $tm, 'imgs' => substr_count($new, '<img'), 'captions' => substr_count($new, '[caption'), 'sec' => round(microtime(true) - $t0, 1)];

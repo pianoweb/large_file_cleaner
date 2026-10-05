@@ -2102,14 +2102,14 @@
 {
 "k": "web",
 "name": "beyer-op101-esercizio-65-web.png",
-"sha": "f8cfc0b8049a2c8aad575f1c358c422671ad5a6cc769d0954b3a84de55f33776",
+"sha": "902fe0b85794eff17a3a4e200142de9c91e6cf499323e91c6ad124b3bc9e3781",
 "title": "Beyer op. 101 – Esercizio n. 65 (spartito)",
-"alt": "Spartito del Beyer op. 101, esercizio n. 65 per pianoforte"
+"alt": "Spartito del Beyer op. 101, scala di Do maggiore ed esercizio n. 65 per pianoforte"
 },
 {
 "k": "pdf",
 "name": "beyer-op101-esercizio-65.pdf",
-"sha": "0d2395b0d14d3bd7e5b2ccc7cdafb695c87e183b010151e157041f50086228a6",
+"sha": "40efbdf7d66b96f2a3e672400c67b229283ef7e4e002babbd55040c031ea017e",
 "title": "Beyer op. 101 – Esercizio n. 65 (PDF)",
 "alt": ""
 },
@@ -2126,17 +2126,28 @@
 "sha": "f0e161d916407a4aeb6bde0de74930a2c842620b69fa6a651770b3f05c4e5b9f",
 "title": "Beyer op. 101 – Esercizio n. 65, frammento b",
 "alt": "Battute 11–12: in rosso il Si della destra e il Re della sinistra, fuori dall'ottava Do–Do; si suonano con il 2° dito, che scavalca il pollice. (Beyer op. 101)"
+},
+{
+"k": "fc",
+"name": "beyer-op101-esercizio-65-frammento-c.png",
+"sha": "c57839dc6c9b17f177a5a7ac242c5eabd6f5ff3052362ed3e89f300e5b6f51d5",
+"title": "Beyer op. 101 – Esercizio n. 65, frammento c",
+"alt": "Esercizio non numerato (scala di Do maggiore), parte b, battute 1–4: la sinistra suona la scala e poi tiene il Do per due battute, con la legatura di valore (fascia gialla), mentre la destra suona la scala. In blu il conteggio. (Beyer op. 101)"
 }
 ],
 "cap": {
 "a": "Battute 3–4: la scala nella sinistra, con tutte le dita in rosso. Il passaggio è fra Sol e La: 1-3 in salita, 3-1 in discesa. In blu il conteggio: le minime della destra cadono sull'«1» e sul «3».",
-"b": "Battute 11–12: in rosso il Si della destra e il Re della sinistra, fuori dall'ottava Do–Do; si suonano con il 2° dito, che scavalca il pollice."
+"b": "Battute 11–12: in rosso il Si della destra e il Re della sinistra, fuori dall'ottava Do–Do; si suonano con il 2° dito, che scavalca il pollice.",
+"c": "Esercizio non numerato (scala di Do maggiore), parte b, battute 1–4: la sinistra suona la scala e poi tiene il Do per due battute, con la legatura di valore (fascia gialla), mentre la destra suona la scala. In blu il conteggio."
 },
-"h2": "Spartito dell'esercizio n. 65",
-"pdf": "Scarica lo spartito dell'esercizio n. 65 in PDF",
+"h2": "Spartito della scala di Do maggiore e dell'esercizio n. 65",
+"pdf": "Scarica lo spartito della scala di Do maggiore e dell'esercizio n. 65 in PDF",
 "nota": "",
 "blocchi": {
 "1": [
+"<strong>Esercizio non numerato (scala di Do maggiore) – scheda:</strong> Do maggiore, in 4/4; lo spartito non riporta un'indicazione di tempo. Nello spartito in fondo all'articolo è diviso in due parti, a e b.",
+"fr:c",
+"<strong>Soluzione:</strong> contate «1, 2, 3, 4» anche nelle battute in cui una mano tace o tiene una nota lunga. Nella parte b il Do della sinistra si suona una volta sola, sull'«1» della battuta 3, e resta abbassato per otto movimenti, fino alla fine della battuta 4. Nella parte a, alla battuta 3, la destra tiene il Do per due movimenti e poi ha la pausa: alzate la mano sul «3».",
 "<h3>Scheda dell'esercizio n. 65</h3>",
 "<strong>Tonalità:</strong> Do maggiore.",
 "<strong>Tempo:</strong> Moderato, in 4/4.",
@@ -2539,14 +2550,14 @@
 {
 "k": "web",
 "name": "beyer-op101-esercizio-75-web.png",
-"sha": "db7af4712e125528bd7647ca4fe1bfd9ce52138deb8f0f155172f3961881e761",
+"sha": "8e9366a53f670484728150a66cd2c71295530593e371ae9c166fd7de8f2703a1",
 "title": "Beyer op. 101 – Esercizio n. 75 (spartito)",
-"alt": "Spartito del Beyer op. 101, esercizio n. 75 per pianoforte"
+"alt": "Spartito del Beyer op. 101, scala di Re maggiore ed esercizio n. 75 per pianoforte"
 },
 {
 "k": "pdf",
 "name": "beyer-op101-esercizio-75.pdf",
-"sha": "75c7123d0b2ac0cf1d9b06158a131e1204aeb4a592fd5732ee53efe570512536",
+"sha": "554a02ef37ea74386dcfad22b8053c1c3f18e001a4e9095be3939af1d04f9ca5",
 "title": "Beyer op. 101 – Esercizio n. 75 (PDF)",
 "alt": ""
 },
@@ -2563,14 +2574,22 @@
 "sha": "a7c0c284018a36a416ec99093f609f0e64e8a2d68783947db06f3164415b28b8",
 "title": "Beyer op. 101 – Esercizio n. 75, frammento b",
 "alt": "Battute 13–16: in rosso le dita della destra e i due Do diesis. Fra la battuta 14 e la 15 il 3 scavalca il pollice. (Beyer op. 101)"
+},
+{
+"k": "fc",
+"name": "beyer-op101-esercizio-75-frammento-c.png",
+"sha": "7d36e58a345311b4cf686e3ea2005d1b9c823d0a488d770d68f3e78bcdceaa00",
+"title": "Beyer op. 101 – Esercizio n. 75, frammento c",
+"alt": "Scala di Re maggiore, parte a, battute 1–2: in rosso i Fa diesis e i Do diesis, con il dito che li suona. Davanti alle note non c'è il segno, perché i due diesis sono in chiave. (Beyer op. 101)"
 }
 ],
 "cap": {
 "a": "Battute 1–3: la scala discendente della sinistra, con le dita in rosso. Dopo il Si (3) il pollice passa sotto e suona il La.",
-"b": "Battute 13–16: in rosso le dita della destra e i due Do diesis. Fra la battuta 14 e la 15 il 3 scavalca il pollice."
+"b": "Battute 13–16: in rosso le dita della destra e i due Do diesis. Fra la battuta 14 e la 15 il 3 scavalca il pollice.",
+"c": "Scala di Re maggiore, parte a, battute 1–2: in rosso i Fa diesis e i Do diesis, con il dito che li suona. Davanti alle note non c'è il segno, perché i due diesis sono in chiave."
 },
-"h2": "Spartito dell'esercizio n. 75",
-"pdf": "Scarica lo spartito dell'esercizio n. 75 in PDF",
+"h2": "Spartito della scala di Re maggiore e dell'esercizio n. 75",
+"pdf": "Scarica lo spartito della scala di Re maggiore e dell'esercizio n. 75 in PDF",
 "nota": "",
 "blocchi": {
 "4": [
@@ -2585,6 +2604,11 @@
 "<strong>Difficoltà:</strong> nelle battute 13–16 la destra scende di un'ottava, dal Re acuto della battuta 14 al Re finale, e deve cambiare posizione. In più c'è il Do diesis, che per distrazione si suona naturale.",
 "fr:b",
 "<strong>Soluzione:</strong> studiate la destra da sola. Nelle battute 13 e 14 la mano è sui tasti da Sol a Re e il Do diesis si suona con il 4. La battuta 14 finisce sul Sol con il pollice: subito dopo il 3 lo scavalca e prende il Fa diesis, e la mano si ritrova sui tasti da Re a La."
+],
+"1": [
+"<strong>Scala di Re maggiore – scheda:</strong> Re maggiore, in 4/4; lo spartito non riporta un'indicazione di tempo. Nello spartito in fondo all'articolo l'esercizio è diviso in due parti, a e b.",
+"fr:c",
+"<strong>Soluzione:</strong> prima di suonare, dite i nomi delle note della scala: Re, Mi, Fa diesis, Sol, La, Si, Do diesis, Re. Poi legate ogni tasto nero al suo dito: in salita la destra suona il Fa diesis con il 3° dito e il Do diesis con il 4°, la sinistra il Fa diesis con il 3° e il Do diesis con il 2°. Studiate lentamente la parte a, dove le mani suonano la scala una alla volta."
 ]
 }
 },
@@ -2760,14 +2784,14 @@
 {
 "k": "web",
 "name": "beyer-op101-esercizio-79-web.png",
-"sha": "a9ca55a11b70a959d753d504be59ec16bb70a039b9b915aa025236f3605590ad",
+"sha": "c6c93f6d644d7185ed11bc59d2c269ca5b5b3ca9be5528c7f0b0cee3105ef5d3",
 "title": "Beyer op. 101 – Esercizio n. 79 (spartito)",
-"alt": "Spartito del Beyer op. 101, esercizio n. 79 per pianoforte"
+"alt": "Spartito del Beyer op. 101, scala di La maggiore ed esercizio n. 79 per pianoforte"
 },
 {
 "k": "pdf",
 "name": "beyer-op101-esercizio-79.pdf",
-"sha": "609005e408a5cfac53cc8ca2b36f334d08b6ed95b543de3e262a2632df21c33c",
+"sha": "1d4786bf336fb3f68bb260b0389ea6918e33bdec9976655d8145e8dfa9b048e6",
 "title": "Beyer op. 101 – Esercizio n. 79 (PDF)",
 "alt": ""
 },
@@ -2790,9 +2814,9 @@
 "a": "Battute 17–20: in rosso le note alzate dai diesis in chiave (Sol diesis, Do diesis, Fa diesis); alla battuta 19, in rosso, le dita del passaggio del pollice.",
 "b": "Battute 1–4: in rosso il Re diesis e il Re naturale della sinistra, con le dita 1-2-1-2; la destra intanto tiene il Si."
 },
-"h2": "Spartito dell'esercizio n. 79",
-"pdf": "Scarica lo spartito dell'esercizio n. 79 in PDF",
-"nota": "",
+"h2": "Spartito della scala di La maggiore e dell'esercizio n. 79",
+"pdf": "Scarica lo spartito della scala di La maggiore e dell'esercizio n. 79 in PDF",
+"nota": "Prima dell'esercizio n. 79 lo spartito riporta l'esercizio sulla scala di La maggiore che lo precede nel Beyer, diviso in tre parti (a, b, c). Nelle parti a e b la sinistra è scritta in chiave di violino.",
 "blocchi": {
 "3": [
 "<h3>Scheda dell'esercizio</h3>",

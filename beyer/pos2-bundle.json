@@ -1,0 +1,77 @@
+{
+"tag": "pos",
+"base": "https://raw.githubusercontent.com/pianoweb/large_file_cleaner/tmp-pianosolo-duvernoy/beyer/",
+"files": {
+"dosol": {
+"name": "beyer-op101-posizione-mani-do-sol.png",
+"sha": "ff68e06178fb466ec8450571ef070702e8a683ad3cac9531e5e33de6decc8b1c",
+"title": "Beyer op. 101 – Posizione delle mani da Do a Sol",
+"alt": "Posizione delle mani sulla tastiera: sinistra e destra sulle cinque note da Do a Sol, a un'ottava di distanza, con i numeri delle dita"
+},
+"lami": {
+"name": "beyer-op101-posizione-mani-la-mi.png",
+"sha": "e45a398592b95cfdafe63ce47ff352c95e32a70b60b36aaa5ba65d171b72336f",
+"title": "Beyer op. 101 – Posizione delle mani da La a Mi",
+"alt": "Posizione delle mani sulla tastiera: sinistra e destra sulle cinque note da La a Mi, a un'ottava di distanza, sopra il Do centrale"
+},
+"dosol8": {
+"name": "beyer-op101-posizione-mani-do-sol-ottava-alta.png",
+"sha": "4a3b74785d3a38a748e071518bf73b6adf188ba72d9f0a3aaec1750b4f58d1e0",
+"title": "Beyer op. 101 – Posizione delle mani da Do a Sol, un'ottava sopra",
+"alt": "Posizione delle mani sulla tastiera: sinistra sulle cinque note da Do a Sol sopra il Do centrale, destra un'ottava più in alto, scritta con il segno di ottava"
+}
+},
+"art": {
+"1762": {
+"post": 1762,
+"titolo": "Esercizio n.41, 42 e 43",
+"files": [
+"lami"
+],
+"cap": {
+"lami": "La posizione delle mani negli esercizi n. 41, 42 e 43: tutte e due le mani sulle cinque note da La a Mi, a un'ottava di distanza. Il 5 della sinistra va sul La sopra il Do centrale, l'1 della destra sul La dell'ottava successiva. In azzurro la sinistra, in rosso la destra; i numeri sono le dita."
+},
+"ops": [
+[
+"s",
+"<strong>Posizione: </strong>il nostro caro amico<strong> Beyer</strong> ha deciso di spostarsi ancora lungo la tastiera: se ricordate bene, negli esercizi precedenti ci trovavamo sul sol, adesso siamo una nota sopra, sul LA. Utilizzeremo sempre e solo le 5 dita, spostandoci di un intervallo massimo di quinta.\r\n\r\n<strong>Difficoltà</strong>: altezza delle note.",
+"<strong>Posizione: </strong>il nostro caro amico<strong> Beyer</strong> ha deciso di spostarsi ancora lungo la tastiera: se ricordate bene, negli esercizi precedenti ci trovavamo sul sol, adesso siamo una nota sopra, sul LA. Utilizzeremo sempre e solo le 5 dita, spostandoci di un intervallo massimo di quinta.\r\n\r\n{{CAP:lami}}\r\n\r\n<strong>Difficoltà</strong>: altezza delle note."
+]
+]
+},
+"1832": {
+"post": 1832,
+"titolo": "Esercizio n.44 ",
+"files": [
+"dosol8"
+],
+"cap": {
+"dosol8": "La posizione delle mani nell'esercizio n. 44: cinque note da Do a Sol, ma più in alto del solito. La sinistra ha il 5 sul primo Do sopra il Do centrale; la destra legge le stesse note e, per il segno 8, le suona un'ottava sopra. In azzurro la sinistra, in rosso la destra; i numeri sono le dita."
+},
+"ops": [
+[
+"s",
+"<strong>Posizione e diteggiatura:</strong> le cinque dita di ogni mano sui tasti da Do a Sol, senza mai spostarsi. Tutto l'esercizio è sotto la legatura: si suona legato.\r\n\r\n<h3>Difficoltà e soluzioni</h3>",
+"<strong>Posizione e diteggiatura:</strong> le cinque dita di ogni mano sui tasti da Do a Sol, senza mai spostarsi. Tutto l'esercizio è sotto la legatura: si suona legato.\r\n\r\n{{CAP:dosol8}}\r\n\r\n<h3>Difficoltà e soluzioni</h3>"
+]
+]
+},
+"1873": {
+"post": 1873,
+"titolo": "Esercizio n.45 e 46",
+"files": [
+"dosol"
+],
+"cap": {
+"dosol": "La posizione delle mani nell'esercizio n. 45: di nuovo quella da Do a Sol, con le mani a un'ottava di distanza. Anche il n. 46 parte da qui, ma lì la sinistra si allarga fino al Si sotto il Do centrale. In azzurro la sinistra, in rosso la destra; i numeri sono le dita."
+},
+"ops": [
+[
+"s",
+"<strong>Esercizio n. 45 – scheda:</strong> Do maggiore, Moderato, in 4/4.\r\n\r\n<strong>Difficoltà:</strong> una mano suona le crome mentre ",
+"<strong>Esercizio n. 45 – scheda:</strong> Do maggiore, Moderato, in 4/4.\r\n\r\n{{CAP:dosol}}\r\n\r\n<strong>Difficoltà:</strong> una mano suona le crome mentre "
+]
+]
+}
+}
+}

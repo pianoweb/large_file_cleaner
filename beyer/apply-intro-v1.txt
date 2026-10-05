@@ -1,0 +1,60 @@
+error_reporting(0); global $wpdb; require_once ABSPATH.'wp-admin/includes/file.php'; require_once ABSPATH.'wp-admin/includes/media.php'; require_once ABSPATH.'wp-admin/includes/image.php';
+add_filter('big_image_size_threshold', '__return_false', 999);
+add_filter('intermediate_image_sizes_advanced', function ($sizes) { return array_intersect_key($sizes, ['thumbnail' => 1, 'medium' => 1]); }, 999);
+$in = $GLOBALS['pw_bey']; $kk = (string) $in['k']; $dry = !empty($in['dry']); $t0 = microtime(true); $budget = isset($in['budget']) ? (float) $in['budget'] : 30;
+$burl = 'https://raw.githubusercontent.com/pianoweb/large_file_cleaner/tmp-pianosolo-duvernoy/beyer/intro-bundle.json';
+$r = wp_remote_get($burl, ['timeout' => 20]); if (is_wp_error($r)) return ['stop' => 'bundle: ' . $r->get_error_message()];
+$body = wp_remote_retrieve_body($r); if (hash('sha256', $body) !== $in['sha']) return ['stop' => 'bundle sha mismatch', 'got' => hash('sha256', $body)];
+$b = json_decode($body, true); $st = $b['art'][$kk] ?? null; if (!$st) return ['stop' => 'articolo assente'];
+$pid = (int) $st['post']; $p = get_post($pid);
+if (!$p || $p->post_status !== 'publish' || $p->post_type !== 'post' || strpos($p->post_title, $st['titolo']) !== 0) return ['stop' => 'controllo articolo fallito', 'title' => $p ? $p->post_title : null];
+if (get_post_meta($pid, '_pw_bey_intro', true)) return ['k' => $kk, 'post' => $pid, 'gia_applicato' => get_post_meta($pid, '_pw_bey_intro', true)];
+$cur = $p->post_content; $new = $cur; $rep = [];
+foreach ($st['ops'] as $i => $op) {
+  if ($op[0] === 's') { $n = substr_count($new, $op[1]); if ($n !== 1) return ['stop' => 'op ' . $i . ': occorrenze ' . $n, 'k' => $kk, 'old' => substr($op[1], 0, 80)]; $new = str_replace($op[1], $op[2], $new); }
+  elseif ($op[0] === 're') { $pat = '~' . $op[1] . '~s'; $n = preg_match_all($pat, $new, $mm); if ($n !== 1) return ['stop' => 'op ' . $i . ': corrispondenze ' . var_export($n, true), 'k' => $kk, 'pat' => substr($op[1], 0, 80)]; $sub = $op[2]; $rep[$i] = strlen($mm[0][0]); $new = preg_replace_callback($pat, function ($m) use ($sub) { return $sub; }, $new); }
+  else return ['stop' => 'op sconosciuta ' . $i];
+}
+$nperm = 0;
+if (!empty($st['permalink'])) $new = preg_replace('~https://pianosolo\.it/\d{4}/\d{2}/\d{2}/([a-z0-9-]+)/~', 'https://www.pianosolo.it/$1/', $new, -1, $nperm);
+preg_match_all('~\{\{(CAP|CAPL|IMGL|URL):([a-z0-9]+)(?::(\d+))?\}\}~', $new, $ph, PREG_SET_ORDER);
+$keys = array_column($st['files'], null, 'k'); $usati = [];
+foreach ($ph as $h) { if (!isset($keys[$h[2]])) return ['stop' => 'segnaposto senza file: ' . $h[0]]; $usati[$h[2]] = 1; }
+foreach ($keys as $k => $f) if (!isset($usati[$k])) return ['stop' => 'file non usato: ' . $k];
+if ($dry) return ['k' => $kk, 'post' => $pid, 'md5' => md5($cur), 'len' => [strlen($cur), strlen($new)], 'ops' => count($st['ops']), 'tolti' => $rep, 'permalink' => $nperm, 'segnaposto' => count($ph), 'anteprima' => $new];
+if (md5($cur) !== ($in['md5'] ?? '')) return ['stop' => 'contenuto cambiato dopo la prova', 'md5' => md5($cur)];
+$bt = $wpdb->prefix . 'pw_bak_beyintro_20261005';
+$wpdb->query("CREATE TABLE IF NOT EXISTS $bt (ID BIGINT UNSIGNED NOT NULL PRIMARY KEY, post_content LONGTEXT NOT NULL, saved DATETIME NOT NULL) DEFAULT CHARSET=utf8mb4");
+$wpdb->query($wpdb->prepare("INSERT IGNORE INTO $bt (ID, post_content, saved) VALUES (%d, %s, NOW())", $pid, $cur));
+if ($wpdb->get_var($wpdb->prepare("SELECT post_content FROM $bt WHERE ID=%d", $pid)) !== $cur) return ['stop' => 'backup non verificato'];
+$ids = []; $log = [];
+foreach ($st['files'] as $f) {
+  $key = 'intro-' . $kk . '-' . $f['k'];
+  $id = (int) $wpdb->get_var($wpdb->prepare("SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key='_pw_bey_key' AND meta_value=%s ORDER BY meta_id LIMIT 1", $key));
+  if ($id && (!get_post($id) || get_post_type($id) !== 'attachment')) $id = 0;
+  if ($id && hash_file('sha256', get_attached_file($id)) === $f['sha']) { $ids[$f['k']] = $id; $log[$key] = 'ok ' . $id; continue; }
+  if ($id) return ['stop' => 'allegato esistente con contenuto diverso: ' . $key . ' (' . $id . '): serve un nome nuovo'];
+  if (microtime(true) - $t0 > $budget) return ['k' => $kk, 'continua' => true, 'fatti' => count($ids), 'di' => count($st['files']), 'log' => $log];
+  $tmp = download_url($b['base'] . $f['name'], 30); if (is_wp_error($tmp)) return ['stop' => 'download ' . $f['name'] . ': ' . $tmp->get_error_message(), 'log' => $log];
+  if (hash_file('sha256', $tmp) !== $f['sha']) { @unlink($tmp); return ['stop' => 'sha ' . $f['name'], 'log' => $log]; }
+  $id = media_handle_sideload(['name' => $f['name'], 'tmp_name' => $tmp], $pid, $f['title']);
+  if (is_wp_error($id)) { @unlink($tmp); return ['stop' => 'sideload ' . $f['name'] . ': ' . $id->get_error_message(), 'log' => $log]; }
+  add_post_meta($id, '_pw_bey_key', $key, true); $log[$key] = 'nuovo ' . $id;
+  if ($f['alt'] !== '') update_post_meta($id, '_wp_attachment_image_alt', $f['alt']);
+  if (hash_file('sha256', get_attached_file($id)) !== $f['sha']) return ['stop' => 'verifica file ' . $f['name'], 'log' => $log];
+  if (basename(get_attached_file($id)) !== $f['name']) $log[$key] .= ' RINOMINATO ' . basename(get_attached_file($id));
+  $ids[$f['k']] = $id;
+}
+$img = function ($k, $cls, $wd = 0) use ($ids) { $id = $ids[$k]; $m = wp_get_attachment_metadata($id); $w = $wd ? (int) $wd : (int) round($m['width'] / 2); $h = (int) round($m['height'] * $w / $m['width']); return [$id, $w, '<img class="' . $cls . 'size-full wp-image-' . $id . '" src="' . wp_get_attachment_url($id) . '" alt="' . esc_attr(get_post_meta($id, '_wp_attachment_image_alt', true)) . '" width="' . $w . '" height="' . $h . '" />']; };
+$new = preg_replace_callback('~\{\{(CAP|CAPL|IMGL|URL):([a-z0-9]+)(?::(\d+))?\}\}~', function ($h) use ($img, $ids, $keys) {
+  $k = $h[2];
+  if ($h[1] === 'URL') return wp_get_attachment_url($ids[$k]);
+  if ($h[1] === 'IMGL') { list($id, $w, $tag) = $img($k, 'alignleft ', $h[3] ?? 0); return $tag; }
+  list($id, $w, $tag) = $img($k, '');
+  if ($h[1] === 'CAPL') $tag = '<a href="' . wp_get_attachment_url($id) . '">' . $tag . '</a>';
+  return '[caption id="attachment_' . $id . '" align="aligncenter" width="' . $w . '"]' . $tag . ' ' . $keys[$k]['cap'] . '[/caption]';
+}, $new);
+$wpdb->update($wpdb->posts, ['post_content' => $new], ['ID' => $pid]); clean_post_cache($pid); do_action('litespeed_purge_post', $pid);
+$chk = $wpdb->get_var($wpdb->prepare("SELECT post_content FROM {$wpdb->posts} WHERE ID=%d", $pid));
+update_post_meta($pid, '_pw_bey_intro', $in['sha'] . '|' . current_time('mysql'));
+return ['k' => $kk, 'post' => $pid, 'written' => $chk === $new, 'len' => [strlen($cur), strlen($new)], 'media' => $log, 'imgs' => substr_count($new, '<img'), 'captions' => substr_count($new, '[caption'), 'resti' => substr_count($new, '{{'), 'sec' => round(microtime(true) - $t0, 1)];

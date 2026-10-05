@@ -1,0 +1,602 @@
+{
+"base": "https://raw.githubusercontent.com/pianoweb/large_file_cleaner/tmp-pianosolo-duvernoy/beyer/",
+"art": {
+"43": {
+"post": 43,
+"titolo": "Elementi di Teoria",
+"permalink": true,
+"files": [
+{
+"k": "pent",
+"name": "beyer-op101-teoria-pentagramma.png",
+"sha": "0f2b1f81204fc7640fdff1a1b177bcbc7a4d469714f1b8e1239daf2a3c67bf49",
+"title": "Beyer op. 101 – Teoria: il pentagramma",
+"alt": "Il pentagramma: linee, spazi e tagli addizionali",
+"cap": "Il pentagramma: cinque linee e quattro spazi, che si contano dal basso verso l'alto. Le note troppo acute o troppo gravi per stare nel rigo si scrivono sulle lineette supplementari, dette tagli addizionali."
+},
+{
+"k": "due",
+"name": "beyer-op101-teoria-note-due-pentagrammi.png",
+"sha": "0df5b6664f7b9bd68795b8cc6a42e7448c69c6d23844a3a5ab6e4e4bddbce05f",
+"title": "Beyer op. 101 – Teoria: le note sui due pentagrammi",
+"alt": "Le note in chiave di violino e in chiave di basso a partire dal Do centrale",
+"cap": "Le note sui due pentagrammi partendo dal Do centrale (in rosso): in chiave di violino si sale, in chiave di basso si scende."
+},
+{
+"k": "doc",
+"name": "beyer-op101-teoria-do-centrale.png",
+"sha": "f0c2d15dc9fa2f79bb5d04d5ff961ecf00bce7372322f50350cb5e8e1ed5d2d4",
+"title": "Beyer op. 101 – Teoria: il Do centrale",
+"alt": "Il Do centrale sul doppio pentagramma e sulla tastiera del pianoforte",
+"cap": "La nota in comune fra la chiave di sol e la chiave di fa è il Do, che viene definito Do centrale"
+},
+{
+"k": "let",
+"name": "beyer-op101-teoria-lettura-delle-note.png",
+"sha": "f4e7b35460f4f6d83bb904888c689fafdedf1be637e6625d6d757f2be8c59d47",
+"title": "Beyer op. 101 – Teoria: esempi di lettura delle note",
+"alt": "Esempi di lettura: note in ordine progressivo e per terze",
+"cap": "I due esempi del Beyer per imparare a leggere: prima le note in ordine progressivo, poi per intervalli di terza."
+},
+{
+"k": "tas",
+"name": "beyer-op101-teoria-note-sulla-tastiera.png",
+"sha": "20fe238199642b61112ba46a958e5ee16edadd0ccc4508507de139549c8a5915",
+"title": "Beyer op. 101 – Teoria: le note sulla tastiera",
+"alt": "Le note in chiave di violino e i tasti corrispondenti sulla tastiera",
+"cap": "Le note in chiave di violino e i tasti corrispondenti, dal Do centrale (in rosso) al Do di due ottave sopra."
+}
+],
+"ops": [
+[
+"re",
+"<a href=\"[^\"]*beyer-elementiditeoria1\\.jpg\"><img[^>]*/></a>",
+"{{CAP:pent}}"
+],
+[
+"re",
+"<a href=\"[^\"]*beyer-elementiditeoria3\\.jpg\"><img[^>]*/></a>",
+"{{CAP:due}}"
+],
+[
+"re",
+"\\[caption id=\"\" align=\"alignnone\" width=\"500\"\\]<a href=\"[^\"]*Chiave-di-violine-e-di-basso1\\.jpg\">.*?\\[/caption\\]",
+"{{CAP:doc}}"
+],
+[
+"re",
+"<a href=\"[^\"]*beyer-elementiditeoria4\\.jpg\"><img[^>]*/></a>",
+"{{CAP:let}}"
+],
+[
+"re",
+"<img class=\"alignnone\" title=\"Immagine tastiera\" src=\"http://upload\\.wikimedia\\.org/[^\"]*Pianoclavier\\.jpg\"[^>]*/>",
+"{{CAP:tas}}"
+],
+[
+"s",
+"il pentragramma <strong>inferiore</strong>",
+"il pentagramma <strong>inferiore</strong>"
+],
+[
+"s",
+"almeno per <strong>un ora al giorno</strong> finchè non abbiate",
+"almeno per <strong>un'ora al giorno</strong> finché non abbiate"
+],
+[
+"s",
+"Dopodichè, potrete passare",
+"Dopodiché, potrete passare"
+]
+]
+},
+"68": {
+"post": 68,
+"titolo": "Elementi di Teoria - Beyer - Lezione n.2",
+"permalink": true,
+"files": [
+{
+"k": "parti",
+"name": "beyer-op101-teoria-parti-della-nota.png",
+"sha": "c906b22f9d52007c46ab1ae14b78296052a810454a1f04b66c74f0c3cc4a641c",
+"title": "Beyer op. 101 – Teoria: le parti della nota",
+"alt": "Le parti della nota: 1 coda, 2 gambo, 3 testa",
+"cap": ""
+},
+{
+"k": "val",
+"name": "beyer-op101-teoria-divisione-dei-valori.png",
+"sha": "2f7ea68bfbeb74768bb4e8541ff2b57af0052670af156ab6077a684bc2bf0163",
+"title": "Beyer op. 101 – Teoria: la divisione dei valori",
+"alt": "Divisione dei valori musicali dalla semibreve alla biscroma",
+"cap": "La divisione dei valori: ogni figura dura la metà di quella della riga sopra. Una semibreve vale due minime, quattro semiminime, otto crome, sedici semicrome, trentadue biscrome."
+},
+{
+"k": "pau",
+"name": "beyer-op101-teoria-note-e-pause.png",
+"sha": "3a1f0e24f2619bf62ddac65ae9ddf8e1d3346c1869e2a8f1650f1bedb940304a",
+"title": "Beyer op. 101 – Teoria: note e pause",
+"alt": "Le figure musicali e le pause corrispondenti, dalla semibreve alla semibiscroma",
+"cap": "Le figure di valore e, accanto a ciascuna, la pausa che dura lo stesso tempo."
+},
+{
+"k": "uni",
+"name": "beyer-op101-teoria-note-unite.png",
+"sha": "473ec844a555a0b81225446b02828de3ce79015a6562bf9617531fe54a5db55d",
+"title": "Beyer op. 101 – Teoria: crome e semicrome unite",
+"alt": "Crome e semicrome separate e unite dalla stanghetta",
+"cap": "Quando siamo in presenza di più note con gambo (in successione), esse vengono collegate fra di loro in questo modo"
+},
+{
+"k": "pun",
+"name": "beyer-op101-teoria-punto-di-valore.png",
+"sha": "bb2bfe8a578c62afdeb16876c6d214dc0a782c9c2d41d1579fd971b63345e52d",
+"title": "Beyer op. 101 – Teoria: il punto di valore",
+"alt": "Il punto di valore: semiminima col punto, minima col punto, minima con due punti",
+"cap": "Il punto aumenta la nota della metà del suo valore: 1/4 con un punto vale 3/8, 2/4 con un punto 3/4. Il secondo punto aggiunge la metà del primo."
+},
+{
+"k": "leg",
+"name": "beyer-op101-teoria-legatura-di-valore.png",
+"sha": "09e5308f1538b52213c8b29dd5e6f55b62806847be79a7ee9dd5f40c5fd1a6a7",
+"title": "Beyer op. 101 – Teoria: la legatura di valore",
+"alt": "Esempi di legatura di valore con la somma delle durate",
+"cap": "La legatura di valore unisce due note della stessa altezza: i loro valori si sommano."
+}
+],
+"ops": [
+[
+"re",
+"<img class=\"alignleft\" title=\"1\\.Coda 2\\.Gambo 3\\.Testa\" src=\"http://upload\\.wikimedia\\.org/[^\"]*\"[^>]*/>",
+"{{IMGL:parti:270}}"
+],
+[
+"re",
+"<a href=\"[^\"]*nomi-e-durata-delle-note\\.jpg\"><img[^>]*/></a>",
+"{{CAP:val}}"
+],
+[
+"s",
+"In una Semimibreve avremo quindi quattro Seminime.",
+"In una Semibreve avremo quindi quattro Semiminime."
+],
+[
+"re",
+"<a href=\"[^\"]*valori-delle-note-musicali\\.png\"><img[^>]*/></a>",
+"{{CAP:pau}}"
+],
+[
+"s",
+"dimostrazione pratica di Christian:\r\n\r\n",
+"dimostrazione pratica di Christian:\r\n\r\nhttps://www.youtube.com/watch?v=cJHHmRwKszE\r\n\r\n"
+],
+[
+"re",
+"\\[caption id=\"\" align=\"alignleft\" width=\"150\"\\].*?\\[/caption\\]",
+"{{CAP:uni}}"
+],
+[
+"re",
+"\\[caption id=\"\" align=\"alignright\" width=\"83\"\\].*?\\[/caption\\]\\r\\n\\r\\n",
+""
+],
+[
+"s",
+"Una semibreve (2/4), invece, diventerebbe di 3/4.",
+"Una minima (2/4), invece, diventerebbe di 3/4."
+],
+[
+"s",
+"La semibreve con due punti avrà il valore (2/4+1/4+1/8=7/8) di 7/8.\r\n\r\n",
+"La minima con due punti avrà il valore (2/4+1/4+1/8=7/8) di 7/8.\r\n\r\n{{CAP:pun}}\r\n\r\n"
+],
+[
+"re",
+"<a href=\"[^\"]*legaturadivalore\\.jpg\"><img[^>]*/></a>",
+"{{CAP:leg}}"
+],
+[
+"s",
+"alla durata degli possibili valori (poichè",
+"alla durata degli altri possibili valori (poiché"
+],
+[
+"s",
+"Dopodichè potremmo iniziare",
+"Dopodiché potremmo iniziare"
+]
+]
+},
+"102": {
+"post": 102,
+"titolo": "Tempi semplici e composti",
+"permalink": false,
+"files": [
+{
+"k": "bat",
+"name": "beyer-op101-teoria-battute-e-stanghette.png",
+"sha": "0bda4fd8bfcaa69e0627b41233e8147ecc2386c3839babda556f21cf2e449085",
+"title": "Beyer op. 101 – Teoria: battute e stanghette",
+"alt": "Battute, stanghette e doppia stanghetta finale",
+"cap": "Le stanghette dividono il rigo in battute (in giallo, una battuta); la doppia stanghetta chiude il brano."
+},
+{
+"k": "tem",
+"name": "beyer-op101-teoria-indicazione-di-tempo.png",
+"sha": "f29cccdfc144aa471e634c1b9dc2b2b16f85ef1238351118e34c0f92a3a27c2d",
+"title": "Beyer op. 101 – Teoria: indicazione di tempo",
+"alt": "Indicazioni di tempo 2/4, 3/4 e 4/4 con il conteggio dei movimenti",
+"cap": "L'indicazione di tempo: il numero in alto dice quanti movimenti ha ogni battuta, quello in basso quale figura vale un movimento (4 = semiminima). In blu il conteggio."
+},
+{
+"k": "com",
+"name": "beyer-op101-teoria-tempi-semplici-e-composti.png",
+"sha": "c595ef4a3785ea31d8dad68d3665abda02ed77449ee92ab355980291322aa126",
+"title": "Beyer op. 101 – Teoria: tempi semplici e composti",
+"alt": "Confronto fra misure semplici (2/4, 3/4, 4/4) e composte (6/8, 9/8, 12/8)",
+"cap": "Misure semplici e composte a confronto. Con i gambi in su i movimenti, con i gambi in giù la loro suddivisione: in due crome nelle misure semplici, in tre nelle composte."
+}
+],
+"ops": [
+[
+"s",
+"che segna la fine dell'ultima misura.\r\n\r\n",
+"che segna la fine dell'ultima misura.\r\n\r\n{{CAP:bat}}\r\n\r\n"
+],
+[
+"s",
+"(ad esempio, in 2/4, due semiminime per misura).\r\n\r\n",
+"(ad esempio, in 2/4, due semiminime per misura).\r\n\r\n{{CAP:tem}}\r\n\r\n"
+],
+[
+"s",
+"(ad esempio, 2/4 diventa 6/8).\r\n\r\n",
+"(ad esempio, 2/4 diventa 6/8).\r\n\r\n{{CAP:com}}\r\n\r\n"
+]
+]
+},
+"19": {
+"post": 19,
+"titolo": "La diteggiatura per pianoforte",
+"permalink": true,
+"files": [
+{
+"k": "pos",
+"name": "beyer-op101-posizione-do-sol-due-mani.png",
+"sha": "168c2ec3e55ec68235377068d5ad10bf91a4e1b44db4fe67130848e05a98de4b",
+"title": "Beyer op. 101 – Ginnastica per le dita: la posizione delle mani",
+"alt": "Posizione delle due mani sulle cinque note da Do a Sol, con i numeri delle dita",
+"cap": "La posizione delle mani negli esercizi: cinque dita su cinque tasti vicini, da Do a Sol. In azzurro la mano sinistra, in rosso la destra; i numeri sono le dita."
+},
+{
+"k": "dx",
+"name": "beyer-op101-ginnastica-mano-destra-web.png",
+"sha": "a667db9266171ae8b019227ebb0d9305cbcb6e27d918ece0182cc52bf924fd1b",
+"title": "Beyer op. 101 – Ginnastica per le dita della mano destra (spartito)",
+"alt": "Spartito del Beyer op. 101, ginnastica per le dita della mano destra",
+"cap": "Esercizi per la mano destra"
+},
+{
+"k": "dxpdf",
+"name": "beyer-op101-ginnastica-mano-destra.pdf",
+"sha": "b14eafc8139b33ae1db9dca7c445b87329050637f92aad258bad2f59b05ba1ef",
+"title": "Beyer op. 101 – Ginnastica per le dita della mano destra (PDF)",
+"alt": "",
+"cap": ""
+},
+{
+"k": "fdx",
+"name": "beyer-op101-ginnastica-mano-destra-frammento-a.png",
+"sha": "7d0de617da5c6cd84002925abd4a13c092b723f02526231c61356a07773fd1b3",
+"title": "Beyer op. 101 – Ginnastica per la mano destra, frammento a",
+"alt": "Esercizi n.1 e 2 per la mano destra: in rosso le dita, in blu il conteggio. La semibreve finale dura quattro movimenti, la minima col punto tre. (Beyer op. 101)",
+"cap": "Esercizi n.1 e 2 per la mano destra: in rosso le dita, in blu il conteggio. La semibreve finale dura quattro movimenti, la minima col punto tre."
+},
+{
+"k": "sx",
+"name": "beyer-op101-ginnastica-mano-sinistra-web.png",
+"sha": "310989d9fd360a1aca0cfbbb6eb78b462f278dc8d5357b0278f39e5ebabef836",
+"title": "Beyer op. 101 – Ginnastica per le dita della mano sinistra (spartito)",
+"alt": "Spartito del Beyer op. 101, ginnastica per le dita della mano sinistra",
+"cap": "Esercizi per la mano sinistra"
+},
+{
+"k": "sxpdf",
+"name": "beyer-op101-ginnastica-mano-sinistra.pdf",
+"sha": "f68b4cf9ad9c35491986e8e249d258a85be07910b3d3395637e02705e780369c",
+"title": "Beyer op. 101 – Ginnastica per le dita della mano sinistra (PDF)",
+"alt": "",
+"cap": ""
+},
+{
+"k": "fsx",
+"name": "beyer-op101-ginnastica-mano-sinistra-frammento-a.png",
+"sha": "0f0256194d5096a3ad885c1f4f611d76bf706971655b59f87e0221e5d0cdbd22",
+"title": "Beyer op. 101 – Ginnastica per la mano sinistra, frammento a",
+"alt": "Esercizi n.13 e 14 per la mano sinistra: il lavoro del 5 e del 4 (in rosso le dita, in blu il conteggio). (Beyer op. 101)",
+"cap": "Esercizi n.13 e 14 per la mano sinistra: il lavoro del 5 e del 4 (in rosso le dita, in blu il conteggio)."
+}
+],
+"ops": [
+[
+"re",
+"A ciascun dito corrisponde un numero e sulle note del pentagramma troveremo questo numero\\. Questa indicazione ci dirà quali dita utilizzare per suonare le note\\.<strong>La diteggiatura </strong>.*?Ecco spiegata la sua importanza\\.\\r\\n\\r\\n",
+""
+],
+[
+"s",
+"il 1dito della mano destra",
+"il 1° dito della mano destra"
+],
+[
+"s",
+"il 2 sul fa e l'1 sul sol.\r\n\r\n",
+"il 2 sul fa e l'1 sul sol.\r\n\r\n{{CAP:pos}}\r\n\r\n"
+],
+[
+"re",
+"\\[caption id=\"attachment_185\"[^\\]]*\\].*?\\[/caption\\]",
+"{{CAPL:dx}}\r\n\r\n<a href=\"{{URL:dxpdf}}\" target=\"_blank\" rel=\"noopener\"><strong>Scarica gli esercizi per la mano destra in PDF</strong></a>"
+],
+[
+"s",
+"https://www.youtube.com/watch?v=wyw38MoVmKA\r\n\r\n",
+"https://www.youtube.com/watch?v=wyw38MoVmKA\r\n\r\n<strong>Come si leggono:</strong> ogni esercizio è fatto di una o due battute chiuse dal segno di ritornello (i due punti accanto alla doppia stanghetta): si ripetono più volte di seguito e solo alla fine si suona la nota lunga che chiude. Il metro cambia da un esercizio all'altro: il segno C indica i 4/4, cioè quattro movimenti per battuta; 3/4 ne indica tre.\r\n\r\n<strong>Difficoltà:</strong> dare a tutte le note la stessa durata e tenere la nota finale per tutto il suo valore. All'inizio si tende a correre sulle note facili e ad accorciare l'ultima.\r\n\r\n{{CAP:fdx}}\r\n\r\n<strong>Soluzione:</strong> contate ad alta voce, un numero per ogni semiminima: «1, 2, 3, 4» nel primo esercizio, «1, 2, 3» nel secondo, senza fermare il conteggio quando ricominciate dal ritornello. Suonate lentamente e senza forzare il suono: un dito si alza nel momento in cui il successivo abbassa il suo tasto.\r\n\r\n"
+],
+[
+"re",
+"\\[caption id=\"attachment_186\"[^\\]]*\\].*?\\[/caption\\]",
+"{{CAPL:sx}}\r\n\r\n<a href=\"{{URL:sxpdf}}\" target=\"_blank\" rel=\"noopener\"><strong>Scarica gli esercizi per la mano sinistra in PDF</strong></a>"
+],
+[
+"s",
+"https://youtu.be/aOGT9v-HGCA\r\n\r\n",
+"https://youtu.be/aOGT9v-HGCA\r\n\r\n<strong>Difficoltà:</strong> nella sinistra la numerazione è rovesciata: il mignolo (5) suona il Do e il pollice (1) il Sol. Il 4 e il 5 sono le dita più deboli: tendono a suonare più piano e in ritardo.\r\n\r\n{{CAP:fsx}}\r\n\r\n<strong>Soluzione:</strong> insistete sugli esercizi dal n.13 in poi, che partono dal mignolo. Tenete le dita arcuate, senza irrigidire il polso, e cercate lo stesso volume con tutte e cinque le dita: se il 4 e il 5 suonano più piano, rallentate invece di spingere con il braccio.\r\n\r\n"
+]
+]
+},
+"218": {
+"post": 218,
+"titolo": "Ginnastica per mani unite",
+"permalink": true,
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-ginnastica-mani-unite-web.png",
+"sha": "de0b0be154664b80188bc89a0a5c2575055a463c788d9ef0471983f81df20996",
+"title": "Beyer op. 101 – Ginnastica per le due mani unite (spartito)",
+"alt": "Spartito del Beyer op. 101, ginnastica per le due mani unite",
+"cap": "Ginnastica per le due mani unite: le due mani sono scritte sullo stesso rigo, la destra con i gambi in su e la sinistra con i gambi in giù."
+},
+{
+"k": "pdf",
+"name": "beyer-op101-ginnastica-mani-unite.pdf",
+"sha": "08821d419c6c78ca08fb51e8f80b0ce5539302a512fba740333f8c152f8eca75",
+"title": "Beyer op. 101 – Ginnastica per le due mani unite (PDF)",
+"alt": "",
+"cap": ""
+},
+{
+"k": "pos",
+"name": "beyer-op101-posizioni-mani-unite.png",
+"sha": "e00d7f2b2fe89f416bab59f1f1e5a458671b4452c644e123e2363b1140d31a83",
+"title": "Beyer op. 101 – Ginnastica per le due mani unite: le posizioni",
+"alt": "Le due posizioni delle mani negli esercizi a mani unite del Beyer",
+"cap": "Le due posizioni della lezione. Negli esercizi 1–12 i pollici sono vicini e le mani si muovono in direzioni opposte; negli esercizi 16–24 le mani suonano le stesse note a un'ottava di distanza. In azzurro la sinistra, in rosso la destra."
+},
+{
+"k": "fa",
+"name": "beyer-op101-ginnastica-mani-unite-frammento-a.png",
+"sha": "5efea1072197f2a44cdf15db5bd5af1ae50f2f2f1c4b081224a85cd6444e270b",
+"title": "Beyer op. 101 – Ginnastica per le due mani unite, frammento a",
+"alt": "Esercizi n.1 e 2: note diverse, ma lo stesso dito nelle due mani nello stesso momento (in rosso). In blu il conteggio. (Beyer op. 101)",
+"cap": "Esercizi n.1 e 2: note diverse, ma lo stesso dito nelle due mani nello stesso momento (in rosso). In blu il conteggio."
+},
+{
+"k": "fb",
+"name": "beyer-op101-ginnastica-mani-unite-frammento-b.png",
+"sha": "8876ac62a02030193e09f332e87197d9c46bf78d04e0d0bdcb7bb448f1c1877b",
+"title": "Beyer op. 101 – Ginnastica per le due mani unite, frammento b",
+"alt": "Esercizi n.21 e 22: le mani suonano le stesse note a distanza di un'ottava, con dita diverse (in rosso). (Beyer op. 101)",
+"cap": "Esercizi n.21 e 22: le mani suonano le stesse note a distanza di un'ottava, con dita diverse (in rosso)."
+}
+],
+"ops": [
+[
+"re",
+"\\[caption id=\"attachment_219\"[^\\]]*\\].*?\\[/caption\\]",
+"{{CAPL:web}}\r\n\r\n<a href=\"{{URL:pdf}}\" target=\"_blank\" rel=\"noopener\"><strong>Scarica lo spartito in PDF</strong></a>"
+],
+[
+"s",
+"leggere qua</a>).\r\n\r\n",
+"leggere qua</a>).\r\n\r\n{{CAP:pos}}\r\n\r\n{{CAP:fa}}\r\n\r\n<strong>Difficoltà:</strong> dal n.13 le mani non si muovono più in direzioni opposte ma nella stessa direzione, sulle stesse note. Le dita allora non coincidono più: dal n.16, quando la destra usa il pollice (1), la sinistra usa il mignolo (5), e così via.\r\n\r\n{{CAP:fb}}\r\n\r\n<strong>Soluzione:</strong> studiate prima a mani separate, poi unitele molto lentamente, una battuta alla volta. Dal n.13 in poi non pensate al numero del dito ma alla nota: le due mani suonano sempre la stessa.\r\n\r\n"
+]
+]
+},
+"192": {
+"post": 192,
+"titolo": "Il mio primo brano a una mano",
+"permalink": true,
+"files": [
+{
+"k": "web",
+"name": "ninna-nanna-brahms-mano-destra-web.png",
+"sha": "da2515a780fc6c710dd51b8ad4c78a7a226921925d95f44611016c140b74a31d",
+"title": "Ninna nanna di Brahms per la mano destra (spartito)",
+"alt": "Spartito facile della Ninna nanna di Brahms per la sola mano destra",
+"cap": "Ninna nanna di Brahms: la melodia per la sola mano destra, con la diteggiatura."
+},
+{
+"k": "pdf",
+"name": "ninna-nanna-brahms-mano-destra.pdf",
+"sha": "27f7a2151ef46b281751e1c0551506db6da4dd7b23e2cbeb96c5f560a4e55c6f",
+"title": "Ninna nanna di Brahms per la mano destra (PDF)",
+"alt": "",
+"cap": ""
+},
+{
+"k": "fa",
+"name": "ninna-nanna-brahms-mano-destra-frammento-a.png",
+"sha": "0eb1f84d39be162b59010ce488b0852ec3860d47278ef732c11fb545becd138a",
+"title": "Ninna nanna di Brahms, frammento a",
+"alt": "Ninna nanna di Brahms, battute 2–4: in blu i tre movimenti, in rosso le crome. Dopo la semiminima col punto la croma arriva a metà fra un numero e l'altro; due crome insieme occupano un solo movimento.",
+"cap": "Battute 2–4: in blu i tre movimenti, in rosso le crome. Dopo la semiminima col punto la croma arriva a metà fra un numero e l'altro; due crome insieme occupano un solo movimento."
+},
+{
+"k": "fb",
+"name": "ninna-nanna-brahms-mano-destra-frammento-b.png",
+"sha": "df15f233c7362a8222c41a2904c656cd39c6dace6bdfc989d0c0e70f85bd96b6",
+"title": "Ninna nanna di Brahms, frammento b",
+"alt": "Ninna nanna di Brahms, battute 4–6: in rosso le dita. Alla battuta 5, dopo il Sol suonato col 2, il pollice scende sul Re: è qui che la mano si sposta.",
+"cap": "Battute 4–6: in rosso le dita. Alla battuta 5, dopo il Sol suonato col 2, il pollice scende sul Re: è qui che la mano si sposta."
+}
+],
+"ops": [
+[
+"re",
+"<a href=\"[^\"]*ninnananna\\.jpg\"><img[^>]*/></a>",
+""
+],
+[
+"s",
+"Ninna Nanna di Bramhs,</strong>",
+"Ninna Nanna di Brahms,</strong>"
+],
+[
+"s",
+"<strong>esclusivamente dalla mano destra. </strong>\r\n\r\n",
+"<strong>esclusivamente dalla mano destra. </strong>\r\n\r\n{{CAPL:web}}\r\n\r\n<a href=\"{{URL:pdf}}\" target=\"_blank\" rel=\"noopener\"><strong>Scarica lo spartito della Ninna nanna in PDF</strong></a>\r\n\r\n"
+],
+[
+"s",
+"così non avrete ulteriori difficoltà.\r\n\r\n",
+"così non avrete ulteriori difficoltà.\r\n\r\n<strong>Scheda:</strong> Do maggiore, in 3/4 (tre movimenti per battuta). Lo spartito non riporta un'indicazione di tempo: è una ninna nanna, va suonata lentamente e piano.\r\n\r\n<strong>Difficoltà:</strong> le crome e le note con il punto. La semiminima col punto (battute 2 e 4) dura un movimento e mezzo, e la croma che la segue arriva a metà fra un movimento e l'altro.\r\n\r\n{{CAP:fa}}\r\n\r\n<strong>Soluzione:</strong> contate dividendo ogni movimento in due: «1 e 2 e 3 e». Alla battuta 2 il Sol dura «1 e 2», il Mi croma cade sulla «e» e l'altro Mi sul «3». Prima di suonare battete il ritmo con le mani contando ad alta voce.\r\n\r\n<strong>Difficoltà:</strong> la mano non resta ferma su cinque tasti come negli esercizi delle lezioni precedenti: la melodia sale fino al Do dell'ottava sopra e scende fino al Do centrale.\r\n\r\n{{CAP:fb}}\r\n\r\n<strong>Soluzione:</strong> seguite la diteggiatura segnata e preparate gli spostamenti. Alla battuta 5, mentre suonate il Sol con il 2, portate già il pollice sopra il Re. Studiate da sole le battute 4–6 finché il passaggio non riesce senza fermarsi.\r\n\r\n"
+]
+]
+},
+"20": {
+"post": 20,
+"titolo": "Impostazione delle dita e posizione",
+"permalink": false,
+"files": [
+{
+"k": "ch",
+"name": "pianoforte-posizione-naturale-mano-chopin.png",
+"sha": "70eb91a499ef9f172749e66f728971abb501ef63c09299d8ba779c776cadd8cb",
+"title": "La posizione naturale della mano secondo Chopin",
+"alt": "Posizione della mano destra su Mi, Fa diesis, Sol diesis, La diesis e Si, sul pentagramma e sulla tastiera",
+"cap": "La posizione che Chopin faceva prendere agli allievi: Mi, Fa diesis, Sol diesis, La diesis e Si con le cinque dita della mano destra. Le dita lunghe stanno sui tasti neri, il pollice e il mignolo sui bianchi."
+}
+],
+"ops": [
+[
+"s",
+"<strong>MI - FA# - SOL# - LA# - DO</strong>",
+"<strong>MI - FA# - SOL# - LA# - SI</strong>"
+],
+[
+"s",
+"con un movimento semplice.\r\n<h3>",
+"con un movimento semplice.\r\n\r\n{{CAP:ch}}\r\n<h3>"
+],
+[
+"s",
+"braccio e avanbraccio formino",
+"braccio e avambraccio formino"
+]
+]
+},
+"25": {
+"post": 25,
+"titolo": "Beyer Scuola Preparatoria del Pianoforte op.101",
+"permalink": true,
+"files": [
+{
+"k": "a",
+"name": "beyer-op101-le-due-parti-del-metodo-frammento-a.png",
+"sha": "41dbc9e24b0d33d2e42b3024cc7a38ba9ade8d9f01d98120b700c3898f905070",
+"title": "Beyer op. 101 – Le due parti del metodo, frammento a",
+"alt": "Prima parte, esercizi a cinque dita (qui il n.31, battute 1–4): ogni mano resta ferma su cinque tasti vicini. In rosso le dita. (Beyer op. 101)",
+"cap": "Prima parte, esercizi a cinque dita (qui il n.31, battute 1–4): ogni mano resta ferma su cinque tasti vicini. In rosso le dita."
+},
+{
+"k": "b",
+"name": "beyer-op101-le-due-parti-del-metodo-frammento-b.png",
+"sha": "9a4c2363ad6a10cce4f1e7d8ab7cf799fa2cf9cc74e8d5cef97243f3b99cde44",
+"title": "Beyer op. 101 – Le due parti del metodo, frammento b",
+"alt": "Seconda parte, esercizi con il passaggio del pollice (qui il n.65, battute 1–2): nella scala di Do il pollice passa sotto il terzo dito e la mano si sposta. In rosso le dita della destra. (Beyer op. 101)",
+"cap": "Seconda parte, esercizi con il passaggio del pollice (qui il n.65, battute 1–2): nella scala di Do il pollice passa sotto il terzo dito e la mano si sposta. In rosso le dita della destra."
+}
+],
+"ops": [
+[
+"s",
+"nelle tonalità più conosciute (es.65-106).</p>\r\n",
+"nelle tonalità più conosciute (es.65-106).</p>\r\n\r\n{{CAP:a}}\r\n\r\n{{CAP:b}}\r\n\r\n"
+],
+[
+"s",
+"<a href=\"http://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)\">Download Beyer op.101</a>",
+"<a href=\"https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)\">Download Beyer op.101</a>"
+]
+]
+},
+"7592": {
+"post": 7592,
+"titolo": "Che cos'è il Beyer",
+"permalink": true,
+"files": [
+{
+"k": "a",
+"name": "beyer-op101-il-percorso-del-metodo-frammento-a.png",
+"sha": "550b16958a73c5dd8aeaa464086491ad35e34c4788936afd247621e6bb7d00e4",
+"title": "Beyer op. 101 – Il percorso del metodo, frammento a",
+"alt": "Esercizio n.14, battute 1–4: all'inizio tutte e due le mani leggono in chiave di violino e restano sulle cinque note da Do a Sol. In rosso le dita agli estremi della posizione. (Beyer op. 101)",
+"cap": "Esercizio n.14, battute 1–4: all'inizio tutte e due le mani leggono in chiave di violino e restano sulle cinque note da Do a Sol. In rosso le dita agli estremi della posizione."
+},
+{
+"k": "b",
+"name": "beyer-op101-il-percorso-del-metodo-frammento-b.png",
+"sha": "de8c6714bbc35ffd88c81b1e56f3de694879ea8deb5d8b91eb8f4d51495070a5",
+"title": "Beyer op. 101 – Il percorso del metodo, frammento b",
+"alt": "La scala di Sol maggiore, battute 1–3: la sinistra passa alla chiave di basso e compare il primo tasto nero, il Fa diesis (in rosso). (Beyer op. 101)",
+"cap": "La scala di Sol maggiore, battute 1–3: la sinistra passa alla chiave di basso e compare il primo tasto nero, il Fa diesis (in rosso)."
+},
+{
+"k": "c",
+"name": "beyer-op101-il-percorso-del-metodo-frammento-c.png",
+"sha": "fe8f943b77022925930dbcc9f9ef7ad88e35d5de997958c248c10b7746f1fe9c",
+"title": "Beyer op. 101 – Il percorso del metodo, frammento c",
+"alt": "Esercizio n.60, battute 1–4: più avanti gli esercizi diventano piccoli brani, con le dinamiche e le frasi da legare. (Beyer op. 101)",
+"cap": "Esercizio n.60, battute 1–4: più avanti gli esercizi diventano piccoli brani, con le dinamiche e le frasi da legare."
+}
+],
+"ops": [
+[
+"s",
+"attraverso lo studio delle scale musicali corrispondenti.\r\n\r\n",
+"attraverso lo studio delle scale musicali corrispondenti.\r\n\r\n{{CAP:a}}\r\n\r\n{{CAP:b}}\r\n\r\n"
+],
+[
+"s",
+"in base alle proprie esigenze tecniche e ritmiche.\r\n\r\n",
+"in base alle proprie esigenze tecniche e ritmiche.\r\n\r\n{{CAP:c}}\r\n\r\n"
+]
+]
+},
+"5540": {
+"post": 5540,
+"titolo": "Tutti i video sul Beyer op.101",
+"permalink": false,
+"files": [],
+"ops": [
+[
+"s",
+"<a href=\"http://www.youtube.com/user/thepianosolo#grid/user/6F6C3173E23188AB\">Playlist del Beyer di Pianosolo</a>",
+"<a href=\"https://www.youtube.com/playlist?list=PL6F6C3173E23188AB\">Playlist del Beyer di Pianosolo</a>\r\n\r\nhttps://www.youtube.com/playlist?list=PL6F6C3173E23188AB"
+]
+]
+}
+}
+}

@@ -4316,6 +4316,70 @@
 "<strong>Soluzione:</strong> conta «1, 2, 3» con due crome per ogni movimento. La minima col punto dura tutta la battuta: tienila abbassata finché l'altra mano non ha finito le sue sei crome. Nella sinistra, mentre il 5° dito tiene il Mi della battuta 1, prepara il 4° dito sopra il Fa diesis."
 ]
 }
+},
+"221": {
+"k": "221",
+"post": 8678,
+"titolo": "Introduzione alla scala cromatica - Beyer - Lezione n.82",
+"files": [
+{
+"k": "web",
+"name": "beyer-op101-scala-cromatica-web.png",
+"sha": "574b1e17344a625c09a2828492fbb0a093dd92c6c792f30f7a10cd63db3eb13b",
+"title": "Beyer op. 101 – Scala cromatica (spartito)",
+"alt": "Spartito del Beyer op. 101, esercizi sulla scala cromatica per pianoforte"
+},
+{
+"k": "pdf",
+"name": "beyer-op101-scala-cromatica.pdf",
+"sha": "3a68cbeb12fa3d9822b4d090e25da4a8c33f079b29b553f342c81a78c636910d",
+"title": "Beyer op. 101 – Scala cromatica (PDF)",
+"alt": ""
+},
+{
+"k": "fa",
+"name": "beyer-op101-scala-cromatica-frammento-a.png",
+"sha": "94c3e615e4c62da34d0e5121720c606fa89f3cef98621a5bfc121c64415473e7",
+"title": "Beyer op. 101 – Scala cromatica, frammento a",
+"alt": "La scala cromatica da Sol a Sol e ritorno (esercizio 1 del Beyer, mano destra) con la diteggiatura per mani piccole. In rosso le sole note suonate con il 3° dito: Fa diesis e Do diesis in salita, Sol bemolle e Re bemolle in discesa. (Beyer op. 101)"
+},
+{
+"k": "fb",
+"name": "beyer-op101-scala-cromatica-frammento-b.png",
+"sha": "3d99e09e62920c95e92d5c3b683dcd19f117c7831f2ad2f1000aa046ea3ed4ff",
+"title": "Beyer op. 101 – Scala cromatica, frammento b",
+"alt": "La stessa scala (esercizio 2 del Beyer) con la diteggiatura più usata. In rosso i tasti neri, tutti con il 3° dito; sui tasti bianchi il pollice, tranne Do e Fa che prendono il 2° dito. (Beyer op. 101)"
+},
+{
+"k": "fc",
+"name": "beyer-op101-scala-cromatica-frammento-c.png",
+"sha": "d14ac4ae1c4092c6aef444652bced269566d4480833aa5522443f0a0be29c350",
+"title": "Beyer op. 101 – Scala cromatica, frammento c",
+"alt": "Esercizio 8, battute 1–2, mani unite: in rosso le dita sui tasti bianchi vicini (Mi–Fa e Si–Do). La destra usa 1-2, la sinistra 2-1; sui tasti neri tutte e due le mani hanno il 3° dito. (Beyer op. 101)"
+}
+],
+"cap": {
+"a": "La scala cromatica da Sol a Sol e ritorno (esercizio 1 del Beyer, mano destra) con la diteggiatura per mani piccole. In rosso le sole note suonate con il 3° dito: Fa diesis e Do diesis in salita, Sol bemolle e Re bemolle in discesa.",
+"b": "La stessa scala (esercizio 2 del Beyer) con la diteggiatura più usata. In rosso i tasti neri, tutti con il 3° dito; sui tasti bianchi il pollice, tranne Do e Fa che prendono il 2° dito.",
+"c": "Esercizio 8, battute 1–2, mani unite: in rosso le dita sui tasti bianchi vicini (Mi–Fa e Si–Do). La destra usa 1-2, la sinistra 2-1; sui tasti neri tutte e due le mani hanno il 3° dito."
+},
+"h2": "Spartito degli esercizi sulla scala cromatica",
+"pdf": "Scarica lo spartito degli esercizi sulla scala cromatica in PDF",
+"nota": "",
+"blocchi": {
+"2": [
+"fr:a"
+],
+"3": [
+"fr:b"
+],
+"5": [
+"<strong>Gli otto esercizi – scheda:</strong> non ci sono alterazioni in chiave: i diesis (in salita) e i bemolli (in discesa) sono scritti davanti a ogni nota. Il metro è 3/4; lo spartito non riporta un'indicazione di tempo. Gli esercizi 1–4 vanno da Sol a Sol, una mano alla volta, con le due diteggiature; il 5 e il 6 coprono due ottave partendo dal Do, sempre a mani separate; nel 7 le mani suonano insieme per moto contrario, partendo dal Re; nell'8 insieme per moto parallelo, a un'ottava di distanza.",
+"<strong>Difficoltà:</strong> nell'esercizio 8 le mani salgono e scendono insieme, ma sui tasti bianchi vicini (Mi–Fa e Si–Do) non usano le stesse dita: la destra suona 1-2, la sinistra 2-1. È il punto in cui una mano tende a copiare l'altra e la scala si inceppa.",
+"fr:c",
+"<strong>Soluzione:</strong> studiate prima l'esercizio 7: per moto contrario, partendo dal Re, le due mani usano sempre lo stesso dito nello stesso momento, ed è il modo più facile per abituarsi a suonarle insieme. Poi passate all'8 molto lentamente, fermandovi un attimo prima di Mi–Fa e di Si–Do per controllare le dita in rosso; quando non sbagliate più, togliete le fermate."
+]
+}
 }
 }
 }

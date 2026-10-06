@@ -1,0 +1,27 @@
+error_reporting(0);
+$in = $GLOBALS['pw_cm']; $t0 = microtime(true); $budget = isset($in['budget']) ? (float) $in['budget'] : 40; $out = [];
+$ua = 'PianosoloImageCheck/1.0 (https://www.pianosolo.it/; sito del portale Pianosolo)'; $n = isset($in['n']) ? (int) $in['n'] : 8; $nt = isset($in['thumbs']) ? (int) $in['thumbs'] : 0; $tw = isset($in['tw']) ? (int) $in['tw'] : 250;
+$pulisci = function ($s, $l) { $s = trim(preg_replace('~\s+~u', ' ', html_entity_decode(wp_strip_all_tags((string) $s)))); return mb_substr($s, 0, $l); };
+foreach ($in['q'] as $key => $q) {
+  if (microtime(true) - $t0 > $budget) { $out[$key] = 'tempo'; continue; }
+  $par = ['action' => 'query', 'format' => 'json', 'prop' => 'imageinfo', 'iiprop' => 'url|size|mime|extmetadata', 'iiurlwidth' => $tw, 'iiextmetadatafilter' => 'LicenseShortName|Artist|Credit|DateTimeOriginal|ImageDescription|Copyrighted|AttributionRequired|Restrictions|UsageTerms'];
+  if (strpos($q, 'File:') === 0) $par['titles'] = $q; else $par += ['generator' => 'search', 'gsrnamespace' => 6, 'gsrsearch' => $q, 'gsrlimit' => $n];
+  $r = wp_remote_get('https://commons.wikimedia.org/w/api.php?' . http_build_query($par), ['timeout' => 15, 'user-agent' => $ua]);
+  if (is_wp_error($r)) { $out[$key] = ['q' => $q, 'err' => $r->get_error_message()]; continue; }
+  $j = json_decode(wp_remote_retrieve_body($r), true); $pages = isset($j['query']['pages']) ? array_values($j['query']['pages']) : [];
+  usort($pages, function ($a, $b) { return ($a['index'] ?? 0) <=> ($b['index'] ?? 0); });
+  $rows = []; $k = 0;
+  foreach ($pages as $p) {
+    $ii = $p['imageinfo'][0] ?? null; if (!$ii) continue; $m = $ii['extmetadata'] ?? [];
+    $row = ['title' => $p['title'], 'w' => $ii['width'], 'h' => $ii['height'], 'mime' => $ii['mime'], 'lic' => $pulisci($m['LicenseShortName']['value'] ?? '', 40), 'artist' => $pulisci($m['Artist']['value'] ?? '', 110), 'credit' => $pulisci($m['Credit']['value'] ?? '', 90),
+      'date' => $pulisci($m['DateTimeOriginal']['value'] ?? '', 40), 'desc' => $pulisci($m['ImageDescription']['value'] ?? '', 200), 'restr' => $pulisci($m['Restrictions']['value'] ?? '', 40), 'attr' => $pulisci($m['AttributionRequired']['value'] ?? '', 6), 'url' => $ii['url'], 'thumb' => $ii['thumburl'] ?? '', 'page' => $ii['descriptionurl'] ?? ''];
+    if ($k < $nt && !empty($ii['thumburl']) && strpos($ii['mime'], 'image/') === 0) {
+      $t = wp_remote_get($ii['thumburl'], ['timeout' => 12, 'user-agent' => $ua]);
+      if (!is_wp_error($t) && wp_remote_retrieve_response_code($t) == 200) $row['b64'] = base64_encode(wp_remote_retrieve_body($t)); else $row['terr'] = is_wp_error($t) ? $t->get_error_message() : wp_remote_retrieve_response_code($t);
+      $k++;
+    }
+    $rows[] = $row;
+  }
+  $out[$key] = ['q' => $q, 'n' => count($rows), 'rows' => $rows, 'apierr' => $j['error']['info'] ?? null];
+}
+return ['sec' => round(microtime(true) - $t0, 1), 'out' => $out, 'pad' => str_repeat('0123456789', 9000)];

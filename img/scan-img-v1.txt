@@ -1,0 +1,30 @@
+error_reporting(0); global $wpdb;
+$in = $GLOBALS['pw_scan']; $ids = $in['ids']; $t0 = microtime(true); $budget = isset($in['budget']) ? (float) $in['budget'] : 40; $out = [];
+$lt = chr(60);
+foreach ($ids as $id) {
+  $id = (int) $id;
+  if (microtime(true) - $t0 > $budget) { $out[$id] = 'tempo'; continue; }
+  $p = get_post($id); if (!$p) { $out[$id] = 'assente'; continue; }
+  $c = $p->post_content;
+  $row = ['t' => $p->post_title, 'st' => $p->post_status, 'ty' => $p->post_type, 'md5' => md5($c), 'len' => strlen($c), 'date' => $p->post_date, 'link' => get_permalink($id), 'thumb' => (int) get_post_thumbnail_id($id), 'imgs' => []];
+  preg_match_all('~' . $lt . 'img\b[^>]*>~i', $c, $m, PREG_OFFSET_CAPTURE);
+  foreach ($m[0] as $mm) {
+    $tag = $mm[0]; $off = $mm[1];
+    if (!preg_match('~\bsrc\s*=\s*(["\'])(.*?)\1~i', $tag, $s)) { $row['imgs'][] = ['tag' => $tag, 'stato' => 'senza src', 'off' => $off]; continue; }
+    $src = trim(html_entity_decode($s[2])); if (strpos($src, 'data:') === 0) continue;
+    $host = parse_url($src, PHP_URL_HOST);
+    if ($host === null || $host === false || preg_match('~(^|\.)pianosolo\.it$~i', $host)) {
+      $path = parse_url($src, PHP_URL_PATH); $file = ABSPATH . ltrim(rawurldecode((string) $path), '/');
+      $stato = (is_file($file) && filesize($file) > 0) ? 'ok' : 'file mancante';
+    } else {
+      $r = wp_remote_get($src, ['timeout' => 7, 'redirection' => 3, 'user-agent' => 'Mozilla/5.0 (compatible; PianosoloCheck/1.0; +https://www.pianosolo.it)', 'limit_response_size' => 4096]);
+      if (is_wp_error($r)) $stato = 'esterna morta: ' . $r->get_error_message();
+      else { $code = wp_remote_retrieve_response_code($r); $ct = (string) wp_remote_retrieve_header($r, 'content-type'); $stato = ($code == 200 && stripos($ct, 'image') === 0) ? 'ok esterna' : 'esterna morta: ' . $code . ' ' . $ct; }
+    }
+    $rec = ['src' => $src, 'stato' => $stato];
+    if ($stato !== 'ok') { $rec['tag'] = $tag; $rec['off'] = $off; $a = max(0, $off - 600); $rec['prima'] = mb_strcut($c, $a, $off - $a, 'UTF-8'); $rec['dopo'] = mb_strcut($c, $off + strlen($tag), 450, 'UTF-8'); }
+    $row['imgs'][] = $rec;
+  }
+  $out[$id] = $row;
+}
+return ['sec' => round(microtime(true) - $t0, 1), 'out' => $out];

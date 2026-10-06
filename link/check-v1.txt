@@ -1,0 +1,53 @@
+error_reporting(0);
+global $wpdb;
+$in = $GLOBALS['pw_lk']; $t0 = microtime(true); $budget = isset($in['budget']) ? (float) $in['budget'] : 40; $out = ['r' => []];
+$ua = 'Mozilla/5.0 (compatible; PianosoloLinkCheck/1.0; +https://www.pianosolo.it/)';
+$enc = function ($u) {
+  $p = wp_parse_url($u); $path = isset($p['path']) ? $p['path'] : '/';
+  $path = implode('/', array_map(function ($s) { return rawurlencode(rawurldecode($s)); }, explode('/', $path)));
+  return $p['scheme'] . '://' . $p['host'] . $path . (isset($p['query']) ? '?' . $p['query'] : '');
+};
+if (($in['mode'] ?? '') === 'log404') {
+  $t = $wpdb->prefix . 'redirection_404';
+  if ($wpdb->get_var($wpdb->prepare('SHOW TABLES LIKE %s', $t)) !== $t) return ['log404' => 'tabella assente'];
+  $o = ['n' => (int) $wpdb->get_var("SELECT COUNT(*) FROM $t"), 'da' => $wpdb->get_var("SELECT MIN(created) FROM $t"), 'a' => $wpdb->get_var("SELECT MAX(created) FROM $t")];
+  $o['top'] = $wpdb->get_results("SELECT url, COUNT(*) n, MAX(created) ultimo, SUM(referrer IS NOT NULL AND referrer<>'' AND referrer NOT LIKE '%pianosolo.it%') ext FROM $t GROUP BY url ORDER BY n DESC LIMIT 150", ARRAY_N);
+  $o['ref'] = $wpdb->get_results("SELECT url, referrer, COUNT(*) n FROM $t WHERE referrer IS NOT NULL AND referrer<>'' AND referrer NOT LIKE '%pianosolo.it%' GROUP BY url, referrer ORDER BY n DESC LIMIT 120", ARRAY_N);
+  $o['opt'] = get_option('redirection_options');
+  if (is_array($o['opt'])) $o['opt'] = array_intersect_key($o['opt'], array_flip(['expire_404', 'expire_redirect', 'log_external', 'ip_logging', 'flag_query', 'flag_case', 'flag_trailing']));
+  return $o;
+}
+$from = isset($in['from']) ? (int) $in['from'] : 0;
+foreach ($in['urls'] as $i => $u) {
+  if ($i < $from) continue;
+  if (microtime(true) - $t0 > $budget) { $out['next'] = $i; break; }
+  $cur = $enc($u); $chain = [];
+  for ($h = 0; $h < 5; $h++) {
+    $r = wp_remote_head($cur, ['timeout' => 10, 'redirection' => 0, 'user-agent' => $ua]);
+    if (!is_wp_error($r) && in_array((int) wp_remote_retrieve_response_code($r), [0, 403, 405, 501], true)) $r = wp_remote_get($cur, ['timeout' => 12, 'redirection' => 0, 'user-agent' => $ua, 'limit_response_size' => 2048]);
+    if (is_wp_error($r)) { $chain[] = ['err', $r->get_error_message()]; break; }
+    $code = (int) wp_remote_retrieve_response_code($r); $loc = wp_remote_retrieve_header($r, 'location'); if (is_array($loc)) $loc = end($loc);
+    $chain[] = [$code, $cur];
+    if ($code >= 300 && $code < 400 && $loc) { if (strpos($loc, '/') === 0) { $p = wp_parse_url($cur); $loc = $p['scheme'] . '://' . $p['host'] . $loc; } $cur = $loc; continue; }
+    break;
+  }
+  $row = ['u' => $u, 'c' => $chain];
+  $p = wp_parse_url($u); $host = strtolower($p['host']);
+  if ($host === 'www.pianosolo.it' || $host === 'pianosolo.it') {
+    $seg = array_values(array_filter(explode('/', isset($p['path']) ? $p['path'] : ''), 'strlen')); $slug = $seg ? sanitize_title(rawurldecode(end($seg))) : '';
+    $id = $seg ? (int) url_to_postid($u) : 0;
+    if ($id) { $po = get_post($id); $row['p'] = [$id, $po->post_status, $po->post_type, $po->post_title]; }
+    elseif ($slug !== '') {
+      $alt = $wpdb->get_results($wpdb->prepare("SELECT ID, post_status, post_type, post_title, post_name FROM {$wpdb->posts} WHERE post_name IN (%s, %s) AND post_type NOT IN ('revision','nav_menu_item','attachment') LIMIT 4", $slug, $slug . '__trashed'), ARRAY_N);
+      $alt2 = $wpdb->get_results($wpdb->prepare("SELECT p.ID, p.post_status, p.post_type, p.post_title, p.post_name FROM {$wpdb->postmeta} m JOIN {$wpdb->posts} p ON p.ID = m.post_id WHERE m.meta_key IN ('_wp_desired_post_slug','_wp_old_slug') AND m.meta_value = %s LIMIT 4", $slug), ARRAY_N);
+      if ($alt || $alt2) $row['alt'] = array_merge($alt, $alt2);
+      foreach (['category', 'post_tag'] as $tx) { $t = get_term_by('slug', $slug, $tx); if ($t) { $row['term'][] = [$tx, (int) $t->term_id, $t->name, (int) $t->count, get_term_link($t)]; } }
+    }
+    $pathq = untrailingslashit(isset($p['path']) ? $p['path'] : '/');
+    $rd = $wpdb->get_results($wpdb->prepare("SELECT id, url, action_data, action_code, status FROM {$wpdb->prefix}redirection_items WHERE url IN (%s, %s) LIMIT 3", $pathq, $pathq . '/'), ARRAY_N);
+    if ($rd) $row['rd'] = $rd;
+  }
+  $out['r'][$i] = $row;
+}
+$out['sec'] = round(microtime(true) - $t0, 1);
+return $out;

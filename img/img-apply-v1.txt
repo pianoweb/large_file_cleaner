@@ -1,0 +1,76 @@
+error_reporting(0); global $wpdb; require_once ABSPATH.'wp-admin/includes/file.php'; require_once ABSPATH.'wp-admin/includes/media.php'; require_once ABSPATH.'wp-admin/includes/image.php';
+add_filter('big_image_size_threshold', '__return_false', 999);
+add_filter('intermediate_image_sizes_advanced', function ($sizes) { return array_intersect_key($sizes, ['thumbnail' => 1, 'medium' => 1]); }, 999);
+$ua = 'PianosoloImageCheck/1.0 (https://www.pianosolo.it/; sito del portale Pianosolo)'; add_filter('http_headers_useragent', function () use ($ua) { return $ua; }, 999);
+$in = $GLOBALS['pw_img']; $kk = (string) $in['k']; $fase = (string) $in['fase']; $dry = !empty($in['dry']); $t0 = microtime(true); $budget = isset($in['budget']) ? (float) $in['budget'] : 35;
+if (!preg_match('~^[a-z0-9-]+\.json$~', (string) $in['bundle'])) return ['stop' => 'nome del bundle non valido'];
+$r = wp_remote_get('https://raw.githubusercontent.com/pianoweb/large_file_cleaner/tmp-pianosolo-duvernoy/img/' . $in['bundle'], ['timeout' => 20]); if (is_wp_error($r)) return ['stop' => 'bundle: ' . $r->get_error_message()];
+$body = wp_remote_retrieve_body($r); if (hash('sha256', $body) !== $in['sha']) return ['stop' => 'bundle sha mismatch', 'got' => hash('sha256', $body)];
+$b = json_decode($body, true); $tag = (string) ($b['tag'] ?? ''); if (!preg_match('~^[a-z0-9]{2,12}$~', $tag)) return ['stop' => 'tag non valido'];
+$st = $b['art'][$kk] ?? null; if (!$st) return ['stop' => 'articolo assente'];
+$pid = (int) $st['post']; $p = get_post($pid);
+if (!$p || $p->post_status !== 'publish' || $p->post_type !== 'post' || strpos($p->post_title, $st['titolo']) !== 0) return ['stop' => 'controllo articolo fallito', 'title' => $p ? $p->post_title : null];
+$up = wp_get_upload_dir(); $files = $st['files'] ?? []; $copie = $st['copie'] ?? [];
+$trova = function ($key) use ($wpdb) { $id = (int) $wpdb->get_var($wpdb->prepare("SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key='_pw_img_key' AND meta_value=%s ORDER BY meta_id LIMIT 1", $key)); return ($id && get_post($id) && get_post_type($id) === 'attachment') ? $id : 0; };
+if ($fase === 'prepara') {
+  $log = [];
+  foreach ($copie as $c) {
+    if (!preg_match('~^\d{4}/\d{2}$~', $c['dir']) || !preg_match('~^[a-z0-9-]+\.(jpe?g|png|gif)$~', $c['to'])) return ['stop' => 'copia non valida'];
+    $src = $up['basedir'] . '/' . $c['dir'] . '/' . hex2bin($c['from_hex']); $dst = $up['basedir'] . '/' . $c['dir'] . '/' . $c['to'];
+    if (!is_file($src)) return ['stop' => 'sorgente della copia assente'];
+    if (is_file($dst)) { $log['copia ' . $c['to']] = (hash_file('sha256', $dst) === hash_file('sha256', $src)) ? 'gia presente, uguale' : 'ESISTE DIVERSO'; if ($log['copia ' . $c['to']] === 'ESISTE DIVERSO') return ['stop' => 'la destinazione della copia esiste ed e diversa', 'log' => $log]; continue; }
+    if (!copy($src, $dst)) return ['stop' => 'copia fallita']; @chmod($dst, fileperms($src) & 0777);
+    $log['copia ' . $c['to']] = (hash_file('sha256', $dst) === hash_file('sha256', $src)) ? 'copiato ' . filesize($dst) : 'COPIA DIVERSA';
+  }
+  foreach ($files as $f) {
+    $key = $tag . '-' . $kk . '-' . $f['k']; $id = $trova($key);
+    if (!$id) {
+      if (microtime(true) - $t0 > $budget) return ['k' => $kk, 'continua' => true, 'log' => $log];
+      $par = ['action' => 'query', 'format' => 'json', 'prop' => 'imageinfo', 'iiprop' => 'url|size|mime|extmetadata', 'iiextmetadatafilter' => 'LicenseShortName', 'titles' => $f['commons']]; if (!empty($f['w'])) $par['iiurlwidth'] = (int) $f['w'];
+      $a = wp_remote_get('https://commons.wikimedia.org/w/api.php?' . http_build_query($par), ['timeout' => 15]); if (is_wp_error($a)) return ['stop' => 'api: ' . $a->get_error_message(), 'log' => $log];
+      $j = json_decode(wp_remote_retrieve_body($a), true); $pg = isset($j['query']['pages']) ? array_values($j['query']['pages']) : []; $ii = $pg[0]['imageinfo'][0] ?? null; if (!$ii) return ['stop' => 'file non trovato su Commons: ' . $f['commons'], 'log' => $log];
+      $lic = wp_strip_all_tags($ii['extmetadata']['LicenseShortName']['value'] ?? ''); if ($lic !== $f['lic']) return ['stop' => 'licenza diversa da quella attesa: ' . $f['commons'] . ' -> ' . $lic, 'log' => $log];
+      $url = (!empty($f['w']) && !empty($ii['thumburl']) && (int) $f['w'] < (int) $ii['width']) ? $ii['thumburl'] : $ii['url'];
+      $tmp = download_url($url, 40); if (is_wp_error($tmp)) return ['stop' => 'download ' . $f['name'] . ': ' . $tmp->get_error_message(), 'log' => $log];
+      $gi = @getimagesize($tmp); if (!$gi) { @unlink($tmp); return ['stop' => 'il file scaricato non e una immagine: ' . $f['name'], 'log' => $log]; }
+      if (!empty($f['jpeg']) && $gi['mime'] !== 'image/jpeg') { $ed = wp_get_image_editor($tmp); if (is_wp_error($ed)) { @unlink($tmp); return ['stop' => 'editor: ' . $ed->get_error_message()]; } $ed->set_quality(86); $sv = $ed->save($tmp . '.jpg', 'image/jpeg'); if (is_wp_error($sv)) { @unlink($tmp); return ['stop' => 'conversione: ' . $sv->get_error_message()]; } @unlink($tmp); $tmp = $sv['path']; }
+      $id = media_handle_sideload(['name' => $f['name'], 'tmp_name' => $tmp], $pid, $f['title'], ['post_excerpt' => $f['cap'], 'post_content' => $f['desc']]);
+      if (is_wp_error($id)) { @unlink($tmp); return ['stop' => 'sideload ' . $f['name'] . ': ' . $id->get_error_message(), 'log' => $log]; }
+      add_post_meta($id, '_pw_img_key', $key, true); update_post_meta($id, '_wp_attachment_image_alt', $f['alt']);
+      $log[$key] = 'nuovo ' . $id . ' da ' . $url;
+    } else $log[$key] = 'ok ' . $id;
+    $m = wp_get_attachment_metadata($id); $path = get_attached_file($id); $prev = ''; $med = image_get_intermediate_size($id, 'medium'); $pp = ($med && !empty($med['path'])) ? $up['basedir'] . '/' . $med['path'] : $path; if (is_file($pp) && filesize($pp) < 300000) $prev = base64_encode(file_get_contents($pp));
+    $out[$f['k']] = ['id' => $id, 'file' => get_post_meta($id, '_wp_attached_file', true), 'dim' => ($m['width'] ?? '?') . 'x' . ($m['height'] ?? '?'), 'bytes' => filesize($path), 'sha' => hash_file('sha256', $path), 'prev' => $prev];
+  }
+  return ['k' => $kk, 'post' => $pid, 'log' => $log, 'files' => $out ?? [], 'sec' => round(microtime(true) - $t0, 1)];
+}
+if ($fase !== 'applica') return ['stop' => 'fase sconosciuta'];
+$mk = '_pw_img_' . $tag; if (get_post_meta($pid, $mk, true)) return ['k' => $kk, 'post' => $pid, 'gia_applicato' => get_post_meta($pid, $mk, true)];
+$ids = []; foreach ($files as $f) { $id = $trova($tag . '-' . $kk . '-' . $f['k']); if (!$id) return ['stop' => 'file non ancora caricato: ' . $f['k']]; $ids[$f['k']] = $id; }
+foreach ($copie as $c) if (!is_file($up['basedir'] . '/' . $c['dir'] . '/' . $c['to'])) return ['stop' => 'copia non ancora fatta: ' . $c['to']];
+$cur = $p->post_content; $new = $cur;
+foreach ($st['ops'] as $i => $op) {
+  if ($op[0] !== 's') return ['stop' => 'op sconosciuta ' . $i];
+  $n = substr_count($new, $op[1]); if ($n !== 1) return ['stop' => 'op ' . $i . ': occorrenze ' . $n, 'k' => $kk, 'old' => substr($op[1], 0, 90)];
+  $new = str_replace($op[1], $op[2], $new);
+}
+$re = '~\{\{(CAP|IMG):([a-z0-9]+):([a-z ]*):(\d+)\}\}~'; preg_match_all($re, $new, $ph, PREG_SET_ORDER); $usati = [];
+foreach ($ph as $h) { if (!isset($ids[$h[2]])) return ['stop' => 'segnaposto senza file: ' . $h[0]]; $usati[$h[2]] = 1; }
+foreach ($ids as $k => $id) if (!isset($usati[$k])) return ['stop' => 'file non usato: ' . $k];
+$fk = array_column($files, null, 'k');
+$new = preg_replace_callback($re, function ($h) use ($ids, $fk) {
+  $k = $h[2]; $id = $ids[$k]; $m = wp_get_attachment_metadata($id); $w = (int) $h[4]; $ht = (int) round($m['height'] * $w / $m['width']); $src = wp_get_attachment_url($id); $alt = esc_attr($fk[$k]['alt']);
+  if ($h[1] === 'IMG') return '<img class="' . trim($h[3] . ' wp-image-' . $id) . '" title="' . esc_attr($fk[$k]['cap']) . '" src="' . $src . '" alt="' . $alt . '" width="' . $w . '" height="' . $ht . '" />';
+  return '[caption id="attachment_' . $id . '" align="' . $h[3] . '" width="' . $w . '"]<img class="size-full wp-image-' . $id . '" src="' . $src . '" alt="' . $alt . '" width="' . $w . '" height="' . $ht . '" /> ' . $fk[$k]['cap'] . '[/caption]';
+}, $new);
+if ($new === $cur) return ['stop' => 'nessuna modifica'];
+if ($dry) { $ctx = []; foreach ($st['ops'] as $op) { $ctx[] = mb_strcut($op[1], 0, 110, 'UTF-8'); } return ['k' => $kk, 'post' => $pid, 'md5' => md5($cur), 'len' => [strlen($cur), strlen($new)], 'ops' => count($st['ops']), 'segnaposto' => count($ph), 'nuovo_md5' => md5($new)]; }
+if (md5($cur) !== ($in['md5'] ?? '')) return ['stop' => 'contenuto cambiato dopo la prova', 'md5' => md5($cur)];
+$bt = $wpdb->prefix . 'pw_bak_' . $tag . '_20261006';
+$wpdb->query("CREATE TABLE IF NOT EXISTS $bt (ID BIGINT UNSIGNED NOT NULL PRIMARY KEY, post_content LONGTEXT NOT NULL, saved DATETIME NOT NULL) DEFAULT CHARSET=utf8mb4");
+$wpdb->query($wpdb->prepare("INSERT IGNORE INTO $bt (ID, post_content, saved) VALUES (%d, %s, NOW())", $pid, $cur));
+if ($wpdb->get_var($wpdb->prepare("SELECT post_content FROM $bt WHERE ID=%d", $pid)) !== $cur) return ['stop' => 'backup non verificato'];
+$wpdb->update($wpdb->posts, ['post_content' => $new], ['ID' => $pid]); clean_post_cache($pid); do_action('litespeed_purge_post', $pid);
+$chk = $wpdb->get_var($wpdb->prepare("SELECT post_content FROM {$wpdb->posts} WHERE ID=%d", $pid));
+update_post_meta($pid, $mk, $in['sha'] . '|' . current_time('mysql'));
+return ['k' => $kk, 'post' => $pid, 'written' => $chk === $new, 'len' => [strlen($cur), strlen($new)], 'md5' => md5($new), 'resti' => substr_count($new, '{{'), 'sec' => round(microtime(true) - $t0, 1)];

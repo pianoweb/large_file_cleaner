@@ -1,0 +1,571 @@
+{
+"tag": "imgfix",
+"art": {
+"816": {
+"post": 816,
+"titolo": "Breve presentazione: Alice",
+"md5": "a5c343de4c7d197e4c661d3f01831c1d",
+"files": [
+{
+"k": "rosa",
+"commons": "File:Rose-on-music-book-on-piano.jpg",
+"w": 960,
+"lic": "Public domain",
+"name": "rosa-su-spartito-al-pianoforte.jpg",
+"jpeg": false,
+"title": "Una rosa su uno spartito al pianoforte",
+"alt": "Una rosa rossa appoggiata su un vecchio spartito aperto sul pianoforte",
+"cap": "Fonte: Liam Quin / Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Rose-on-music-book-on-piano.jpg\nLicenza: Pubblico dominio (Liam Quin, «Pictures of old books», 2003)"
+}
+],
+"ops": [
+[
+"s",
+"<img src=\"http://digilander.libero.it/vero_870/roa%20e%20pianoforte.jpg\" alt=\"http://digilander.libero.it/vero_870/roa%20e%20pianoforte.jpg\" width=\"245\" height=\"180\" />",
+"{{CAP:rosa:alignnone:300}}"
+]
+],
+"copie": []
+},
+"831": {
+"post": 831,
+"titolo": "J. S. Bach Preludio n.1",
+"md5": "df4d8e6b5029a47182de78fce22bc6f7",
+"files": [
+{
+"k": "bach",
+"commons": "File:Johann Sebastian Bach.jpg",
+"w": 500,
+"lic": "Public domain",
+"name": "johann-sebastian-bach-ritratto-haussmann-1748.jpg",
+"jpeg": false,
+"title": "Johann Sebastian Bach, ritratto di E. G. Haussmann (1748)",
+"alt": "Johann Sebastian Bach nel ritratto di Elias Gottlob Haussmann, 1748",
+"cap": "J. S. Bach nel ritratto di E. G. Haussmann (1748). Fonte: Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.jpg\nLicenza: Pubblico dominio (dipinto di Elias Gottlob Haussmann, 1748)"
+}
+],
+"ops": [
+[
+"s",
+"[caption id=\"\" align=\"alignleft\" width=\"173\"]<img class=\" alignleft\" title=\"J. S. Bach\" src=\"http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/220px-Johann_Sebastian_Bach.jpg\" alt=\"J. S. Bach\" width=\"173\" height=\"213\" /> J. S. Bach[/caption]",
+"{{CAP:bach:alignleft:190}}"
+]
+],
+"copie": []
+},
+"890": {
+"post": 890,
+"titolo": "Acqua azzurra acqua chiara",
+"md5": "6464e1219e1d5dbfe2d8d4fac894d955",
+"files": [
+{
+"k": "battisti",
+"commons": "File:Sanremo 1969 Lucio Battisti.jpg",
+"w": 0,
+"lic": "Public domain",
+"name": "lucio-battisti-sanremo-1969.jpg",
+"jpeg": false,
+"title": "Lucio Battisti al Festival di Sanremo del 1969",
+"alt": "Lucio Battisti sul palco del Festival di Sanremo nel 1969",
+"cap": "Lucio Battisti al Festival di Sanremo, 1969. Fonte: Archivio Rai / Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Sanremo_1969_Lucio_Battisti.jpg\nLicenza: Pubblico dominio in Italia (fotografia semplice dell'Archivio Rai, 1969)"
+}
+],
+"ops": [
+[
+"s",
+"<img src=\"http://digilander.libero.it/andrealatino/D/1969/acquaJUG.jpg\" alt=\"Copertina del singolo Acqua azzurra, acqua chiara\" width=\"241\" height=\"241\" />",
+"{{IMG:battisti::241}}"
+]
+],
+"copie": []
+},
+"1056": {
+"post": 1056,
+"titolo": "Victor Borge",
+"md5": "418a55fba8d9a02df76a3ac5e6988e1e",
+"files": [
+{
+"k": "borge",
+"commons": "File:Victor Borge in concert 1957.JPG",
+"w": 0,
+"lic": "Public domain",
+"name": "victor-borge-in-concerto-1957.jpg",
+"jpeg": false,
+"title": "Victor Borge in concerto nel 1957",
+"alt": "Victor Borge al pianoforte durante un concerto nel 1957",
+"cap": "Victor Borge in concerto, 1957. Fonte: Joe Clark / Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Victor_Borge_in_concert_1957.JPG\nLicenza: Pubblico dominio (foto promozionale del 1957 senza avviso di copyright, Joe Clark, Detroit)"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"alignleft\" title=\"Victor Borge\" src=\"http://userserve-ak.last.fm/serve/252/175809.jpg\" alt=\"\" width=\"121\" height=\"166\" />",
+"{{CAP:borge:alignleft:180}}"
+]
+],
+"copie": []
+},
+"1885": {
+"post": 1885,
+"titolo": "Trasferimento di Dominio",
+"md5": "68fb565589aa01ee513f20febb087bab",
+"files": [
+{
+"k": "trasloco",
+"commons": "File:Moving-boxes.jpg",
+"w": 960,
+"lic": "CC BY-SA 4.0",
+"name": "scatoloni-per-il-trasloco.jpg",
+"jpeg": false,
+"title": "Scatoloni per il trasloco",
+"alt": "Scatoloni di cartone pronti per un trasloco",
+"cap": "Foto: MoveON moving / Wikimedia Commons, CC BY-SA 4.0",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Moving-boxes.jpg\nLicenza: CC BY-SA 4.0 (MoveON moving) – https://creativecommons.org/licenses/by-sa/4.0/"
+}
+],
+"ops": [
+[
+"s",
+"<a href=\"http://images.google.it/imgres?imgurl=http://www.matteodini.com/wp-content/uploads/2008/09/trasferimento.jpg&amp;imgrefurl=http://www.ilbloggatore.com/2008/09/18/trasferimento-del-dominio/&amp;usg=__Jf9N2XnMMGZby7Ug-bQf480WyYg=&amp;h=300&amp;w=336&amp;sz=10&amp;hl=it&amp;start=12&amp;um=1&amp;tbnid=PsKhaEFA9eIqCM:&amp;tbnh=106&amp;tbnw=119&amp;prev=/images%3Fq%3Dtrasferimento%26um%3D1%26hl%3Dit%26sa%3DN\"><img class=\"alignleft\" style=\"border: 1px solid;\" src=\"http://tbn1.google.com/images?q=tbn:PsKhaEFA9eIqCM:http://www.matteodini.com/wp-content/uploads/2008/09/trasferimento.jpg\" alt=\"\" width=\"119\" height=\"106\" /></a>",
+"{{CAP:trasloco:alignleft:200}}"
+]
+],
+"copie": []
+},
+"2077": {
+"post": 2077,
+"titolo": "Recensione di “No line on the horizon” U2",
+"md5": "061ace1e2f755008f2af22a8b5c990e7",
+"files": [
+{
+"k": "u2",
+"commons": "File:The Edge Bono Lincoln Memorial 2009.jpg",
+"w": 960,
+"lic": "CC BY 2.0",
+"name": "u2-the-edge-bono-washington-2009.jpg",
+"jpeg": false,
+"title": "The Edge e Bono a Washington nel gennaio 2009",
+"alt": "The Edge e Bono degli U2 in concerto al Lincoln Memorial di Washington, 18 gennaio 2009",
+"cap": "The Edge e Bono a Washington, gennaio 2009. Foto: Steve Jurvetson / Wikimedia Commons, CC BY 2.0",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:The_Edge_Bono_Lincoln_Memorial_2009.jpg\nLicenza: CC BY 2.0 (Steve Jurvetson) – https://creativecommons.org/licenses/by/2.0/"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"alignleft\" style=\"border: 1px solid;\" src=\"http://tbn1.google.com/images?q=tbn:b2M18ZG1HP3W2M:http://www.mp3midikaraoke.com/public/images/U2%2520-%2520No%2520Line%2520On%2520The%2520Horizon%25202.jpg\" alt=\"\" width=\"114\" height=\"114\" />",
+"{{CAP:u2:alignleft:200}}"
+]
+],
+"copie": []
+},
+"2288": {
+"post": 2288,
+"titolo": "Dancing Queen - ABBA",
+"md5": "21d7771d96086e00af6e6769385c2dbc",
+"files": [
+{
+"k": "abba",
+"commons": "File:Zweedse popgroep Abba in Nederland v.l.n.r. Benny, Frida, Anna en Björn op Schi, Bestanddeelnr 928-8964.jpg",
+"w": 960,
+"lic": "CC0",
+"name": "abba-aeroporto-schiphol-1976.jpg",
+"jpeg": false,
+"title": "Gli ABBA all'aeroporto di Schiphol nel 1976",
+"alt": "Gli ABBA (Benny, Frida, Agnetha e Björn) all'aeroporto di Schiphol nel novembre 1976",
+"cap": "Gli ABBA a Schiphol nel novembre 1976, l'anno di Dancing Queen. Foto: Bert Verhoeff / Anefo, Nationaal Archief, CC0",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Zweedse_popgroep_Abba_in_Nederland_v.l.n.r._Benny,_Frida,_Anna_en_Björn_op_Schi,_Bestanddeelnr_928-8964.jpg\nLicenza: CC0 (Bert Verhoeff / Anefo, Nationaal Archief, 1976)"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"alignright\" src=\"http://www.telegraph.co.uk/telegraph/multimedia/archive/00681/abba-404b_681093c.jpg\" alt=\"\" width=\"304\" height=\"217\" />",
+"{{CAP:abba:alignright:304}}"
+],
+[
+"s",
+"<img class=\"alignleft wp-image-14254\" src=\"https://pianosolo.it/wp-content/uploads/2009/04/Abba-Dancing-Queen.jpg\" alt=\"Abba Dancing Queen\" width=\"228\" height=\"300\" />",
+"<img class=\"alignleft wp-image-14254\" src=\"https://www.pianosolo.it/wp-content/uploads/2009/04/abba-dancing-queen.jpg\" alt=\"Abba Dancing Queen\" width=\"228\" height=\"300\" />"
+]
+],
+"copie": []
+},
+"2460": {
+"post": 2460,
+"titolo": "Come costruire un pianoforte",
+"md5": "0eb4f1c73d1ae9c02612655686db325f",
+"files": [
+{
+"k": "steinway",
+"commons": "File:Steinway piano factory in Queens, New York LCCN2011631250.tif",
+"w": 960,
+"lic": "Public domain",
+"name": "fabbrica-steinway-queens-new-york.jpg",
+"jpeg": false,
+"title": "La fabbrica Steinway & Sons nel Queens, New York",
+"alt": "Pianoforti a coda in lavorazione nella fabbrica Steinway & Sons di New York",
+"cap": "La fabbrica Steinway & Sons nel Queens, New York. Fonte: Carol M. Highsmith / Library of Congress, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Steinway_piano_factory_in_Queens,_New_York_LCCN2011631250.tif\nLicenza: Pubblico dominio (Carol M. Highsmith Archive, Library of Congress, LCCN 2011631250)"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"alignleft\" src=\"http://www.steveodland.com/Images/Steinway1.jpg\" alt=\"http://www.steveodland.com/Images/Steinway1.jpg\" width=\"300\" height=\"225\" />",
+"{{CAP:steinway:alignleft:300}}"
+]
+],
+"copie": []
+},
+"2529": {
+"post": 2529,
+"titolo": "Concorso U2",
+"md5": "1455bd55a2229e70b936865ea1f33d9a",
+"files": [
+{
+"k": "palco",
+"commons": "File:U2 360 Stage (3825380521).jpg",
+"w": 960,
+"lic": "CC BY 2.0",
+"name": "u2-360-tour-palco-wembley-2009.jpg",
+"jpeg": false,
+"title": "Il palco dell'U2 360° Tour a Wembley nel 2009",
+"alt": "Il palco circolare dell'U2 360° Tour allo stadio di Wembley, agosto 2009",
+"cap": "Il palco dell'U2 360° Tour a Wembley, agosto 2009. Foto: wonker / Wikimedia Commons, CC BY 2.0",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:U2_360_Stage_(3825380521).jpg\nLicenza: CC BY 2.0 (wonker, Londra) – https://creativecommons.org/licenses/by/2.0/"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"alignleft\" src=\"http://media.u2.com/non_secure/images/tours/360/U2360-Tourlogo-white.gif\" alt=\"http://media.u2.com/non_secure/images/tours/360/U2360-Tourlogo-white.gif\" width=\"240\" height=\"240\" />",
+"{{CAP:palco:alignleft:300}}"
+]
+],
+"copie": []
+},
+"2719": {
+"post": 2719,
+"titolo": "Come prepararsi per una esecuzione in pubblico",
+"md5": "cc79e63c3bdf15be397f2737ddaf31f0",
+"files": [
+{
+"k": "gould",
+"commons": "File:Glenn Gould playing on CBC-TV concert.jpg",
+"w": 960,
+"lic": "Public domain",
+"name": "glenn-gould-al-pianoforte-cbc-1962.jpg",
+"jpeg": false,
+"title": "Glenn Gould al pianoforte in un concerto televisivo della CBC (1962)",
+"alt": "Glenn Gould al pianoforte durante un concerto per la televisione canadese CBC nel 1962",
+"cap": "Glenn Gould in un concerto televisivo della CBC, 1962. Fonte: Canadian Broadcasting Corporation / Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Glenn_Gould_playing_on_CBC-TV_concert.jpg\nLicenza: Pubblico dominio (Canadian Broadcasting Corporation, «CBC Times», gennaio 1962)"
+}
+],
+"ops": [
+[
+"s",
+"[caption id=\"\" align=\"alignright\" width=\"302\"]<img style=\"cursor: -moz-zoom-in;\" src=\"http://urbanfluteproject.com/wp-content/uploads/2007/03/glenn-gould-2.jpg\" alt=\"http://urbanfluteproject.com/wp-content/uploads/2007/03/glenn-gould-2.jpg\" width=\"302\" height=\"292\" /> Glenn Gould[/caption]",
+"{{CAP:gould:alignright:302}}"
+]
+],
+"copie": []
+},
+"2736": {
+"post": 2736,
+"titolo": "Nora la gatta pianista",
+"md5": "bb3699c16c9c1511e7bc00c0596c18a2",
+"files": [
+{
+"k": "nora",
+"commons": "File:NoraPianoCat.jpg",
+"w": 0,
+"lic": "CC BY-SA 3.0",
+"name": "nora-la-gatta-pianista.jpg",
+"jpeg": false,
+"title": "Nora, la gatta pianista",
+"alt": "Nora, la gatta pianista, con le zampe sulla tastiera",
+"cap": "Nora al pianoforte. Foto: Burnell Yow! / Wikimedia Commons, CC BY-SA 3.0",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:NoraPianoCat.jpg\nLicenza: CC BY-SA 3.0 (Burnell Yow!) – https://creativecommons.org/licenses/by-sa/3.0/"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"alignleft\" style=\"margin: 1px 3px;\" src=\"http://www.lastampa.it/cmstp/rubriche/admin/immagine.asp?ID_blog=164&amp;ID_file=1267\" alt=\"\" hspace=\"3\" vspace=\"1\" width=\"240\" height=\"184\" align=\"right\" />",
+"{{CAP:nora:alignleft:180}}"
+]
+],
+"copie": []
+},
+"2782": {
+"post": 2782,
+"titolo": "L’Hanon, descrizione",
+"md5": "131d96c890763897585a15c163715d84",
+"files": [
+{
+"k": "hanon",
+"commons": "File:Charles-Louis Hanon.jpg",
+"w": 0,
+"lic": "Public domain",
+"name": "charles-louis-hanon-ritratto.jpg",
+"jpeg": false,
+"title": "Charles-Louis Hanon",
+"alt": "Ritratto di Charles-Louis Hanon",
+"cap": "Charles-Louis Hanon. Fonte: Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Charles-Louis_Hanon.jpg\nLicenza: Pubblico dominio (ritratto ottocentesco, autore sconosciuto)"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"alignleft\" src=\"http://www.musica-sacra.it/images/images/prodotti/Hanon.jpg\" alt=\"http://www.musica-sacra.it/images/images/prodotti/Hanon.jpg\" width=\"154\" height=\"213\" />",
+"{{IMG:hanon:alignleft:134}}"
+]
+],
+"copie": []
+},
+"2818": {
+"post": 2818,
+"titolo": "Alcuni consigli sul metodo di studio",
+"md5": "fa5903960358889bca85b269524a1b77",
+"files": [
+{
+"k": "mani",
+"commons": "File:Hupfeld piano played (2018-10-04 @pxhere 1546039).jpg",
+"w": 960,
+"lic": "CC0",
+"name": "mani-sulla-tastiera-del-pianoforte.jpg",
+"jpeg": false,
+"title": "Mani sulla tastiera di un pianoforte",
+"alt": "Due mani che suonano sulla tastiera di un pianoforte verticale",
+"cap": "Fonte: pxhere / Wikimedia Commons, CC0",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Hupfeld_piano_played_(2018-10-04_@pxhere_1546039).jpg\nLicenza: CC0 (pxhere.com, foto 1546039)"
+}
+],
+"ops": [
+[
+"s",
+"<img style=\"cursor: -moz-zoom-in;\" src=\"http://stoica.ch/wp-content/uploads/2007/07/consigli.jpg\" alt=\"http://stoica.ch/wp-content/uploads/2007/07/consigli.jpg\" width=\"450\" height=\"337\" />",
+"{{CAP:mani:alignnone:450}}"
+]
+],
+"copie": []
+},
+"2961": {
+"post": 2961,
+"titolo": "Introduzione alle Invenzioni a due voci",
+"md5": "22822021ad1120a6fb1b90252ff003a4",
+"files": [
+{
+"k": "autografo",
+"commons": "File:BWV 772, 1723 autograph, page 1.png",
+"w": 960,
+"lic": "Public domain",
+"name": "bach-invenzione-n1-bwv-772-autografo-1723.jpg",
+"jpeg": true,
+"title": "Bach, Invenzione n. 1 BWV 772: prima pagina dell'autografo (1723)",
+"alt": "Prima pagina dell'Invenzione a due voci n. 1 BWV 772 nel manoscritto autografo di Bach, 1723",
+"cap": "L'Invenzione n. 1 nell'autografo di Bach del 1723. Fonte: Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:BWV_772,_1723_autograph,_page_1.png\nLicenza: Pubblico dominio (manoscritto autografo di J. S. Bach, 1723)"
+}
+],
+"ops": [
+[
+"s",
+"<img src=\"http://thumbs.ebaystatic.com/pict/380135717762.jpg\" alt=\"http://thumbs.ebaystatic.com/pict/380135717762.jpg\" />",
+"{{CAP:autografo:alignnone:220}}"
+]
+],
+"copie": []
+},
+"3182": {
+"post": 3182,
+"titolo": "Bach – Invenzioni a due voci la n.1",
+"md5": "76fa3082c562451e6fbfb113601277e2",
+"files": [
+{
+"k": "mordente",
+"commons": "File:Upper and lower simple mordents.jpg",
+"w": 500,
+"lic": "Public domain",
+"name": "mordente-superiore-e-inferiore.jpg",
+"jpeg": false,
+"title": "Mordente superiore e mordente inferiore",
+"alt": "Mordente superiore e mordente inferiore: il segno e la sua esecuzione",
+"cap": "Mordente superiore e inferiore. Fonte: Bouncey2k / Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Upper_and_lower_simple_mordents.jpg\nLicenza: Pubblico dominio (Bouncey2k, 2007)"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"thumbimage alignleft\" src=\"http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Upper_and_lower_simple_mordents.jpg/140px-Upper_and_lower_simple_mordents.jpg\" alt=\"\" width=\"140\" height=\"112\" />",
+"{{IMG:mordente:thumbimage alignleft:140}}"
+]
+],
+"copie": []
+},
+"3894": {
+"post": 3894,
+"titolo": "Film famosi sul pianoforte",
+"md5": "ed6ad778a77174a555c07ac3d86e2182",
+"files": [
+{
+"k": "casablanca",
+"commons": "File:Dooley Wilson-Humphrey Bogart in Casablanca.jpg",
+"w": 0,
+"lic": "Public domain",
+"name": "casablanca-1942-dooley-wilson-humphrey-bogart.jpg",
+"jpeg": false,
+"title": "Dooley Wilson e Humphrey Bogart in «Casablanca» (1942)",
+"alt": "Dooley Wilson e Humphrey Bogart in una foto di scena di Casablanca, 1942",
+"cap": "Dooley Wilson (Sam, il pianista) e Humphrey Bogart in «Casablanca», 1942. Fonte: Warner Bros. / Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Dooley_Wilson-Humphrey_Bogart_in_Casablanca.jpg\nLicenza: Pubblico dominio negli Stati Uniti (foto promozionale Warner Bros. del 1942 senza avviso di copyright)"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"alignleft\" style=\"cursor: -moz-zoom-in;\" src=\"http://data.kataweb.it/kpm2cinx/field/image/tcimage/143074\" alt=\"http://data.kataweb.it/kpm2cinx/field/image/tcimage/143074\" width=\"136\" height=\"190\" />",
+"{{CAP:casablanca:alignleft:250}}"
+]
+],
+"copie": []
+},
+"5071": {
+"post": 5071,
+"titolo": "Ipad, come rivoluzionerà",
+"md5": "515563c8ab61349693ec750848025a2b",
+"files": [
+{
+"k": "ipad",
+"commons": "File:1st-Gen-iPad-WiFi-iBooks.jpg",
+"w": 960,
+"lic": "Public domain",
+"name": "ipad-prima-generazione-2010.jpg",
+"jpeg": false,
+"title": "iPad di prima generazione (2010)",
+"alt": "Un iPad di prima generazione con un libro aperto sullo schermo",
+"cap": "Un iPad di prima generazione (2010). Fonte: Evan-Amos / Wikimedia Commons, pubblico dominio",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:1st-Gen-iPad-WiFi-iBooks.jpg\nLicenza: Pubblico dominio (Evan-Amos, 2011)"
+}
+],
+"ops": [
+[
+"s",
+"<img src=\"http://www.telefonino.net/new_files/images/global/Apple-iPad_45887_1.jpg\" alt=\"http://www.telefonino.net/new_files/images/global/Apple-iPad_45887_1.jpg\" />",
+"{{CAP:ipad:aligncenter:400}}"
+]
+],
+"copie": []
+},
+"5827": {
+"post": 5827,
+"titolo": "Nuovo tema per Pianosolo",
+"md5": "2a63efc7b12cb1b477dd58ff34e9002b",
+"files": [
+{
+"k": "wordpress",
+"commons": "File:WordPress W Mark.svg",
+"w": 500,
+"lic": "Public domain",
+"name": "logo-wordpress.png",
+"jpeg": false,
+"title": "Logo di WordPress",
+"alt": "Logo di WordPress",
+"cap": "Logo di WordPress. Fonte: wordpress.org / Wikimedia Commons",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:WordPress_W_Mark.svg\nLicenza: Pubblico dominio per il diritto d'autore (forma semplice); è un marchio registrato della WordPress Foundation"
+}
+],
+"ops": [
+[
+"s",
+"<img id=\"il_fi\" class=\"alignleft\" src=\"http://fenomeno.it/wp-content/uploads/2008/02/wordpress-logo2.png\" alt=\"\" width=\"273\" height=\"256\" />",
+"{{IMG:wordpress:alignleft:200}}"
+]
+],
+"copie": []
+},
+"10026": {
+"post": 10026,
+"titolo": "Musica e bambini",
+"md5": "380ac5192bb5875c57806903d088da99",
+"files": [
+{
+"k": "bambino",
+"commons": "File:Young pianist (Unsplash).jpg",
+"w": 960,
+"lic": "CC0",
+"name": "bambino-al-pianoforte.jpg",
+"jpeg": false,
+"title": "Un bambino al pianoforte",
+"alt": "Le mani di un bambino sulla tastiera di un pianoforte",
+"cap": "Fonte: Clark Young / Unsplash, via Wikimedia Commons, CC0",
+"desc": "Fonte: https://commons.wikimedia.org/wiki/File:Young_pianist_(Unsplash).jpg\nLicenza: CC0 (Clark Young, Unsplash, 2016)"
+}
+],
+"ops": [
+[
+"s",
+"<img class=\"size-medium wp-image-92 alignleft\" title=\"5239076037_45b802760f_b\" src=\"http://www.musicaebambini.it/wp-content/uploads/2010/12/5239076037_45b802760f_b-200x300.jpg\" alt=\"\" width=\"200\" height=\"300\" />",
+"{{IMG:bambino:alignleft:300}}"
+]
+],
+"copie": []
+},
+"14174": {
+"post": 14174,
+"titolo": "Storia della musica Afro-americana. Le contaminazioni",
+"md5": "442ecb9f9063f472520a6b2d688e8c6d",
+"files": [],
+"ops": [
+[
+"s",
+"<img class=\"alignleft  wp-image-14175\" style=\"border: 5px solid black; margin: 5px;\" alt=\"Gravação+de+Getz-Gilberto\" src=\"https://pianosolo.it/wp-content/uploads/2013/01/Gravação+de+Getz-Gilberto.jpeg\" width=\"320\" height=\"182\" />",
+"<img class=\"alignleft  wp-image-14175\" style=\"border: 5px solid black; margin: 5px;\" alt=\"La registrazione dell'album Getz/Gilberto\" src=\"https://www.pianosolo.it/wp-content/uploads/2013/01/gravacao-de-getz-gilberto.jpeg\" width=\"320\" height=\"182\" />"
+]
+],
+"copie": [
+{
+"dir": "2013/01",
+"from_hex": "4772617661c383c2a7c383c2a36f2b64652b4765747a2d47696c626572746f2e6a706567",
+"to": "gravacao-de-getz-gilberto.jpeg"
+}
+]
+},
+"20402": {
+"post": 20402,
+"titolo": "Il pianoforte torna sulla laguna",
+"md5": "2b1bbd04552d389640293fbb55c1b04a",
+"files": [],
+"ops": [
+[
+"s",
+"<img class=\"wp-image-20408 size-large\" src=\"https://pianosolo.it/wp-content/uploads/2015/07/Jason-Lindner-522x260.jpg\" alt=\"Jason-Lindner\" width=\"522\" height=\"260\" />",
+"<img class=\"wp-image-20408 size-large\" src=\"https://www.pianosolo.it/wp-content/uploads/2015/07/Jason-Lindner.jpg\" alt=\"Jason-Lindner\" width=\"522\" height=\"260\" />"
+]
+],
+"copie": []
+},
+"22327": {
+"post": 22327,
+"titolo": "Napoli città del pianoforte",
+"md5": "75ad3a3bb06ebe16aa86327c15aeeb79",
+"files": [],
+"ops": [
+[
+"s",
+"<img class=\"alignnone size-full wp-image-22329\" src=\"https://pianosolo.it/wp-content/uploads/2015/10/ANDREAS-KERN.jpg\" alt=\"ANDREAS KERN\" width=\"815\" height=\"587\" />",
+"<img class=\"alignnone size-full wp-image-22329\" src=\"https://www.pianosolo.it/wp-content/uploads/2015/10/ANDREAS-KERN-815x580.jpg\" alt=\"ANDREAS KERN\" width=\"815\" height=\"580\" />"
+]
+],
+"copie": []
+}
+}
+}
